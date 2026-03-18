@@ -833,6 +833,80 @@ class PI05Pytorch(nn.Module):  # see openpi `PI0Pytorch`
         return x_t, feaure
 
     @torch.no_grad() 
+    def sample_actions_and_get_feature_opt(self, sample_num, images, img_masks, tokens, masks, noise=None, num_steps=None) -> Tensor:
+        """Do a full inference forward and compute the action."""
+        if num_steps is None:
+            num_steps = self.config.num_inference_steps
+
+        bsize = tokens.shape[0]
+        device = tokens.device
+
+        if noise is None:
+            # Sample noise with padded dimension as expected by action_in_proj
+            actions_shape = (
+                bsize,
+                self.config.chunk_size,
+                self.config.max_action_dim,
+            )  # Use config max_action_dim for internal processing
+            noise = self.sample_noise(actions_shape, device)
+
+        prefix_embs, prefix_pad_masks, prefix_att_masks = self.embed_prefix(images, img_masks, tokens, masks)
+        prefix_att_2d_masks = make_att_2d_masks(prefix_pad_masks, prefix_att_masks)
+        prefix_position_ids = torch.cumsum(prefix_pad_masks, dim=1) - 1
+
+        prefix_att_2d_masks_4d = self._prepare_attention_masks_4d(prefix_att_2d_masks)
+        self.paligemma_with_expert.paligemma.language_model.config._attn_implementation = "eager"  # noqa: SLF001
+
+        _, past_key_values = self.paligemma_with_expert.forward(
+            attention_mask=prefix_att_2d_masks_4d,
+            position_ids=prefix_position_ids,
+            past_key_values=None,
+            inputs_embeds=[prefix_embs, None],
+            use_cache=True,
+        )
+
+        # # 1 -> sample num, for old tranformers
+        for key, value in past_key_values.items():
+            past_key_values[key]['key_states'] = past_key_values[key]['key_states'].repeat(sample_num, 1, 1, 1)
+            past_key_values[key]['value_states'] = past_key_values[key]['value_states'].repeat(sample_num, 1, 1, 1)
+        bsize = sample_num
+        state = state.repeat(sample_num, 1)
+        prefix_pad_masks = prefix_pad_masks.repeat(sample_num, 1)
+
+        # # 1 -> sample num, for new transformers !!!!
+        # new_cache = DynamicCache()
+        # for layer_idx in range(len(past_key_values)):
+        #     k, v = past_key_values[layer_idx]
+        #     k = k.repeat(sample_num, 1, 1, 1)
+        #     v = v.repeat(sample_num, 1, 1, 1)
+        #     new_cache.update(k, v, layer_idx)
+        # past_key_values = new_cache
+
+        bsize = sample_num * bsize
+        prefix_pad_masks = prefix_pad_masks.repeat(sample_num, 1)
+
+        dt = -1.0 / num_steps
+        dt = torch.tensor(dt, dtype=torch.float32, device=device)
+
+        x_t = noise
+        time = torch.tensor(1.0, dtype=torch.float32, device=device)
+        # import ipdb;ipdb.set_trace()
+        while time >= -dt / 2:
+            expanded_time = time.expand(bsize)
+            v_t, feaure = self.denoise_step_and_getfeature(
+                prefix_pad_masks,
+                past_key_values,
+                x_t,
+                expanded_time,
+            )
+            x_t = x_t + dt * v_t
+            time += dt
+
+        return x_t, feaure
+
+
+    
+    @torch.no_grad() 
     def add_and_denoise1step_get_feature(self, images, img_masks, tokens, masks, clean_action, noise=None, num_steps=None) -> Tensor:
         """Do a single denoising and compute the action and feature."""
         if num_steps is None:
@@ -1301,6 +1375,28 @@ class PI05Policy(PreTrainedPolicy):
         actions = actions[:, :, :original_action_dim]
 
         return actions, feature
+
+    @torch.no_grad()
+    def predict_action_chunk_and_get_feature_opt(self, sample_num, batch: dict[str, Tensor], noise: Tensor = None) -> Tensor:
+        """Predict a chunk of actions given environment observations."""
+        self.eval()
+
+        # Prepare inputs
+        images, img_masks = self._preprocess_images(batch)
+        tokens, masks = batch[f"{OBS_LANGUAGE_TOKENS}"], batch[f"{OBS_LANGUAGE_ATTENTION_MASK}"]
+
+        # import ipdb;ipdb.set_trace()
+        # assert images.shape[0] == 1
+        # Sample actions using the model (no separate state needed for PI05)
+        actions, feature = self.model.sample_actions_and_get_feature_opt(sample_num, images, img_masks, tokens, masks, noise)
+
+        # ipdb.set_trace()
+        # Unpad actions to actual action dimension
+        original_action_dim = self.config.output_features[ACTION].shape[0]
+        actions = actions[:, :, :original_action_dim]
+
+        return actions, feature
+
 
     @torch.no_grad()
     def add_and_denoise1step_get_feature(self, batch: dict[str, Tensor], noise: Tensor) -> Tensor:
