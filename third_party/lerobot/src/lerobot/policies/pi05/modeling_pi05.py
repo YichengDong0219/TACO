@@ -181,7 +181,7 @@ def resize_with_pad_torch(  # see openpi `resize_with_pad_torch` (exact copy)
     if images.dtype == torch.uint8:
         resized_images = torch.round(resized_images).clamp(0, 255).to(torch.uint8)
     elif images.dtype == torch.float32:
-        resized_images = resized_images.clamp(-1.0, 1.0)
+        resized_images = resized_images.clamp(0.0, 1.0)
     else:
         raise ValueError(f"Unsupported image dtype: {images.dtype}")
 
@@ -191,8 +191,11 @@ def resize_with_pad_torch(  # see openpi `resize_with_pad_torch` (exact copy)
     pad_w0, remainder_w = divmod(width - resized_width, 2)
     pad_w1 = pad_w0 + remainder_w
 
-    # Pad
-    constant_value = 0 if images.dtype == torch.uint8 else -1.0
+    # Pad. This function is called on float tensors already scaled to [0, 1], and
+    # the caller maps the result with `* 2 - 1`, so the pad value has to be 0.0 to
+    # land on -1.0. Padding with -1.0 here would put the letterbox band at -3.0,
+    # well outside the range the model was trained on (openpi pads uint8 with 0).
+    constant_value = 0 if images.dtype == torch.uint8 else 0.0
     padded_images = F.pad(
         resized_images,
         (pad_w0, pad_w1, pad_h0, pad_h1),  # left, right, top, bottom

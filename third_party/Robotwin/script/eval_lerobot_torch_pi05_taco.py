@@ -1,6 +1,9 @@
 import sys
 import os
 import subprocess
+import json
+import math
+import time
 
 sys.path.append("./")
 sys.path.append(f"./policy")
@@ -9,6 +12,7 @@ from envs import CONFIGS_PATH
 from envs.utils.create_actor import UnStableError
 
 import numpy as np
+import torch
 from pathlib import Path
 from collections import deque
 import traceback
@@ -22,6 +26,7 @@ import pdb
 from generate_episode_instructions import *
 
 from policy.pi05 import pi05_model_torch
+from cfn.pi05_rpc import RemotePI05Model
 
 from policy.pi05 import deploy_policy
 
@@ -57,6 +62,87 @@ def get_embodiment_config(robot_file):
         embodiment_args = yaml.load(f.read(), Loader=yaml.FullLoader)
     return embodiment_args
 
+
+
+def _wilson(successes, total):
+    if total == 0:
+        return [0.0, 0.0]
+    z = 1.959963984540054
+    p = successes / total
+    denominator = 1 + z * z / total
+    center = (p + z * z / (2 * total)) / denominator
+    margin = z * math.sqrt((p * (1 - p) + z * z / (4 * total)) / total) / denominator
+    return [center - margin, center + margin]
+
+
+def _eval_manifest(TASK_ENV, args, model, episodes, output_dir, mode):
+    eval_func = deploy_policy.eval
+    reset_func = deploy_policy.reset_model
+    output_dir.mkdir(parents=True, exist_ok=True)
+    episode_path = output_dir / "episodes.jsonl"
+    for name in ("episodes.jsonl", "summary.json", "summary.tsv", "COMPLETE"):
+        (output_dir / name).unlink(missing_ok=True)
+    rows = []
+    for index, item in enumerate(episodes):
+        seed = int(item["episode_id"])
+        started = time.time()
+        error = None
+        success = False
+        length = 0
+        try:
+            TASK_ENV.setup_demo(now_ep_num=index, seed=seed, is_test=True, **args)
+            TASK_ENV.set_instruction(instruction=item["instruction"])
+            reset_func(model)
+            while TASK_ENV.take_action_cnt < TASK_ENV.step_lim:
+                observation = TASK_ENV.get_obs()
+                eval_func(TASK_ENV, model, observation)
+                length = int(TASK_ENV.take_action_cnt)
+                if TASK_ENV.eval_success:
+                    success = True
+                    break
+        except Exception as exc:
+            error = f"{type(exc).__name__}: {exc}"
+        finally:
+            try:
+                TASK_ENV.close_env(clear_cache=((index + 1) % args["clear_cache_freq"] == 0))
+            except Exception as close_exc:
+                if error is None:
+                    error = f"close_env: {type(close_exc).__name__}: {close_exc}"
+        row = {
+            "method": mode,
+            "task": args["task_name"],
+            "seed": seed,
+            "instruction": item["instruction"],
+            "scene_info": item["scene_info"],
+            "success": success,
+            "episode_length": length,
+            "elapsed_s": time.time() - started,
+            "error": error,
+        }
+        rows.append(row)
+        with episode_path.open("a", encoding="utf-8") as stream:
+            stream.write(json.dumps(row, ensure_ascii=False) + "\n")
+        print(f"[{index + 1}/{len(episodes)}] seed={seed} success={success} error={error}", flush=True)
+        if error is not None:
+            raise RuntimeError(f"Manifest episode failed without replacement: {row}")
+
+    successes = sum(row["success"] for row in rows)
+    summary = {
+        "method": mode,
+        "task": args["task_name"],
+        "n_episodes": len(rows),
+        "n_success": successes,
+        "success_rate": successes / len(rows),
+        "success_rate_ci95": _wilson(successes, len(rows)),
+    }
+    (output_dir / "summary.json").write_text(
+        json.dumps(summary, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+    )
+    with (output_dir / "summary.tsv").open("w", encoding="utf-8") as stream:
+        stream.write("method\ttask\tn_episodes\tn_success\tsuccess_rate\n")
+        stream.write(f"{mode}\t{args['task_name']}\t{len(rows)}\t{successes}\t{summary['success_rate']:.8f}\n")
+    (output_dir / "COMPLETE").write_text("complete\n", encoding="utf-8")
+    return summary
 
 
 def main(usr_args):
@@ -163,11 +249,37 @@ def main(usr_args):
 
     ckpt_dir = policy_path
 
-    model = pi05_model_torch.Lerobot_torch_PI05_taco(
-        task_name, 
-        ckpt_dir,
-        cfn_ckpt_path=os.getenv("cfn_ckpt_path")
-    )
+    mode = usr_args.get("mode", "taco")
+    cfn_path = usr_args.get("cfn_checkpoint") or os.getenv("cfn_ckpt_path")
+    policy_server = usr_args.get("policy_server") or os.getenv("TACO_POLICY_SERVER")
+    if policy_server:
+        model = RemotePI05Model(policy_server, mode)
+    elif mode == "baseline":
+        model = pi05_model_torch.Lerobot_torch_PI05(task_name, ckpt_dir)
+        torch.manual_seed(42)
+    elif mode == "taco":
+        if not cfn_path:
+            raise ValueError("TACO mode requires cfn_checkpoint or cfn_ckpt_path")
+        model = pi05_model_torch.Lerobot_torch_PI05_taco(task_name, ckpt_dir, cfn_ckpt_path=cfn_path)
+    else:
+        raise ValueError(f"Unknown mode: {mode}")
+
+    episodes_manifest = usr_args.get("episodes_manifest")
+    if episodes_manifest:
+        with open(episodes_manifest, "r", encoding="utf-8") as stream:
+            manifest = json.load(stream)
+        if manifest.get("task") != task_name:
+            raise ValueError("Evaluation manifest task mismatch")
+        episodes = manifest["episodes"][: int(usr_args.get("max_episodes", len(manifest["episodes"])))]
+        args["eval_video_log"] = False
+        # Base_task.setup_demo initializes the per-task step limit only for
+        # eval runs. The legacy evaluator sets this inside eval_policy(), but
+        # manifest-driven evaluation bypasses that function.
+        args["eval_mode"] = True
+        output_dir = Path(usr_args.get("output_dir") or save_dir)
+        summary = _eval_manifest(TASK_ENV, args, model, episodes, output_dir, mode)
+        print(json.dumps(summary, indent=2))
+        return
 
     st_seed, suc_num = eval_policy(task_name,
                                    TASK_ENV,

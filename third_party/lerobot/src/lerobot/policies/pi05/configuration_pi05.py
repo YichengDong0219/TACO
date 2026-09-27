@@ -25,6 +25,9 @@ from lerobot.optim.schedulers import CosineDecayWithWarmupSchedulerConfig
 @PreTrainedConfig.register_subclass("pi05")
 @dataclass
 class PI05Config(PreTrainedConfig):
+    # Compatibility fields written by the LeRobot version used to convert this checkpoint.
+    use_peft: bool = False
+    pretrained_revision: str | None = None
     paligemma_variant: str = "gemma_2b"
     action_expert_variant: str = "gemma_300m"
     dtype: str = "float32"  # Options: "bfloat16", "float32"
@@ -46,6 +49,11 @@ class PI05Config(PreTrainedConfig):
     min_period: float = 4e-3
     max_period: float = 4.0
 
+    use_relative_actions: bool = False
+    relative_exclude_joints: list[str] = field(default_factory=lambda: ["gripper"])
+    action_feature_names: list[str] | None = None
+    rtc_config: dict | None = None
+
     image_resolution: tuple[int, int] = (224, 224)  # see openpi `preprocessing_pytorch.py`
 
     # Add empty images. Used to add empty cameras when no image features are present.
@@ -66,6 +74,8 @@ class PI05Config(PreTrainedConfig):
     compile_model: bool = False  # Whether to use torch.compile for model optimization
     compile_mode: str = "max-autotune"  # Torch compile mode
     device: str | None = None  # Device to use for the model (None = auto-detect)
+    freeze_vision_encoder: bool = False
+    train_expert_only: bool = False
 
     # Optimizer settings: see openpi `AdamW`
     optimizer_lr: float = 2.5e-5  # see openpi `CosineDecaySchedule: peak_lr`

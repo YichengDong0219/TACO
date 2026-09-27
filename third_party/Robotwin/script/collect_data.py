@@ -36,7 +36,25 @@ def get_embodiment_config(robot_file):
     return embodiment_args
 
 
-def main(task_name=None, task_config=None):
+def _load_manifest(path, task_name):
+    if path is None:
+        return None
+    with open(path, "r", encoding="utf-8") as stream:
+        payload = json.load(stream)
+    if payload.get("task") != task_name:
+        raise ValueError(f"Manifest task {payload.get('task')!r} does not match {task_name!r}")
+    return payload["episodes"]
+
+
+def _assert_scene_info(expected, actual):
+    if not isinstance(actual, dict):
+        raise ValueError(f"RoboTwin returned invalid scene info: {type(actual).__name__}")
+    mismatches = {key: (value, actual.get(key)) for key, value in expected.items() if actual.get(key) != value}
+    if mismatches:
+        raise RuntimeError(f"Scene info does not match manifest: {mismatches}")
+
+
+def main(task_name=None, task_config=None, episodes_manifest=None):
 
     task = class_decorator(task_name)
     config_path = f"./task_config/{task_config}.yml"
@@ -100,10 +118,14 @@ def main(task_name=None, task_config=None):
     args["embodiment_name"] = embodiment_name
     args['task_config'] = task_config
     args["save_path"] = os.path.join(args["save_path"], str(args["task_name"]), args["task_config"])
-    run(task, args)
+    manifest_episodes = _load_manifest(episodes_manifest, task_name)
+    if manifest_episodes is not None:
+        args["episode_num"] = len(manifest_episodes)
+        args["use_seed"] = True
+    run(task, args, manifest_episodes=manifest_episodes)
 
 # @profile
-def run(TASK_ENV, args):
+def run(TASK_ENV, args, manifest_episodes=None):
     epid, suc_num, fail_num, seed_list = 0, 0, 0, []
 
     print(f"Task Name: \033[34m{args['task_name']}\033[0m")
@@ -111,7 +133,27 @@ def run(TASK_ENV, args):
     # =========== Collect Seed ===========
     os.makedirs(args["save_path"], exist_ok=True)
 
-    if not args["use_seed"]:
+    if manifest_episodes is not None:
+        print("[Plan Exact Manifest Episodes]")
+        args["need_plan"] = True
+        seed_list = [int(item["episode_id"]) for item in manifest_episodes]
+        os.makedirs(os.path.join(args["save_path"], "_traj_data"), exist_ok=True)
+        for episode_idx, item in enumerate(manifest_episodes):
+            traj_path = os.path.join(args["save_path"], "_traj_data", f"episode{episode_idx}.pkl")
+            if os.path.isfile(traj_path):
+                continue
+            try:
+                TASK_ENV.setup_demo(now_ep_num=episode_idx, seed=seed_list[episode_idx], **args)
+                episode_info = TASK_ENV.play_once()
+                if not (TASK_ENV.plan_success and TASK_ENV.check_success()):
+                    raise RuntimeError(f"Expert failed for exact seed {seed_list[episode_idx]}")
+                _assert_scene_info(item["scene_info"], episode_info["info"])
+                TASK_ENV.save_traj_data(episode_idx)
+            finally:
+                TASK_ENV.close_env(clear_cache=((episode_idx + 1) % args["clear_cache_freq"] == 0))
+        with open(os.path.join(args["save_path"], "seed.txt"), "w", encoding="utf-8") as stream:
+            stream.write(" ".join(map(str, seed_list)) + "\n")
+    elif not args["use_seed"]:
         print("\033[93m" + "[Start Seed and Pre Motion Data Collection]" + "\033[0m")
         args["need_plan"] = True
 
@@ -219,6 +261,8 @@ def run(TASK_ENV, args):
                 info_db = json.load(file)
 
             info = TASK_ENV.play_once()
+            if manifest_episodes is not None:
+                _assert_scene_info(manifest_episodes[episode_idx]["scene_info"], info["info"])
             info_db[f"episode_{episode_idx}"] = info
 
             with open(info_file_path, "w", encoding="utf-8") as file:
@@ -229,8 +273,15 @@ def run(TASK_ENV, args):
             TASK_ENV.remove_data_cache()
             assert TASK_ENV.check_success(), "Collect Error"
 
-        command = f"cd description && bash gen_episode_instructions.sh {args['task_name']} {args['task_config']} {args['language_num']}"
-        os.system(command)
+            if manifest_episodes is not None:
+                instruction_dir = os.path.join(args["save_path"], "instructions")
+                os.makedirs(instruction_dir, exist_ok=True)
+                with open(os.path.join(instruction_dir, f"episode{episode_idx}.json"), "w", encoding="utf-8") as stream:
+                    json.dump({"seen": [manifest_episodes[episode_idx]["instruction"]]}, stream, indent=2)
+
+        if manifest_episodes is None:
+            command = f"cd description && bash gen_episode_instructions.sh {args['task_name']} {args['task_config']} {args['language_num']}"
+            os.system(command)
 
 
 if __name__ == "__main__":
@@ -243,8 +294,9 @@ if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument("task_name", type=str)
     parser.add_argument("task_config", type=str)
+    parser.add_argument("--episodes-manifest", type=str)
     parser = parser.parse_args()
     task_name = parser.task_name
     task_config = parser.task_config
 
-    main(task_name=task_name, task_config=task_config)
+    main(task_name=task_name, task_config=task_config, episodes_manifest=parser.episodes_manifest)

@@ -40,6 +40,10 @@ from lerobot.policies.smolvla.configuration_smolvla import SmolVLAConfig
 from lerobot.policies.tdmpc.configuration_tdmpc import TDMPCConfig
 from lerobot.policies.vqbet.configuration_vqbet import VQBeTConfig
 from lerobot.processor import PolicyAction, PolicyProcessorPipeline
+from lerobot.processor.relative_action_processor import (
+    AbsoluteActionsProcessorStep,
+    RelativeActionsProcessorStep,
+)
 from lerobot.processor.converters import (
     batch_to_transition,
     policy_action_to_transition,
@@ -206,8 +210,7 @@ def make_pre_post_processors(
             policy configuration type.
     """
     if pretrained_path:
-        return (
-            PolicyProcessorPipeline.from_pretrained(
+        preprocessor = PolicyProcessorPipeline.from_pretrained(
                 pretrained_model_name_or_path=pretrained_path,
                 config_filename=kwargs.get(
                     "preprocessor_config_filename", f"{POLICY_PREPROCESSOR_DEFAULT_NAME}.json"
@@ -215,8 +218,8 @@ def make_pre_post_processors(
                 overrides=kwargs.get("preprocessor_overrides", {}),
                 to_transition=batch_to_transition,
                 to_output=transition_to_batch,
-            ),
-            PolicyProcessorPipeline.from_pretrained(
+            )
+        postprocessor = PolicyProcessorPipeline.from_pretrained(
                 pretrained_model_name_or_path=pretrained_path,
                 config_filename=kwargs.get(
                     "postprocessor_config_filename", f"{POLICY_POSTPROCESSOR_DEFAULT_NAME}.json"
@@ -224,8 +227,15 @@ def make_pre_post_processors(
                 overrides=kwargs.get("postprocessor_overrides", {}),
                 to_transition=policy_action_to_transition,
                 to_output=transition_to_policy_action,
-            ),
+            )
+        relative_step = next(
+            (step for step in preprocessor.steps if isinstance(step, RelativeActionsProcessorStep)), None
         )
+        if relative_step is not None:
+            for step in postprocessor.steps:
+                if isinstance(step, AbsoluteActionsProcessorStep):
+                    step.relative_step = relative_step
+        return preprocessor, postprocessor
 
     # Create a new processor based on policy type
     if isinstance(policy_cfg, TDMPCConfig):

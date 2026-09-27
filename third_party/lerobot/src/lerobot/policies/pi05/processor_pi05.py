@@ -68,8 +68,13 @@ class Pi05PrepareStateTokenizerProcessorStep(ProcessorStep):
         # TODO: check if this necessary
         state = deepcopy(state)
 
-        # Prepare state (pad to max_state_dim)
-        state = pad_vector(state, self.max_state_dim)
+        # The prompt carries only the real state dims. openpi tokenizes the state
+        # before padding it (TokenizePrompt runs ahead of PadStatesAndActions), so
+        # padding to max_state_dim here would append zero-pad bins - digitized as
+        # "128" - to the prompt and condition the model on a state string it was
+        # never trained on. The model-side padding still happens later.
+        if state.ndim == 3:
+            state = state[:, -1]
 
         # State should already be normalized to [-1, 1] by the NormalizerProcessorStep that runs before this step
         # Discretize into 256 bins (see openpi `PaligemmaTokenizer.tokenize()`)

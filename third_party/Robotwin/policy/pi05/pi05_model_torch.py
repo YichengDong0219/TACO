@@ -169,7 +169,9 @@ class Lerobot_torch_PI05_taco:
         weight_path = cfn_ckpt_path
 
         print(f"🔍 load cfn ckpt: {weight_path}")
-        cfn.cfn.load_state_dict(torch.load(weight_path))
+        cfn.cfn.load_state_dict(
+            torch.load(weight_path, map_location=next(model.parameters()).device, weights_only=True)
+        )
 
         self.cfn = cfn.cfn.eval()
 
@@ -298,4 +300,3 @@ class Lerobot_torch_PI05_taco:
                 "is_suc": -1,
             }
         print("successfully unset obs and language intruction")
-
