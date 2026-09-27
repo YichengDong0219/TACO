@@ -81,11 +81,86 @@ RAW_TAG = "demo_clean_official_v1"
 # but nothing in a manifest can carry it, so `bootstrap` is where a machine is
 # held to it before any work starts.
 ROBOTWIN_REVISION = "6dde57155eafa3e4ebf6ad1f93a7cf7d5d41a755"
-DEFAULT_ARTIFACTS = ROOT / "artifacts" / PROTOCOL
-DEFAULT_POLICY = Path("/home/dongyicheng/dsrl/pi05_robotwin_lerobot")
-DEFAULT_ASSETS = Path("/home/dongyicheng/dsrl/RoboTwin-assets/assets")
-DEFAULT_ROBOTWIN = ROOT / "third_party" / "RoboTwin-official"
-DEFAULT_TOKENIZER = Path("/home/dongyicheng/dsrl/lerobot-dsrl-stage/tokenizer/paligemma-3b-pt-224")
+
+# Paths that differ per machine. They used to be literals here, which meant
+# moving to another host or another task set required editing this file; they
+# now come from taco.toml, overridable by taco.local.toml (untracked), by the
+# environment, and by the matching command-line flag -- in that order, the flag
+# winning. `TACO_<NAME>` is the environment variable for each.
+CONFIG_NAME = "taco.toml"
+LOCAL_CONFIG_NAME = "taco.local.toml"
+PATH_SETTINGS = (
+    "policy",
+    "assets",
+    "tokenizer",
+    "robotwin",
+    "train_manifests",
+    "eval_manifests",
+    "artifacts",
+)
+# The settings each command cannot run without -- the ones with no sensible
+# repository-relative fallback. Checked at launch so that a missing path fails
+# once, up front, rather than inside each of twelve queued jobs.
+REQUIRED_SETTINGS = {
+    "serve": ("policy", "tokenizer"),
+    "extract": ("policy",),
+    "eval": ("policy",),
+    "smoke": ("policy",),
+    "prepare": ("policy",),
+    "extract-queue": ("policy",),
+    "queue": ("policy",),
+    "pipeline": ("policy",),
+    "bootstrap": ("assets",),
+}
+
+
+def _read_config(path: Path) -> dict:
+    if not path.is_file():
+        return {}
+    try:
+        import tomllib
+    except ModuleNotFoundError:  # Python 3.10, which is what the campaign ran on
+        try:
+            import tomli as tomllib
+        except ModuleNotFoundError as exc:
+            raise SystemExit(
+                f"{path} exists but no TOML parser is available. On Python 3.10 "
+                f"that means installing `tomli`."
+            ) from exc
+    with path.open("rb") as stream:
+        return tomllib.load(stream).get("paths", {})
+
+
+def load_settings(root: Path) -> dict[str, Path]:
+    """Resolve the machine-specific paths, most specific source winning.
+
+    Command-line flags are layered on top of this by argparse, so the whole
+    order is: flag > environment > taco.local.toml > taco.toml. Relative paths
+    are taken against the repository root.
+    """
+    layered = {**_read_config(root / CONFIG_NAME), **_read_config(root / LOCAL_CONFIG_NAME)}
+    settings: dict[str, Path] = {}
+    for name in PATH_SETTINGS:
+        raw = os.environ.get(f"TACO_{name.upper()}") or layered.get(name)
+        if raw is None:
+            continue
+        candidate = Path(str(raw)).expanduser()
+        settings[name] = (candidate if candidate.is_absolute() else root / candidate).resolve()
+    return settings
+
+
+def _require_settings(args, *names: str) -> None:
+    """Fail with the fix, not with an AttributeError three frames down."""
+    missing = [name for name in names if getattr(args, name, None) is None]
+    if not missing:
+        return
+    flags = "/".join("--" + name.replace("_", "-") for name in missing)
+    keys = ", ".join(name.replace("_", "-") for name in missing)
+    raise SystemExit(
+        f"No {keys} configured.\n"
+        f"Set {keys} in {CONFIG_NAME} (or {LOCAL_CONFIG_NAME}), pass {flags}, "
+        f"or set the matching TACO_* environment variable."
+    )
 
 
 def sha256(path: Path) -> str:
@@ -988,14 +1063,19 @@ def summarize(args) -> int:
     return 0
 
 
-def build_parser() -> argparse.ArgumentParser:
+def build_parser(settings: dict[str, Path] | None = None) -> argparse.ArgumentParser:
+    settings = settings or {}
+    artifacts = settings.get("artifacts", ROOT / "artifacts" / PROTOCOL)
     parser = argparse.ArgumentParser()
-    parser.add_argument("--train-manifests", type=Path, default=ROOT / "robotwin_train_episodes_12tasks")
-    parser.add_argument("--eval-manifests", type=Path, default=ROOT / "robotwin_eval_episodes_12tasks")
-    parser.add_argument("--artifacts", type=Path, default=DEFAULT_ARTIFACTS)
-    parser.add_argument("--robotwin", type=Path, default=DEFAULT_ROBOTWIN)
-    parser.add_argument("--policy", type=Path, default=DEFAULT_POLICY)
-    parser.add_argument("--tokenizer", type=Path, default=DEFAULT_TOKENIZER)
+    parser.add_argument("--train-manifests", type=Path,
+                        default=settings.get("train_manifests", ROOT / "robotwin_train_episodes_12tasks"))
+    parser.add_argument("--eval-manifests", type=Path,
+                        default=settings.get("eval_manifests", ROOT / "robotwin_eval_episodes_12tasks"))
+    parser.add_argument("--artifacts", type=Path, default=artifacts)
+    parser.add_argument("--robotwin", type=Path,
+                        default=settings.get("robotwin", ROOT / "third_party" / "RoboTwin-official"))
+    parser.add_argument("--policy", type=Path, default=settings.get("policy"))
+    parser.add_argument("--tokenizer", type=Path, default=settings.get("tokenizer"))
     parser.add_argument(
         "--policy-server",
         help="Shared PI0.5 server address, for example 127.0.0.1:18080. The "
@@ -1005,11 +1085,11 @@ def build_parser() -> argparse.ArgumentParser:
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     command = subparsers.add_parser("validate")
-    command.add_argument("--output", type=Path, default=DEFAULT_ARTIFACTS / "manifest_audit.json")
+    command.add_argument("--output", type=Path)
     command.set_defaults(func=validate)
 
     command = subparsers.add_parser("bootstrap")
-    command.add_argument("--assets", type=Path, default=DEFAULT_ASSETS)
+    command.add_argument("--assets", type=Path, default=settings.get("assets"))
     command.add_argument(
         "--allow-revision-mismatch",
         action="store_true",
@@ -1045,7 +1125,7 @@ def build_parser() -> argparse.ArgumentParser:
     command.set_defaults(func=serve)
 
     command = subparsers.add_parser("load-cfn")
-    command.add_argument("--cfn-checkpoint", type=Path, default=DEFAULT_ARTIFACTS / "cfn/model_epoch16.pt")
+    command.add_argument("--cfn-checkpoint", type=Path)
     command.set_defaults(func=load_cfn)
 
     command = subparsers.add_parser("collect-queue")
@@ -1084,12 +1164,12 @@ def build_parser() -> argparse.ArgumentParser:
              "only in this are genuine replicates; two runs sharing it are the "
              "same deterministic run twice.",
     )
-    command.add_argument("--cfn-checkpoint", type=Path, default=DEFAULT_ARTIFACTS / "cfn/model_epoch16.pt")
+    command.add_argument("--cfn-checkpoint", type=Path)
     command.add_argument("--output-dir", type=Path)
     command.set_defaults(func=evaluate)
 
     command = subparsers.add_parser("queue")
-    command.add_argument("--cfn-checkpoint", type=Path, default=DEFAULT_ARTIFACTS / "cfn/model_epoch16.pt")
+    command.add_argument("--cfn-checkpoint", type=Path)
     command.add_argument("--noise-seed", type=int, default=42)
     command.add_argument("--max-jobs-per-gpu", type=int, default=1)
     command.add_argument("--eval-reserve-mib", type=int, default=6144)
@@ -1127,15 +1207,33 @@ def build_parser() -> argparse.ArgumentParser:
     command.add_argument("--eval-reserve-mib", type=int, default=6144)
     command.add_argument("--eval-preferred-gpus", default=None,
                          help="Devices evaluation fills first, e.g. 1,2.")
-    command.add_argument("--cfn-checkpoint", type=Path, default=DEFAULT_ARTIFACTS / "cfn/model_epoch16.pt")
+    command.add_argument("--cfn-checkpoint", type=Path)
     command.set_defaults(func=pipeline)
     return parser
 
 
+def _derive_artifact_paths(args) -> None:
+    """Fill in the paths that hang off the artifacts root.
+
+    These cannot be argparse defaults: `--artifacts` is applied after the parser
+    is built, so a default computed at build time would ignore the flag and
+    leave the audit and the CFN checkpoint pointing at the old tree.
+    """
+    if hasattr(args, "output") and args.output is None:
+        args.output = args.artifacts / "manifest_audit.json"
+    if hasattr(args, "cfn_checkpoint") and args.cfn_checkpoint is None:
+        args.cfn_checkpoint = args.artifacts / "cfn" / "model_epoch16.pt"
+
+
 def main() -> int:
-    args = build_parser().parse_args()
-    for name in ("train_manifests", "eval_manifests", "artifacts", "robotwin", "policy", "tokenizer"):
-        setattr(args, name, getattr(args, name).expanduser().resolve())
+    args = build_parser(load_settings(ROOT)).parse_args()
+    # `assets` exists only on `bootstrap`; the rest are top-level arguments.
+    for name in PATH_SETTINGS:
+        value = getattr(args, name, None)
+        if value is not None:
+            setattr(args, name, value.expanduser().resolve())
+    _derive_artifact_paths(args)
+    _require_settings(args, *REQUIRED_SETTINGS.get(args.command, ()))
     return args.func(args)
 
 

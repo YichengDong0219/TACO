@@ -1,0 +1,33 @@
+# Machine-specific paths.
+#
+# Override order, most specific first:
+#   1. the matching command-line flag  (--policy, --assets, --artifacts, ...)
+#   2. the environment                 (TACO_POLICY, TACO_ASSETS, ...)
+#   3. taco.local.toml                 (untracked -- edit that one, not this,
+#                                       so `git pull` never conflicts)
+#   4. this file
+#
+# Relative paths are taken against the repository root. The values below are the
+# 4090 cluster's, which is where the campaign ran; `vendor/bootstrap.sh robotwin`
+# creates both RoboTwin paths.
+
+[paths]
+
+# Fine-tuned PI0.5 checkpoint: the policy TACO steers, and the model whose
+# internal representations the CFN is trained on.
+policy = "/home/dongyicheng/dsrl/pi05_robotwin_lerobot"
+
+# PaliGemma tokenizer the checkpoint was trained against.
+tokenizer = "/home/dongyicheng/dsrl/lerobot-dsrl-stage/tokenizer/paligemma-3b-pt-224"
+
+# Official RoboTwin checkout. `robotwin_multitask.py bootstrap` asserts its
+# revision against ROBOTWIN_REVISION, because environments, experts and task
+# definitions all come from here.
+robotwin = "third_party/RoboTwin-official"
+
+# ~30 GB asset tree, symlinked into the checkout by `bootstrap`.
+assets = "/home/dongyicheng/dsrl/RoboTwin-assets/assets"
+
+train_manifests = "robotwin_train_episodes_12tasks"
+eval_manifests = "robotwin_eval_episodes_12tasks"
+artifacts = "artifacts/robotwin12_official_v1"

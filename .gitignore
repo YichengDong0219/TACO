@@ -12,3 +12,5 @@ third_party/Robotwin/task_config/
 # Both are machine-local; neither belongs in the repository.
 third_party/RoboTwin-official/
 third_party/RoboTwin-assets/
+# Per-machine path overrides; taco.toml holds the shared defaults.
+taco.local.toml

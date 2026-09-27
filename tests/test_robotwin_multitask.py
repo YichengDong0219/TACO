@@ -2,6 +2,7 @@ import importlib.util
 import json
 from pathlib import Path
 
+import pytest
 import torch
 
 from cfn.feature_dataset import cfn_feature_dataset
@@ -54,3 +55,44 @@ def test_validate_writes_hash_audit(tmp_path):
     audit = json.loads(args.output.read_text())
     assert set(audit["tasks"]) == set(PIPELINE.TASKS)
     assert all(item["overlap_count"] == 0 for item in audit["tasks"].values())
+
+
+def test_settings_layer_local_over_toml_env_over_local(tmp_path, monkeypatch):
+    (tmp_path / "taco.toml").write_text('[paths]\npolicy = "/shared/p"\n')
+    (tmp_path / "taco.local.toml").write_text('[paths]\npolicy = "/local/p"\n')
+    assert PIPELINE.load_settings(tmp_path)["policy"] == Path("/local/p")
+
+    monkeypatch.setenv("TACO_POLICY", "/env/p")
+    assert PIPELINE.load_settings(tmp_path)["policy"] == Path("/env/p")
+
+
+def test_settings_resolve_relative_paths_against_the_repo_root(tmp_path):
+    (tmp_path / "taco.toml").write_text('[paths]\nartifacts = "artifacts/x"\n')
+    assert PIPELINE.load_settings(tmp_path)["artifacts"] == tmp_path / "artifacts" / "x"
+
+
+def test_settings_are_empty_without_a_config_file(tmp_path):
+    # Commands that need no policy path must still run in a bare checkout.
+    assert PIPELINE.load_settings(tmp_path) == {}
+
+
+def test_artifacts_flag_moves_the_paths_derived_from_it():
+    """`--artifacts` has to carry `--cfn-checkpoint` and `--output` with it.
+
+    All three hang off the same root, but argparse applies the flag after the
+    parser is built, so deriving the other two at build time leaves them
+    pointing at the tree the flag was meant to replace.
+    """
+    args = PIPELINE.build_parser({}).parse_args(
+        ["--artifacts", "/tmp/other", "eval",
+         "--mode", "taco", "--task", "click_bell", "--gpu", "0"]
+    )
+    PIPELINE._derive_artifact_paths(args)
+    assert args.cfn_checkpoint == Path("/tmp/other/cfn/model_epoch16.pt")
+
+
+def test_missing_policy_is_reported_with_the_fix():
+    args = PIPELINE.build_parser({}).parse_args(["serve", "--gpu", "0"])
+    with pytest.raises(SystemExit) as excinfo:
+        PIPELINE._require_settings(args, "policy", "tokenizer")
+    assert "--policy" in str(excinfo.value) and "taco.toml" in str(excinfo.value)

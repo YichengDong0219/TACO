@@ -5,6 +5,10 @@ does not use a published TACO checkpoint or any DSRL artifact.
 
 ## Fixed inputs
 
+These are the values in `taco.toml`; a different machine overrides them there,
+in the untracked `taco.local.toml`, in the environment (`TACO_POLICY` and
+friends), or with the matching command-line flag.
+
 - Policy: `/home/dongyicheng/dsrl/pi05_robotwin_lerobot`
 - Assets: `/home/dongyicheng/dsrl/RoboTwin-assets/assets`
 - RoboTwin: `third_party/RoboTwin-official` at `6dde5715`, from
