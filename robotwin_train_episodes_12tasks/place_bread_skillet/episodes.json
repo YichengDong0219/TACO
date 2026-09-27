@@ -1,0 +1,410 @@
+{
+  "schema": "sva.robotwin.eval_episodes.v1",
+  "task": "place_bread_skillet",
+  "task_config": "demo_clean",
+  "robotwin_root": "/newhome/xiexinyi/sva/RoboTwin",
+  "config_path": "/newhome/xiexinyi/sva/configs/robotwin_15tasks/sva_robotwin_place_bread_skillet.yaml",
+  "seed_start": 100000,
+  "target_count": 30,
+  "attempted_count": 74,
+  "failure_counts": {
+    "expert_check_failed": 25,
+    "planned_joints_illegal": 1,
+    "planning_failed": 18
+  },
+  "instruction_split": "seen",
+  "language_num": 100,
+  "created_at": "2026-09-21T10:35:56.921811+00:00",
+  "episodes": [
+    {
+      "episode_id": 100004,
+      "scene_info": {
+        "{A}": "106_skillet/base0",
+        "{B}": "075_bread/base5",
+        "{a}": "right"
+      },
+      "instruction": "Transfer the sponge-textured golden bread into the round skillet with open handle end.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100006,
+      "scene_info": {
+        "{A}": "106_skillet/base1",
+        "{B}": "075_bread/base3",
+        "{a}": "left"
+      },
+      "instruction": "Keep the dark pan with sturdy grip raised with the left arm; the other arm places the light brown bread with ridges.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100008,
+      "scene_info": {
+        "{A}": "106_skillet/base0",
+        "{B}": "075_bread/base6",
+        "{a}": "right"
+      },
+      "instruction": "Set the golden crusted bread slice inside the round skillet with open handle end.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100009,
+      "scene_info": {
+        "{A}": "106_skillet/base3",
+        "{B}": "075_bread/base3",
+        "{a}": "right"
+      },
+      "instruction": "Lift the skillet the hefty black skillet and place the brown loaf inside it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100011,
+      "scene_info": {
+        "{A}": "106_skillet/base2",
+        "{B}": "075_bread/base3",
+        "{a}": "left"
+      },
+      "instruction": "Raise the skillet with looped handle with the left arm; the other arm places the light brown bread with ridges.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100015,
+      "scene_info": {
+        "{A}": "106_skillet/base0",
+        "{B}": "075_bread/base3",
+        "{a}": "right"
+      },
+      "instruction": "Lift and hold the round skillet with handle with the right arm while placing the light brown bread with ridges inside.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100018,
+      "scene_info": {
+        "{A}": "106_skillet/base0",
+        "{B}": "075_bread/base3",
+        "{a}": "left"
+      },
+      "instruction": "Lift the skillet the gray skillet for stovetop cooking and place the light brown loaf with smooth sides inside it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100019,
+      "scene_info": {
+        "{A}": "106_skillet/base0",
+        "{B}": "075_bread/base3",
+        "{a}": "left"
+      },
+      "instruction": "Hold the round skillet with open handle end in the left arm while the other arm transfers the hand-sized oval loaf.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100021,
+      "scene_info": {
+        "{A}": "106_skillet/base1",
+        "{B}": "075_bread/base5",
+        "{a}": "left"
+      },
+      "instruction": "Support the versatile skillet for stovetop cooking with the left arm; the other arm sets the square-shaped bread piece inside.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100023,
+      "scene_info": {
+        "{A}": "106_skillet/base1",
+        "{B}": "075_bread/base3",
+        "{a}": "left"
+      },
+      "instruction": "Raise the black skillet with smooth base with the left arm; the other arm places the small golden brown bread.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100025,
+      "scene_info": {
+        "{A}": "106_skillet/base1",
+        "{B}": "075_bread/base5",
+        "{a}": "left"
+      },
+      "instruction": "Lift both objects and set the rounded square loaf inside the black skillet with smooth base.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100026,
+      "scene_info": {
+        "{A}": "106_skillet/base0",
+        "{B}": "075_bread/base6",
+        "{a}": "left"
+      },
+      "instruction": "Hold the skillet for frying food in one arm; place the square loaf of bread with the other.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100029,
+      "scene_info": {
+        "{A}": "106_skillet/base0",
+        "{B}": "075_bread/base0",
+        "{a}": "right"
+      },
+      "instruction": "Pick up the golden brown bread with braided design and put it in the skillet with black cooking surface.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100031,
+      "scene_info": {
+        "{A}": "106_skillet/base1",
+        "{B}": "075_bread/base3",
+        "{a}": "right"
+      },
+      "instruction": "Raise the round cooking pan, then place the bread with golden-brown crust inside with the other arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100038,
+      "scene_info": {
+        "{A}": "106_skillet/base2",
+        "{B}": "075_bread/base1",
+        "{a}": "right"
+      },
+      "instruction": "Support the skillet with sturdy material with the right arm; the other arm sets the cuboid bread inside.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100042,
+      "scene_info": {
+        "{A}": "106_skillet/base1",
+        "{B}": "075_bread/base1",
+        "{a}": "left"
+      },
+      "instruction": "Raise the medium black pan with handle, then place the golden bread inside with the other arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100048,
+      "scene_info": {
+        "{A}": "106_skillet/base0",
+        "{B}": "075_bread/base3",
+        "{a}": "right"
+      },
+      "instruction": "Put the bread with golden-brown crust into the center of the round skillet with open handle end.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100051,
+      "scene_info": {
+        "{A}": "106_skillet/base0",
+        "{B}": "075_bread/base5",
+        "{a}": "left"
+      },
+      "instruction": "Support the gray skillet for stovetop cooking with the left arm; the other arm sets the medium-sized bread piece inside.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100052,
+      "scene_info": {
+        "{A}": "106_skillet/base0",
+        "{B}": "075_bread/base5",
+        "{a}": "left"
+      },
+      "instruction": "Grab the sponge-textured golden bread and place it in the black-surfaced skillet with gray sides.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100053,
+      "scene_info": {
+        "{A}": "106_skillet/base0",
+        "{B}": "075_bread/base3",
+        "{a}": "right"
+      },
+      "instruction": "Take the golden bread loaf from the table to the round skillet with handle.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100054,
+      "scene_info": {
+        "{A}": "106_skillet/base1",
+        "{B}": "075_bread/base5",
+        "{a}": "right"
+      },
+      "instruction": "Keep the black pan with curved edges raised with the right arm; the other arm places the golden baked bread.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100055,
+      "scene_info": {
+        "{A}": "106_skillet/base0",
+        "{B}": "075_bread/base3",
+        "{a}": "left"
+      },
+      "instruction": "Move and hold the metal skillet, then place the smooth loaf with rounded edges inside.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100058,
+      "scene_info": {
+        "{A}": "106_skillet/base1",
+        "{B}": "075_bread/base6",
+        "{a}": "left"
+      },
+      "instruction": "Raise the flat-bottomed skillet with long handle with the left arm; the other arm places the bread with firm crust edges.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100062,
+      "scene_info": {
+        "{A}": "106_skillet/base1",
+        "{B}": "075_bread/base5",
+        "{a}": "left"
+      },
+      "instruction": "Keep the versatile skillet for stovetop cooking raised with the left arm; the other arm places the light brown porous bread.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100063,
+      "scene_info": {
+        "{A}": "106_skillet/base0",
+        "{B}": "075_bread/base1",
+        "{a}": "right"
+      },
+      "instruction": "Pick up the square-shaped bread and set it inside the held the skillet with black cooking surface.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100064,
+      "scene_info": {
+        "{A}": "106_skillet/base0",
+        "{B}": "075_bread/base5",
+        "{a}": "right"
+      },
+      "instruction": "Move and hold the dark gray skillet, then place the medium-sized bread piece inside.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100067,
+      "scene_info": {
+        "{A}": "106_skillet/base0",
+        "{B}": "075_bread/base1",
+        "{a}": "right"
+      },
+      "instruction": "Keep the skillet for frying food steady with the right arm while placing the light golden brown bread inside.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100068,
+      "scene_info": {
+        "{A}": "106_skillet/base1",
+        "{B}": "075_bread/base3",
+        "{a}": "left"
+      },
+      "instruction": "Set the light brown loaf with smooth sides inside the flat-bottomed skillet with long handle.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100070,
+      "scene_info": {
+        "{A}": "106_skillet/base1",
+        "{B}": "075_bread/base5",
+        "{a}": "left"
+      },
+      "instruction": "Hold the medium black pan with handle with the left arm; the other arm places the soft square bread.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100073,
+      "scene_info": {
+        "{A}": "106_skillet/base1",
+        "{B}": "075_bread/base5",
+        "{a}": "right"
+      },
+      "instruction": "Support the round pan with hole in handle with the right arm; the other arm sets the soft square bread inside.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    }
+  ]
+}

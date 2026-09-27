@@ -1,0 +1,1218 @@
+{
+  "schema": "sva.robotwin.eval_episodes.v1",
+  "task": "pick_dual_bottles",
+  "task_config": "demo_clean",
+  "robotwin_root": "/newhome/xiexinyi/sva/RoboTwin",
+  "config_path": "/newhome/xiexinyi/sva/configs/robotwin_15tasks/sva_robotwin_pick_dual_bottles.yaml",
+  "seed_start": 200000,
+  "target_count": 100,
+  "attempted_count": 109,
+  "failure_counts": {
+    "planning_failed": 9
+  },
+  "instruction_split": "seen",
+  "language_num": 100,
+  "created_at": "2026-09-21T06:41:04.807661+00:00",
+  "episodes": [
+    {
+      "episode_id": 200000,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Lift the narrow-necked bottle and the bottle with white printed label together with both arms.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200001,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Hold the bottle with ridges on bottom in one arm and the plastic bottle in the other.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200002,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use each arm to secure one bottle, the long thin bottle and the medium-sized green bottle.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200003,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use one arm for the dark drink bottle with logo and the other for the smooth green bottle.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200004,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Lift the medium dark brown bottle with one arm and the smooth green bottle with the other.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200005,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Take hold of the bottle with white neck and red top and the medium green bottle at once.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200006,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Raise both bottles together, the bottle with white neck and red top and the bottle with white printed label.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200007,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Reach for the smooth bottle with red lid and the plastic bottle with both arms simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200008,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Hold the brown bottle with red label in one arm and the medium green bottle with capped neck in the other.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200009,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Lift the narrow-necked bottle and the smooth green bottle together with both arms.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200010,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Reach for the bottle with white neck and red top and the bottle with ridges near base with both arms simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200011,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Secure the brown bottle with red label and the plastic bottle simultaneously with separate arms.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200012,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Secure the medium dark brown bottle and the plastic bottle simultaneously with separate arms.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200013,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use both arms together to pick the plastic drink bottle and the bottle with white printed label.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200014,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Hold the Coca-Cola bottle in one arm and the smooth green bottle in the other.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200016,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Raise both the Coca-Cola bottle and the smooth green plastic bottle simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200017,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Catch the narrow-necked bottle and the bottle with narrow top in parallel.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200018,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Simultaneously grasp and lift the narrow-necked bottle and the medium green bottle.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200019,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Lift the two bottles the medium dark brown bottle and the plastic bottle together.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200020,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Secure the medium dark brown bottle and the medium green bottle with capped neck simultaneously with separate arms.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200021,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Grasp the bottle with white neck and red top and the smooth green plastic bottle at the same time.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200022,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Secure the plastic drink bottle and the bottle with narrow top simultaneously with separate arms.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200023,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Raise both the bottle with white neck and red top and the medium-sized green bottle simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200025,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Grab both bottles at once: the Coca-Cola bottle and the handheld green bottle.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200026,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Pick up the bottle with white neck and red top and the medium-sized green bottle simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200027,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Pick up both the bottle with ridges on bottom and the smooth green bottle using separate arms.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200028,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Take the medium dark brown bottle and the handheld green bottle together, one per arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200029,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Pick the smooth bottle with red lid and the bottle with narrow top up in parallel.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200030,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Pick up the narrow-necked bottle and the bottle with rounded neck in one synchronized motion.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200031,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Reach for the Coca-Cola bottle and the medium green bottle with both arms simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200032,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Grasp both bottles, the dark drink bottle with logo and the bottle with narrow top, simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200033,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Pick up both the narrow-necked bottle and the medium green bottle with capped neck using separate arms.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200035,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Each arm should lift one bottle: the long thin bottle and the bottle with ridges near base.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200036,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Hold the bottle with white neck and red top in one arm and the medium green bottle with capped neck in the other.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200037,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Lift the narrow-necked bottle and the green bottle with indented base together with both arms.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200038,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Raise both the bottle with white neck and red top and the bottle with rounded neck simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200039,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use one arm for the long thin bottle and the other for the medium green bottle with capped neck.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200040,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Grab the bottle with ridges on bottom and the bottle with white printed label together.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200041,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use each arm to secure one bottle, the narrow-necked bottle and the medium-sized green bottle.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200043,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use each arm to grab one of the Coca-Cola bottle and the plastic bottle.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200045,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Pick the hand-sized soda bottle and the medium green bottle up in parallel.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200046,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Pick the long thin bottle as the other arm picks the medium green bottle with capped neck.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200047,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use one arm for the plastic drink bottle and the other for the smooth green plastic bottle.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200049,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Pick up the smooth bottle with red lid and the plastic bottle simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200050,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Raise the smooth bottle with red lid and the handheld green bottle at the same time.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200051,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Take the bottle with ridges on bottom and the handheld green bottle together, one per arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200052,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use both arms to lift the hand-sized soda bottle and the medium-sized green bottle together.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200053,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Grasp both bottles, the bottle with ridges on bottom and the bottle with white printed label, simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200054,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Pick the medium dark brown bottle as the other arm picks the plastic bottle.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200055,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Raise both bottles together, the long thin bottle and the medium-sized green bottle.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200056,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Catch the medium dark brown bottle and the smooth green bottle in parallel.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200058,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Lift the bottle with ridges on bottom and the smooth green plastic bottle together with both arms.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200059,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Pick up the bottle with ridges on bottom and the smooth green bottle simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200060,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Lift the two bottles the bottle with ridges on bottom and the medium green bottle together.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200061,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Lift the two bottles the plastic drink bottle and the green bottle with indented base together.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200062,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use one arm for the dark drink bottle with logo and the other for the smooth green bottle.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200063,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Pick the bottle with white neck and red top and the medium green bottle up in parallel.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200064,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use both arms to lift the long thin bottle and the smooth green bottle together.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200065,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Hold the long thin bottle in one arm and the bottle with white printed label in the other.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200066,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Lift the two bottles the brown bottle with red label and the plastic bottle together.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200067,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Raise the hand-sized soda bottle and the smooth green bottle at the same time.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200068,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Catch the narrow-necked bottle and the bottle with white printed label in parallel.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200069,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Reach for the plastic drink bottle and the bottle with rounded neck with both arms simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200070,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use each arm to grab one of the long thin bottle and the bottle with ridges near base.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200071,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use both arms to lift the medium dark brown bottle and the smooth green bottle together.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200072,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Secure the bottle with white neck and red top and the medium green bottle simultaneously with separate arms.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200073,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Pick up the bottle with ridges on bottom and the handheld green bottle simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200074,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use both arms to lift the dark drink bottle with logo and the smooth green bottle together.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200075,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use both arms together to pick the dark drink bottle with logo and the bottle with ridges near base.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200076,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Raise the medium dark brown bottle and the smooth green plastic bottle at the same time.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200077,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use each arm to grab one of the hand-sized soda bottle and the bottle with ridges near base.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200078,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Grab the smooth bottle with red lid and the smooth green bottle together.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200079,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Grasp both bottles, the bottle with white neck and red top and the handheld green bottle, simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200080,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Pick up the hand-sized soda bottle and the smooth green bottle simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200081,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use one arm for the hand-sized soda bottle and the other for the green bottle with indented base.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200082,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Lift the two bottles the medium dark brown bottle and the smooth green plastic bottle together.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200083,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Pick the red-capped bottle and the bottle with ridges near base up in parallel.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200085,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use both arms to lift the hand-sized soda bottle and the bottle with ridges near base together.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200086,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Lift the two bottles the Coca-Cola bottle and the bottle with narrow top together.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200087,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Hold both the smooth bottle with red lid and the bottle with narrow top, one in each arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200088,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Raise the brown bottle with red label and the bottle with rounded neck at the same time.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200089,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use both arms to lift the bottle with ridges on bottom and the smooth green plastic bottle together.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200090,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Pick up both the hand-sized soda bottle and the medium green bottle with capped neck using separate arms.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200091,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use both arms to lift the plastic drink bottle and the medium-sized green bottle together.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200092,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use separate arms to grasp the narrow-necked bottle and the bottle with white printed label simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200093,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Grasp both bottles, the bottle with ridges on bottom and the bottle with narrow top, simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200094,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Hold the brown bottle with red label in one arm and the green bottle with indented base in the other.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200095,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use one arm for the plastic drink bottle and the other for the medium green bottle with capped neck.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200097,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Lift the hand-sized soda bottle and the bottle with ridges near base together with both arms.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200098,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Grasp both bottles, the brown bottle with red label and the bottle with narrow top, simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200099,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Grab both bottles at once: the smooth bottle with red lid and the medium-sized green bottle.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200100,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use separate arms to grasp the dark drink bottle with logo and the smooth green bottle simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200101,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Raise both the red-capped bottle and the handheld green bottle simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200102,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Grab the Coca-Cola bottle and the smooth green bottle together.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200103,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Lift the smooth bottle with red lid and the bottle with narrow top together with both arms.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200104,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Grasp both bottles, the red-capped bottle and the smooth green plastic bottle, simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200105,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Use each arm to secure one bottle, the red-capped bottle and the bottle with narrow top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200106,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Raise both the hand-sized soda bottle and the smooth green plastic bottle simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200107,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Grab the narrow-necked bottle and the handheld green bottle together.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200108,
+      "scene_info": {
+        "{A}": "001_bottle/base13",
+        "{B}": "001_bottle/base16"
+      },
+      "instruction": "Pick up the bottle with white neck and red top and the medium green bottle in one synchronized motion.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    }
+  ]
+}

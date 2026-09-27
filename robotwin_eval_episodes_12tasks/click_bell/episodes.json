@@ -1,0 +1,1216 @@
+{
+  "schema": "sva.robotwin.eval_episodes.v1",
+  "task": "click_bell",
+  "task_config": "demo_clean",
+  "robotwin_root": "/newhome/xiexinyi/sva/RoboTwin",
+  "config_path": "/newhome/xiexinyi/sva/configs/robotwin_15tasks/sva_robotwin_click_bell.yaml",
+  "seed_start": 200000,
+  "target_count": 100,
+  "attempted_count": 100,
+  "failure_counts": {},
+  "instruction_split": "seen",
+  "language_num": 100,
+  "created_at": "2026-09-21T06:16:24.705623+00:00",
+  "episodes": [
+    {
+      "episode_id": 200000,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to press the small blue and brown bell's top section.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200001,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Locate the blue dome-shaped bell and click its top center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200002,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Press the top center of the plastic and metal bell on table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200003,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Command the left arm to press the smooth blue bell's top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200004,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Locate the bell with brown base and click its top center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200005,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Push the center of the metal bell with plastic parts using the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200006,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Press the center of the small desk bell for tapping using the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200007,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Pinpoint the smooth blue bell and click its top center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200008,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to touch the brown-bottomed bell's top center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200009,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Pinpoint the blue bell and click its top center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200010,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Press down the white dome bell's top center gently.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200011,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Direct the right arm to click the top of the brown-bottomed bell.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200012,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Pinpoint the plastic and metal bell and click its top center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200013,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Press the white and black colored bell's top center with the left arm firmly.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200014,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Guide the left arm to click the flat-topped bell's top center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200015,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Activate the brown-bottomed bell by pressing its top center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200016,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Command the left arm to press the blue dome-shaped bell's top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200017,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Direct the right arm to click the top of the bell with protruding knob.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200018,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Click the designated center of the brown-bottomed bell.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200019,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Click the designated center of the white bell.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200020,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Click the bell shaped like half-circle dome at its top center on table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200021,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Command the right arm to press the metal bell with plastic parts's top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200022,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Command the right arm to press the bell with circular body's top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200023,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Tap the bell with brown base's top center with the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200024,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Click the blue dome-shaped bell's top center using the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200025,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Click the bell with brown base at its top center on table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200026,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Direct the left arm to touch the bell shaped like half-circle dome's top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200027,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Press the round bell's top center with the left arm firmly.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200028,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Press the top center of the small blue and brown bell on table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200029,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Push the blue bell's <top center> on the table",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200030,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Command the left arm to press the blue bell's top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200031,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Click the top center of the simple hand bell with black stand on table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200032,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Press the bell with circular body's top center on the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200033,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Guide the right arm to click the metal bell with plastic parts's top center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200034,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Tap the small blue and brown bell's top center with the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200035,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Press the center of the bell with metallic top and plastic base using the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200036,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Tap the top center of the flat-topped bell.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200037,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Tap the white dome bell's top center with the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200038,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Press the bell shaped like half-circle dome's top center with the left arm firmly.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200039,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Press the center of the bell with brown base using the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200040,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Click the white bell at its top center on table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200041,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Click the designated center of the white bell.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200042,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Guide the left arm to click the bell with metallic top and plastic base's top center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200043,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Tap the top center of the compact bell with round base.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200044,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Click using the left arm on the white bell's center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200045,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to press the smooth blue bell's top section.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200046,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Push the center of the bell with metallic top and plastic base using the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200047,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Click the bell shaped like half-circle dome's <top center> using the left arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200048,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Press down the bell shaped like half-circle dome's top center gently.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200049,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Press the metal bell with plastic parts's top center on the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200050,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Press the center of the white bell using the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200051,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Press the bell with protruding knob's top center on the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200052,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Make the right arm interact with the white bell with black bottom's top center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200053,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Direct the left arm to touch the blue dome-shaped bell's top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200054,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Click the designated center of the bell with black flat base.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200055,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Press the specified top area of the blue bell.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200056,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Press down the top of the bell with metallic top and plastic base using the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200057,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Direct the right arm to touch the bell shaped like half-circle dome's top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200058,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Guide the left arm to click the white dome bell's top center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200059,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Direct the right arm to click the top of the white and black colored bell.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200060,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Tap the white dome bell's top center with the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200061,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Push the center of the bell shaped like half-circle dome using the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200062,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Press the specified top area of the bell with black flat base.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200063,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Push the center of the compact tabletop bell using the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200064,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Tap the flat-topped bell's top center with the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200065,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Have the left arm click at the bell with circular body's top center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200066,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Activate the round bell by pressing its top center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200067,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Direct the right arm to touch the small desk bell for tapping's top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200068,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Press the center of the bell with brown base using the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200069,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Direct the right arm to touch the compact bell with round base's top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200070,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Click the designated center of the compact tabletop bell.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200071,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Tap the top center of the white dome bell.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200072,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Make the left arm interact with the bell with metallic top and plastic base's top center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200073,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Direct the right arm to click the top of the white and black colored bell.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200074,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Press the top center of the round bell on table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200075,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Click the white bell with black bottom at its top center on table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200076,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to press the white and black colored bell's top section.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200077,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Pinpoint the blue bell and click its top center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200078,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Click the top center of the plastic and metal bell on table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200079,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Tap the simple hand bell with black stand's top center with the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200080,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Press the center of the white dome bell using the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200081,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Click the metal bell with plastic parts's <top center> using the right arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200082,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Press down the bell with black flat base's top center gently.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200083,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Tap the bell with circular body's top center with the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200084,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Press the specified top area of the bell with protruding knob.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200085,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Direct the left arm to touch the bell with metallic top and plastic base's top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200086,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Have the right arm click at the bell with protruding knob's top center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200087,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Click the top center of the white bell with black bottom on table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200088,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Guide the left arm to click the plastic and metal bell's top center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200089,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Tap the white and black colored bell's top center with the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200090,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Click the designated center of the plastic and metal bell.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200091,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Press down the top of the bell shaped like half-circle dome using the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200092,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to press the bell with metallic top and plastic base's top section.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200093,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Click the compact tabletop bell at its top center on table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200094,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Click the brown-bottomed bell at its top center on table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200095,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "right"
+      },
+      "instruction": "Direct the right arm to click the top of the plastic and metal bell.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200096,
+      "scene_info": {
+        "{A}": "050_bell/base0",
+        "{a}": "left"
+      },
+      "instruction": "Push the white dome bell's <top center> on the table",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200097,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Push the smooth blue bell's <top center> on the table",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200098,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "right"
+      },
+      "instruction": "Press the bell with protruding knob's top center on the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200099,
+      "scene_info": {
+        "{A}": "050_bell/base1",
+        "{a}": "left"
+      },
+      "instruction": "Push the brown-bottomed bell's <top center> on the table",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    }
+  ]
+}

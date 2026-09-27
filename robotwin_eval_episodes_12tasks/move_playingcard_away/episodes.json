@@ -1,0 +1,1219 @@
+{
+  "schema": "sva.robotwin.eval_episodes.v1",
+  "task": "move_playingcard_away",
+  "task_config": "demo_clean",
+  "robotwin_root": "/newhome/xiexinyi/sva/RoboTwin",
+  "config_path": "/newhome/xiexinyi/sva/configs/robotwin_15tasks/sva_robotwin_move_playingcard_away.yaml",
+  "seed_start": 200000,
+  "target_count": 100,
+  "attempted_count": 102,
+  "failure_counts": {
+    "expert_error": 1,
+    "planning_failed": 1
+  },
+  "instruction_split": "seen",
+  "language_num": 100,
+  "created_at": "2026-09-21T06:15:11.467334+00:00",
+  "episodes": [
+    {
+      "episode_id": 200000,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Using the right arm, lift the playingcards storage box and move it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200001,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "left"
+      },
+      "instruction": "With the left arm, pick up the blue pack holding playingcards and slide it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200002,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "left"
+      },
+      "instruction": "Shift the blue playingcards box outward by grabbing it with the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200003,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "left"
+      },
+      "instruction": "Pick the black box with rectangular shape from the table and shift it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200004,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "left"
+      },
+      "instruction": "Move the smooth playingcards pack away from its position on the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200005,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "left"
+      },
+      "instruction": "Grab the small black box with cards and move it further away.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200006,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Shift the box for playingcards off the table to the side.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200007,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "right"
+      },
+      "instruction": "Pick up the black playing cards box and move it away.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200008,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "left"
+      },
+      "instruction": "Lift the rectangle-shaped cards box and shift it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200009,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "left"
+      },
+      "instruction": "Take the playingcards storage box and push it further away.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200010,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to grab the playingcards pack with blue top and move it away.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200011,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "right"
+      },
+      "instruction": "Lift the blue playingcards box using the right arm and transfer it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200012,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "right"
+      },
+      "instruction": "Place the rectangle-shaped cards box away from the table outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200013,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "right"
+      },
+      "instruction": "Pick up the cardboard playing cards box using the right arm and shift it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200014,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "left"
+      },
+      "instruction": "Lift the black playing cards box and place it farther away with the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200015,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "left"
+      },
+      "instruction": "Pick up the compact box for playing cards and shift it further outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200016,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "left"
+      },
+      "instruction": "Lift the compact red playingcards pack from the table and move it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200017,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "right"
+      },
+      "instruction": "Grab the smooth playingcards holder and move it further outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200018,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "left"
+      },
+      "instruction": "Grab the smooth playingcards pack using the left arm and push it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200019,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to grab the small playingcards pack and move it away.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200020,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "left"
+      },
+      "instruction": "Pick the box of playingcards and move it outward from the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200021,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "right"
+      },
+      "instruction": "Grab the blue and white playingcards packaging and move it further outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200022,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "right"
+      },
+      "instruction": "Take the black box with rectangular shape and place it beyond the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200023,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Lift the glossy rectangular playingcards box using the right arm and transfer it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200024,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Take the smooth playingcards pack and place it further outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200025,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Move the red playingcards box away from its position on the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200026,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "left"
+      },
+      "instruction": "Pick up the small playingcards pack using the left arm and shift it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200027,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "left"
+      },
+      "instruction": "Pick up the blue playingcards box using the left arm and shift it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200028,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "left"
+      },
+      "instruction": "Move the playingcards pack with blue top off the table outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200029,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "right"
+      },
+      "instruction": "Grab the smooth black cards container and move it further away.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200030,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to pick the rectangular box for card storage and shift it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200031,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Grab the smooth playingcards pack and move it further outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200032,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to pick up the yellow and red playingcards box and move it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200033,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "right"
+      },
+      "instruction": "Grab the playing cards box with gold text and set it beyond the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200034,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Move the yellow and red playingcards box off the table outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200035,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "right"
+      },
+      "instruction": "Lift the blue pack holding playingcards and slide it off the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200036,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to grab the black box with rectangular shape and move it away.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200037,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "left"
+      },
+      "instruction": "Grab the compact box for playing cards using the left arm and move it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200038,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "left"
+      },
+      "instruction": "Move the playingcards box with white symbols outward from the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200039,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "right"
+      },
+      "instruction": "Lift the box of playingcards using the right arm and transfer it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200040,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "right"
+      },
+      "instruction": "Using the right arm, lift the black playing cards box and move it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200041,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "right"
+      },
+      "instruction": "Shift the compact box for playing cards off the table to the side.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200042,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "left"
+      },
+      "instruction": "Grab the rectangle-shaped cards box and take it away from the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200043,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "left"
+      },
+      "instruction": "Using the left arm, lift the playingcards pack with blue top and move it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200044,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to pick the compact red playingcards pack and move it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200045,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Pick up the red and yellow playingcards case with the right arm and place it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200046,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "right"
+      },
+      "instruction": "Take the blue playingcards box and push it further away.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200047,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "left"
+      },
+      "instruction": "Lift the box of playingcards and slide it off the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200048,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "left"
+      },
+      "instruction": "Grab the playingcards box with white symbols and move it further away.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200049,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "left"
+      },
+      "instruction": "Grab the blue playingcards box and set it beyond the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200050,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "left"
+      },
+      "instruction": "Place the glossy rectangular playingcards box away from the table outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200051,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Lift the playingcards storage box and set it away from the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200052,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Grab the box for playingcards and shift it farther away from the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200053,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to grab the playingcards box with white symbols and move it away.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200054,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "left"
+      },
+      "instruction": "Slide the smooth black cards container off the table outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200055,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "left"
+      },
+      "instruction": "Move the rectangular blue playingcards case further outward after picking it up.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200056,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "left"
+      },
+      "instruction": "Lift the smooth playingcards holder and slide it off the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200057,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "right"
+      },
+      "instruction": "Using the right arm, lift the compact box for playing cards and move it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200058,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "left"
+      },
+      "instruction": "Grab the glossy rectangular playingcards box using the left arm and push it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200059,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Using the right arm, lift the rectangular playingcards case and move it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200060,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "left"
+      },
+      "instruction": "Move the rectangular playingcards case outward from the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200061,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "right"
+      },
+      "instruction": "Take the box of playingcards and place it further outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200062,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to pick the playingcards box with white symbols and shift it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200063,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "left"
+      },
+      "instruction": "Grab the cardboard playing cards box with the left arm and move it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200064,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Pick up the red playingcards box and move it farther outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200065,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "right"
+      },
+      "instruction": "Move the rectangular box for card storage further outward after picking it up.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200066,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "right"
+      },
+      "instruction": "Take the box with cards inside and place it beyond the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200067,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "left"
+      },
+      "instruction": "Lift the red and yellow playingcards case and shift it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200068,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to grab the smooth playingcards pack and move it aside.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200069,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "right"
+      },
+      "instruction": "Grab the blue carton for playingcards and shift it farther away from the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200070,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "right"
+      },
+      "instruction": "Slide the card box with golden designs off the table outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200071,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Move the playingcards storage box outward from the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200072,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to grab the box of playingcards and move it aside.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200073,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "right"
+      },
+      "instruction": "With the right arm, pick up the small playingcards container and slide it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200074,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "left"
+      },
+      "instruction": "Grab the hand-sized playingcards container from the table and shift it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200075,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Slide the red and yellow playingcards case off the table outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200076,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "left"
+      },
+      "instruction": "Move the rectangle-shaped cards box further outward after picking it up.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200077,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "left"
+      },
+      "instruction": "Using the left arm, lift the smooth playingcards pack and move it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200078,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "right"
+      },
+      "instruction": "Pick up the rectangular box for card storage and place it further away.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200079,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Grab the hand-sized playingcards container and shift it farther away from the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200082,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "left"
+      },
+      "instruction": "Take the card box with golden designs and push it further away.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200083,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "left"
+      },
+      "instruction": "Lift the playing cards box with gold text using the left arm and transfer it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200084,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "left"
+      },
+      "instruction": "Move the hand-sized playingcards container outward from the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200085,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "left"
+      },
+      "instruction": "Pick up the yellow and red playingcards box and place it further away.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200086,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "right"
+      },
+      "instruction": "Grab the blue pack holding playingcards and shift it farther away from the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200087,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "right"
+      },
+      "instruction": "Grab the blue pack holding playingcards with the right arm and move it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200088,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "left"
+      },
+      "instruction": "Lift the smooth playingcards pack and slide it off the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200089,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "left"
+      },
+      "instruction": "Lift the playingcards box with white accents using the left arm and transfer it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200090,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "right"
+      },
+      "instruction": "Relocate the playing cards box with gold text farther outward using the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200091,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Grab the playingcards storage box and take it away from the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200092,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Place the yellow and red playingcards box away from the table outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200093,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Pick up the box for playingcards and place it further away.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200094,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "right"
+      },
+      "instruction": "Pick up the black playing cards box and move it farther outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200095,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Slide the playingcards storage box off the table outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200096,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "left"
+      },
+      "instruction": "Take the compact box for playing cards and place it beyond the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200097,
+      "scene_info": {
+        "{A}": "081_playingcards/base2",
+        "{a}": "right"
+      },
+      "instruction": "Pick the small black box with cards and slide it further outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200098,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Grab the small playingcards pack and move it further away.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200099,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "left"
+      },
+      "instruction": "Lift the blue pack holding playingcards using the left arm and transfer it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200100,
+      "scene_info": {
+        "{A}": "081_playingcards/base0",
+        "{a}": "left"
+      },
+      "instruction": "Lift the playingcards pack with blue top with the left arm and move it outward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200101,
+      "scene_info": {
+        "{A}": "081_playingcards/base1",
+        "{a}": "right"
+      },
+      "instruction": "Lift the playingcards storage box and set it away from the table.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    }
+  ]
+}

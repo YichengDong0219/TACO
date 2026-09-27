@@ -1,0 +1,378 @@
+{
+  "schema": "sva.robotwin.eval_episodes.v1",
+  "task": "move_pillbottle_pad",
+  "task_config": "demo_clean",
+  "robotwin_root": "/newhome/xiexinyi/sva/RoboTwin",
+  "config_path": "/newhome/xiexinyi/sva/configs/robotwin_15tasks/sva_robotwin_move_pillbottle_pad.yaml",
+  "seed_start": 100000,
+  "target_count": 30,
+  "attempted_count": 44,
+  "failure_counts": {
+    "planning_failed": 14
+  },
+  "instruction_split": "seen",
+  "language_num": 100,
+  "created_at": "2026-09-21T10:38:18.567168+00:00",
+  "episodes": [
+    {
+      "episode_id": 100001,
+      "scene_info": {
+        "{A}": "080_pillbottle/base5",
+        "{a}": "right"
+      },
+      "instruction": "Move the cylindrical bottle with ridged white lid onto the pad using the right arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100002,
+      "scene_info": {
+        "{A}": "080_pillbottle/base1",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to take the plastic bottle with orange screw lid and move it",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100004,
+      "scene_info": {
+        "{A}": "080_pillbottle/base2",
+        "{a}": "left"
+      },
+      "instruction": "Move the white bottle using the left arm and drop it on pad",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100005,
+      "scene_info": {
+        "{A}": "080_pillbottle/base2",
+        "{a}": "right"
+      },
+      "instruction": "Take the white bottle for pills or liquids and put it onto the pad",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100006,
+      "scene_info": {
+        "{A}": "080_pillbottle/base5",
+        "{a}": "right"
+      },
+      "instruction": "Move the compact bottle with teal and white design onto the pad using the right arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100007,
+      "scene_info": {
+        "{A}": "080_pillbottle/base3",
+        "{a}": "left"
+      },
+      "instruction": "Grab the orange cylindrical bottle for medicine carefully and drop it on pad",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100008,
+      "scene_info": {
+        "{A}": "080_pillbottle/base1",
+        "{a}": "left"
+      },
+      "instruction": "Lift the white and orange storage bottle and carefully place it on pad",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100009,
+      "scene_info": {
+        "{A}": "080_pillbottle/base2",
+        "{a}": "right"
+      },
+      "instruction": "Lift the plastic bottle with labeled surface and set it on the pad",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100010,
+      "scene_info": {
+        "{A}": "080_pillbottle/base3",
+        "{a}": "right"
+      },
+      "instruction": "Pick the medium orange bottle with flat bottom up and set it onto the pad",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100011,
+      "scene_info": {
+        "{A}": "080_pillbottle/base5",
+        "{a}": "right"
+      },
+      "instruction": "Pick the cylindrical bottle with ridged white lid with the right arm and place it down",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100013,
+      "scene_info": {
+        "{A}": "080_pillbottle/base3",
+        "{a}": "right"
+      },
+      "instruction": "Lift the orange bottle with blue stripe label with the right arm and drop on pad",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100015,
+      "scene_info": {
+        "{A}": "080_pillbottle/base3",
+        "{a}": "right"
+      },
+      "instruction": "Lift the white cap on orange bottle using the right arm and position it on the pad.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100016,
+      "scene_info": {
+        "{A}": "080_pillbottle/base3",
+        "{a}": "left"
+      },
+      "instruction": "Lift the medium-sized pharmacy bottle and set it on the pad",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100017,
+      "scene_info": {
+        "{A}": "080_pillbottle/base1",
+        "{a}": "right"
+      },
+      "instruction": "Move the round bottle with orange screw-top and position it on the pad",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100018,
+      "scene_info": {
+        "{A}": "080_pillbottle/base4",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to lift the small brown bottle with white accents and place it",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100020,
+      "scene_info": {
+        "{A}": "080_pillbottle/base3",
+        "{a}": "left"
+      },
+      "instruction": "Take the flat base orange bottle and put it onto the pad",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100021,
+      "scene_info": {
+        "{A}": "080_pillbottle/base5",
+        "{a}": "left"
+      },
+      "instruction": "Grab the plastic bottle with ridged white cap and position it on the pad",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100023,
+      "scene_info": {
+        "{A}": "080_pillbottle/base2",
+        "{a}": "right"
+      },
+      "instruction": "Control the right arm to pick the bottle with smooth body and ridged cap and set it down",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100025,
+      "scene_info": {
+        "{A}": "080_pillbottle/base1",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to grab the white bottle with orange label and place it",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100026,
+      "scene_info": {
+        "{A}": "080_pillbottle/base2",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to grab the white bottle and put it on the pad.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100028,
+      "scene_info": {
+        "{A}": "080_pillbottle/base3",
+        "{a}": "left"
+      },
+      "instruction": "Move the orange bottle with blue stripe label to the pad and release it there.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100029,
+      "scene_info": {
+        "{A}": "080_pillbottle/base3",
+        "{a}": "left"
+      },
+      "instruction": "Set the medium orange bottle with flat bottom down on the pad after picking it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100030,
+      "scene_info": {
+        "{A}": "080_pillbottle/base1",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to set the bottle with large orange label onto the pad",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100035,
+      "scene_info": {
+        "{A}": "080_pillbottle/base5",
+        "{a}": "right"
+      },
+      "instruction": "Pick the teal-bottom bottle with cylindrical body up and set it onto the pad",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100037,
+      "scene_info": {
+        "{A}": "080_pillbottle/base1",
+        "{a}": "right"
+      },
+      "instruction": "Hold the white body bottle with textured cap and position it on the pad",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100038,
+      "scene_info": {
+        "{A}": "080_pillbottle/base5",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to pick the teal-bottom bottle with cylindrical body, then place it on pad",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100039,
+      "scene_info": {
+        "{A}": "080_pillbottle/base2",
+        "{a}": "left"
+      },
+      "instruction": "Grab the bottle with white screw cap and drop it onto the pad",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100041,
+      "scene_info": {
+        "{A}": "080_pillbottle/base5",
+        "{a}": "left"
+      },
+      "instruction": "Move the teal-bottom bottle with cylindrical body to the pad and let it rest there",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100042,
+      "scene_info": {
+        "{A}": "080_pillbottle/base1",
+        "{a}": "left"
+      },
+      "instruction": "Lift the smooth plastic bottle using the left arm and position it on the pad.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100043,
+      "scene_info": {
+        "{A}": "080_pillbottle/base3",
+        "{a}": "left"
+      },
+      "instruction": "Lift the medicine bottle with screw cap and carefully place it on pad",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    }
+  ]
+}

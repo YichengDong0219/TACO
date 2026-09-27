@@ -1,0 +1,439 @@
+{
+  "schema": "sva.robotwin.eval_episodes.v1",
+  "task": "scan_object",
+  "task_config": "demo_clean",
+  "robotwin_root": "/newhome/xiexinyi/sva/RoboTwin",
+  "config_path": "/newhome/xiexinyi/sva/configs/robotwin_15tasks/sva_robotwin_scan_object.yaml",
+  "seed_start": 100000,
+  "target_count": 30,
+  "attempted_count": 120,
+  "failure_counts": {
+    "expert_check_failed": 63,
+    "planning_failed": 27
+  },
+  "instruction_split": "seen",
+  "language_num": 100,
+  "created_at": "2026-09-21T10:46:55.404788+00:00",
+  "episodes": [
+    {
+      "episode_id": 100002,
+      "scene_info": {
+        "{A}": "112_tea-box/base2",
+        "{B}": "024_scanner/base4",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Grasp the decorative tea-box and the barcode scanner with yellow body together using the right arm and the left arm; scan the decorative tea-box with the barcode scanner with yellow body.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100006,
+      "scene_info": {
+        "{A}": "112_tea-box/base2",
+        "{B}": "024_scanner/base0",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Grasp the decorative tea-box and the black scanner with gray handle in parallel, then align the black scanner with gray handle with the decorative tea-box.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100011,
+      "scene_info": {
+        "{A}": "112_tea-box/base1",
+        "{B}": "024_scanner/base3",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Pick the rectangular tea-box using the right arm while the left arm picks the gray scanner with black scanning head, then scan the rectangular tea-box.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100014,
+      "scene_info": {
+        "{A}": "112_tea-box/base0",
+        "{B}": "024_scanner/base4",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Simultaneously secure the green box with tea label and the yellow scanner with buttons, then move the yellow scanner with buttons close to scan the green box with tea label.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100019,
+      "scene_info": {
+        "{A}": "112_tea-box/base0",
+        "{B}": "024_scanner/base2",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Grasp the tea box with beige edges and the scanner with smooth black body in parallel, then align the scanner with smooth black body with the tea box with beige edges.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100029,
+      "scene_info": {
+        "{A}": "112_tea-box/base3",
+        "{B}": "024_scanner/base1",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Pick the square-shaped tea box while picking the handheld scanner with the other arm, then scan the square-shaped tea box.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100037,
+      "scene_info": {
+        "{A}": "112_tea-box/base4",
+        "{B}": "024_scanner/base0",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Take the beige tea-box with handle and the lightweight handheld barcode scanner together, one per arm, and scan the beige tea-box with handle.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100038,
+      "scene_info": {
+        "{A}": "112_tea-box/base4",
+        "{B}": "024_scanner/base2",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Grasp both the light beige box for tea and the scanner with smooth black body simultaneously, then bring the scanner with smooth black body to the light beige box for tea.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100040,
+      "scene_info": {
+        "{A}": "112_tea-box/base4",
+        "{B}": "024_scanner/base4",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Hold the beige tea-box with handle steady in one arm while the other uses the yellow scanner with buttons to scan it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100042,
+      "scene_info": {
+        "{A}": "112_tea-box/base0",
+        "{B}": "024_scanner/base1",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Use the right arm for scanner the black scanner and the left arm for object the printed tea box with lid, grasping simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100043,
+      "scene_info": {
+        "{A}": "112_tea-box/base4",
+        "{B}": "024_scanner/base2",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Pick the tea-box with curved edges using the left arm while the right arm picks the scanner for reading barcodes, then scan the tea-box with curved edges.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100044,
+      "scene_info": {
+        "{A}": "112_tea-box/base0",
+        "{B}": "024_scanner/base0",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Take the printed tea box with lid and the black scanner together, one per arm, and scan the printed tea box with lid.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100046,
+      "scene_info": {
+        "{A}": "112_tea-box/base1",
+        "{B}": "024_scanner/base0",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Grasp the tea-box with white TEA text and the barcode scanner with flat top together using the left arm and the right arm; scan the tea-box with white TEA text with the barcode scanner with flat top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100049,
+      "scene_info": {
+        "{A}": "112_tea-box/base1",
+        "{B}": "024_scanner/base1",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Grasp both the rectangular box for tea and the matte black scanner simultaneously, then bring the matte black scanner to the rectangular box for tea.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100052,
+      "scene_info": {
+        "{A}": "112_tea-box/base2",
+        "{B}": "024_scanner/base1",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Lift the rectangle tea-box with the left arm as the right arm lifts the black scanner with gray textured tip, then scan the rectangle tea-box.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100054,
+      "scene_info": {
+        "{A}": "112_tea-box/base0",
+        "{B}": "024_scanner/base2",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Grasp the tea box with leafy design and the scanner for reading barcodes together using the left arm and the right arm; scan the tea box with leafy design with the scanner for reading barcodes.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100055,
+      "scene_info": {
+        "{A}": "112_tea-box/base5",
+        "{B}": "024_scanner/base0",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Pick the small box with golden patterns using the left arm while the right arm picks the black scanner with gray handle, then scan the small box with golden patterns.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100059,
+      "scene_info": {
+        "{A}": "112_tea-box/base5",
+        "{B}": "024_scanner/base1",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Raise both the beige cube with golden leaf patterns and the black scanner with gray textured tip simultaneously and complete the scan.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100063,
+      "scene_info": {
+        "{A}": "112_tea-box/base2",
+        "{B}": "024_scanner/base2",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Grasp both the black tea-box with turquoise sides and the barcode scanner simultaneously, then bring the barcode scanner to the black tea-box with turquoise sides.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100064,
+      "scene_info": {
+        "{A}": "112_tea-box/base1",
+        "{B}": "024_scanner/base0",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Use the left arm for scanner the scanner with flat reading surface and the right arm for object the tea-box with bold white writing, grasping simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100065,
+      "scene_info": {
+        "{A}": "112_tea-box/base3",
+        "{B}": "024_scanner/base2",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Pick both items up together and use the compact black scanner for easy grip to scan the light yellow tea box.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100067,
+      "scene_info": {
+        "{A}": "112_tea-box/base1",
+        "{B}": "024_scanner/base1",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Lift the tea-box with rectangular edges with the left arm as the right arm lifts the scanner with pointed bottom tip, then scan the tea-box with rectangular edges.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100072,
+      "scene_info": {
+        "{A}": "112_tea-box/base4",
+        "{B}": "024_scanner/base1",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Secure the small rectangular tea-box and the scanner with gray and black design at once, then scan the small rectangular tea-box using the scanner with gray and black design.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100077,
+      "scene_info": {
+        "{A}": "112_tea-box/base1",
+        "{B}": "024_scanner/base2",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Grab the red cuboid-shaped tea-box and the black scanner at the same time and scan the red cuboid-shaped tea-box with the black scanner.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100092,
+      "scene_info": {
+        "{A}": "112_tea-box/base0",
+        "{B}": "024_scanner/base1",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Simultaneously lift the green tea box and the black scanner, then use the black scanner to scan the green tea box.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100098,
+      "scene_info": {
+        "{A}": "112_tea-box/base3",
+        "{B}": "024_scanner/base0",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Use the right arm for scanner the scanner with ergonomic grip design and the left arm for object the tea box with floral designs, grasping simultaneously.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100101,
+      "scene_info": {
+        "{A}": "112_tea-box/base0",
+        "{B}": "024_scanner/base0",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Pick up the light green cardboard tea box and the lightweight handheld barcode scanner simultaneously, then scan the light green cardboard tea box with the lightweight handheld barcode scanner.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100104,
+      "scene_info": {
+        "{A}": "112_tea-box/base3",
+        "{B}": "024_scanner/base1",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Secure the yellow box for tea and the curved black scanner with trigger at once, then scan the yellow box for tea using the curved black scanner with trigger.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100110,
+      "scene_info": {
+        "{A}": "112_tea-box/base0",
+        "{B}": "024_scanner/base2",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Hold the leaf-patterned green tea storage using the right arm and the black plastic scanner with blue trim using the left arm, then scan the leaf-patterned green tea storage.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 100119,
+      "scene_info": {
+        "{A}": "112_tea-box/base1",
+        "{B}": "024_scanner/base1",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Pick up the box for holding tea and the scanner with curved handle simultaneously, then scan the box for holding tea with the scanner with curved handle.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    }
+  ]
+}

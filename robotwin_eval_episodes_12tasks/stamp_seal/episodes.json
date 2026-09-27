@@ -1,0 +1,1319 @@
+{
+  "schema": "sva.robotwin.eval_episodes.v1",
+  "task": "stamp_seal",
+  "task_config": "demo_clean",
+  "robotwin_root": "/newhome/xiexinyi/sva/RoboTwin",
+  "config_path": "/newhome/xiexinyi/sva/configs/robotwin_15tasks/sva_robotwin_stamp_seal.yaml",
+  "seed_start": 200000,
+  "target_count": 100,
+  "attempted_count": 184,
+  "failure_counts": {
+    "expert_check_failed": 3,
+    "planning_failed": 81
+  },
+  "instruction_split": "seen",
+  "language_num": 100,
+  "created_at": "2026-09-21T06:18:18.781030+00:00",
+  "episodes": [
+    {
+      "episode_id": 200004,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Olive",
+        "{a}": "left"
+      },
+      "instruction": "Press the rectangular seal block onto Olive with the left arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200005,
+      "scene_info": {
+        "{A}": "100_seal/base6",
+        "{B}": "Purple",
+        "{a}": "right"
+      },
+      "instruction": "Grab the seal with smooth yellow bottom to press onto Purple",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200006,
+      "scene_info": {
+        "{A}": "100_seal/base3",
+        "{B}": "Yellow",
+        "{a}": "right"
+      },
+      "instruction": "the right arm picks the brown seal, stamps Yellow",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200008,
+      "scene_info": {
+        "{A}": "100_seal/base3",
+        "{B}": "Tan",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to press the engraved top seal on Tan",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200009,
+      "scene_info": {
+        "{A}": "100_seal/base3",
+        "{B}": "Lime",
+        "{a}": "right"
+      },
+      "instruction": "Pick the seal with textured top and press on Lime",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200010,
+      "scene_info": {
+        "{A}": "100_seal/base6",
+        "{B}": "Red",
+        "{a}": "left"
+      },
+      "instruction": "With the left arm, secure the seal with wooden-like grip and mark Red.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200011,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Gray",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm, take the stone seal with leaf designs, and apply to Gray.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200013,
+      "scene_info": {
+        "{A}": "100_seal/base3",
+        "{B}": "Olive",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to pick the seal for stamping for Olive",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200015,
+      "scene_info": {
+        "{A}": "100_seal/base2",
+        "{B}": "Teal",
+        "{a}": "left"
+      },
+      "instruction": "Use the seal with carved light letters to stamp Teal",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200018,
+      "scene_info": {
+        "{A}": "100_seal/base3",
+        "{B}": "Pink",
+        "{a}": "left"
+      },
+      "instruction": "Hold the rectangular seal and press onto Pink",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200019,
+      "scene_info": {
+        "{A}": "100_seal/base3",
+        "{B}": "Gray",
+        "{a}": "left"
+      },
+      "instruction": "Place the brown seal onto Gray",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200020,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Navy",
+        "{a}": "left"
+      },
+      "instruction": "With the left arm, take the small red stamp handle and mark Navy.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200023,
+      "scene_info": {
+        "{A}": "100_seal/base6",
+        "{B}": "Olive",
+        "{a}": "left"
+      },
+      "instruction": "Stamp the yellow seal with ridged grip on Olive",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200025,
+      "scene_info": {
+        "{A}": "100_seal/base2",
+        "{B}": "Gray",
+        "{a}": "right"
+      },
+      "instruction": "the right arm uses the palm-sized stamping seal to stamp Gray",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200027,
+      "scene_info": {
+        "{A}": "100_seal/base6",
+        "{B}": "Navy",
+        "{a}": "left"
+      },
+      "instruction": "With the left arm, secure the seal with vertical textured grip and mark Navy.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200028,
+      "scene_info": {
+        "{A}": "100_seal/base2",
+        "{B}": "Brown",
+        "{a}": "left"
+      },
+      "instruction": "Grab the seal with rounded top and patterns and press onto Brown",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200029,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Turquoise",
+        "{a}": "right"
+      },
+      "instruction": "Pick up the brown seal and press onto Turquoise",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200032,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Beige",
+        "{a}": "left"
+      },
+      "instruction": "Stamp Beige after grabbing the red seal for stamping",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200033,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Teal",
+        "{a}": "right"
+      },
+      "instruction": "Take the decorative brown stamping seal and stamp Teal",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200038,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Silver",
+        "{a}": "left"
+      },
+      "instruction": "Hold the small red stamp handle and press onto Silver",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200041,
+      "scene_info": {
+        "{A}": "100_seal/base6",
+        "{B}": "Indigo",
+        "{a}": "right"
+      },
+      "instruction": "Place the seal for marking onto Indigo",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200042,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Olive",
+        "{a}": "left"
+      },
+      "instruction": "Lift the hand-sized red and black seal and press onto Olive",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200046,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Brown",
+        "{a}": "right"
+      },
+      "instruction": "Place the hand-sized red and black seal onto Brown after grabbing.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200048,
+      "scene_info": {
+        "{A}": "100_seal/base6",
+        "{B}": "Black",
+        "{a}": "right"
+      },
+      "instruction": "Grab the seal with vertical textured grip and press onto Black",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200049,
+      "scene_info": {
+        "{A}": "100_seal/base2",
+        "{B}": "Maroon",
+        "{a}": "left"
+      },
+      "instruction": "Grab the rectangular seal with decorative carvings with the left arm, press it onto Maroon.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200050,
+      "scene_info": {
+        "{A}": "100_seal/base6",
+        "{B}": "Beige",
+        "{a}": "left"
+      },
+      "instruction": "Pick the seal for marking and press on Beige",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200051,
+      "scene_info": {
+        "{A}": "100_seal/base2",
+        "{B}": "Green",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to grab the reddish-brown seal, press Green",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200052,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Turquoise",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to pick the red seal for stamping for Turquoise",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200055,
+      "scene_info": {
+        "{A}": "100_seal/base2",
+        "{B}": "Navy",
+        "{a}": "left"
+      },
+      "instruction": "the left arm uses the palm-sized stamping seal to stamp Navy",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200056,
+      "scene_info": {
+        "{A}": "100_seal/base6",
+        "{B}": "Indigo",
+        "{a}": "left"
+      },
+      "instruction": "Pick up the seal with wooden-like grip, stamp Indigo",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200057,
+      "scene_info": {
+        "{A}": "100_seal/base3",
+        "{B}": "Tan",
+        "{a}": "right"
+      },
+      "instruction": "Set the seal with sloped sides on Tan",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200060,
+      "scene_info": {
+        "{A}": "100_seal/base2",
+        "{B}": "Turquoise",
+        "{a}": "right"
+      },
+      "instruction": "Pick the reddish-brown seal and apply it onto Turquoise.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200062,
+      "scene_info": {
+        "{A}": "100_seal/base3",
+        "{B}": "Red",
+        "{a}": "right"
+      },
+      "instruction": "Grab the seal with smooth engraved top and press on Red.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200064,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Yellow",
+        "{a}": "left"
+      },
+      "instruction": "the left arm holds the hand-sized red and black seal, presses Yellow",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200065,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Tan",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to press the small red stamp handle on Tan",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200067,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Olive",
+        "{a}": "right"
+      },
+      "instruction": "Position the hand-sized carved seal over Olive and stamp",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200069,
+      "scene_info": {
+        "{A}": "100_seal/base2",
+        "{B}": "Lime",
+        "{a}": "right"
+      },
+      "instruction": "Pick the seal with carved light letters and press on Lime",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200071,
+      "scene_info": {
+        "{A}": "100_seal/base3",
+        "{B}": "Black",
+        "{a}": "left"
+      },
+      "instruction": "Position the rectangular seal on Black, apply pressure",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200072,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Yellow",
+        "{a}": "left"
+      },
+      "instruction": "Use the smooth brown seal to stamp Yellow",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200074,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Beige",
+        "{a}": "left"
+      },
+      "instruction": "With the left arm, take the decorative brown stamping seal and mark Beige.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200075,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Silver",
+        "{a}": "right"
+      },
+      "instruction": "the right arm grabs the carved seal with leaf patterns, stamps Silver",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200080,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Lime",
+        "{a}": "right"
+      },
+      "instruction": "Lift the carved seal with leaf patterns and press onto Lime",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200081,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Orange",
+        "{a}": "right"
+      },
+      "instruction": "Pick the stone seal with leaf designs and press down on Orange",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200084,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Turquoise",
+        "{a}": "right"
+      },
+      "instruction": "Grab the stone seal with leaf designs and press onto Turquoise",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200085,
+      "scene_info": {
+        "{A}": "100_seal/base6",
+        "{B}": "Magenta",
+        "{a}": "left"
+      },
+      "instruction": "Use the round yellow seal base to stamp Magenta",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200086,
+      "scene_info": {
+        "{A}": "100_seal/base2",
+        "{B}": "Brown",
+        "{a}": "right"
+      },
+      "instruction": "Use the engraved reddish seal for marking to stamp Brown",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200087,
+      "scene_info": {
+        "{A}": "100_seal/base3",
+        "{B}": "Turquoise",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to press the seal for stamping on Turquoise",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200089,
+      "scene_info": {
+        "{A}": "100_seal/base6",
+        "{B}": "Green",
+        "{a}": "left"
+      },
+      "instruction": "Take the round yellow seal base and stamp Green",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200092,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Brown",
+        "{a}": "right"
+      },
+      "instruction": "Place the seal for imprinting onto Brown after grabbing.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200093,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Black",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm for the plastic seal with handle and stamp Black",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200094,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Magenta",
+        "{a}": "right"
+      },
+      "instruction": "Pick the seal with smooth handle and apply it onto Magenta.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200095,
+      "scene_info": {
+        "{A}": "100_seal/base6",
+        "{B}": "Silver",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm for the round yellow seal base and stamp Silver",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200096,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Orange",
+        "{a}": "left"
+      },
+      "instruction": "Stamp Orange after grabbing the red seal.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200098,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Green",
+        "{a}": "right"
+      },
+      "instruction": "Bring the compact seal to Green and stamp",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200101,
+      "scene_info": {
+        "{A}": "100_seal/base3",
+        "{B}": "Gray",
+        "{a}": "left"
+      },
+      "instruction": "Hold the hand-sized rectangular brown seal and press onto Gray",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200105,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Turquoise",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to press the rectangular seal block on Turquoise",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200107,
+      "scene_info": {
+        "{A}": "100_seal/base2",
+        "{B}": "Olive",
+        "{a}": "right"
+      },
+      "instruction": "Pick the palm-sized stamping seal and apply it onto Olive.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200109,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Silver",
+        "{a}": "left"
+      },
+      "instruction": "Stamp Silver after grabbing the seal with smooth handle.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200112,
+      "scene_info": {
+        "{A}": "100_seal/base2",
+        "{B}": "Coral",
+        "{a}": "right"
+      },
+      "instruction": "Grab the seal with carved light letters and press onto Coral",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200113,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Cyan",
+        "{a}": "left"
+      },
+      "instruction": "Pick the plastic seal with handle and press on Cyan",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200114,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Red",
+        "{a}": "right"
+      },
+      "instruction": "Press the stone seal with leaf designs onto Red",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200115,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Blue",
+        "{a}": "left"
+      },
+      "instruction": "the left arm picks the decorative brown stamping seal, stamps Blue",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200117,
+      "scene_info": {
+        "{A}": "100_seal/base3",
+        "{B}": "Cyan",
+        "{a}": "right"
+      },
+      "instruction": "the right arm uses the brown seal to stamp Cyan",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200120,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Tan",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to grab the stone seal with leaf designs, press Tan",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200121,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Black",
+        "{a}": "left"
+      },
+      "instruction": "Lift the hand-sized red and black seal and press onto Black",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200122,
+      "scene_info": {
+        "{A}": "100_seal/base2",
+        "{B}": "Teal",
+        "{a}": "right"
+      },
+      "instruction": "Lift the seal with white engraving and press onto Teal",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200125,
+      "scene_info": {
+        "{A}": "100_seal/base3",
+        "{B}": "Red",
+        "{a}": "right"
+      },
+      "instruction": "Stamp Red after grabbing the engraved top seal.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200126,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Green",
+        "{a}": "right"
+      },
+      "instruction": "Place the smooth brown seal onto Green after grabbing.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200127,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Tan",
+        "{a}": "left"
+      },
+      "instruction": "the left arm grabs the brown seal, stamps Tan",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200129,
+      "scene_info": {
+        "{A}": "100_seal/base6",
+        "{B}": "Navy",
+        "{a}": "right"
+      },
+      "instruction": "Take the seal with smooth yellow bottom and stamp it on Navy.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200130,
+      "scene_info": {
+        "{A}": "100_seal/base2",
+        "{B}": "Lime",
+        "{a}": "right"
+      },
+      "instruction": "Set the palm-sized stamping seal on Lime",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200131,
+      "scene_info": {
+        "{A}": "100_seal/base2",
+        "{B}": "Tan",
+        "{a}": "left"
+      },
+      "instruction": "Grab the seal with rounded top and patterns with the left arm, press it onto Tan.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200132,
+      "scene_info": {
+        "{A}": "100_seal/base2",
+        "{B}": "Maroon",
+        "{a}": "right"
+      },
+      "instruction": "Take the seal with white engraving and stamp it on Maroon.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200133,
+      "scene_info": {
+        "{A}": "100_seal/base3",
+        "{B}": "Teal",
+        "{a}": "left"
+      },
+      "instruction": "Lift the rectangular seal and press onto Teal",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200134,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Silver",
+        "{a}": "right"
+      },
+      "instruction": "the right arm holds the red seal, presses Silver",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200135,
+      "scene_info": {
+        "{A}": "100_seal/base3",
+        "{B}": "Pink",
+        "{a}": "right"
+      },
+      "instruction": "Grab the rectangular seal and press onto Pink",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200137,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Cyan",
+        "{a}": "right"
+      },
+      "instruction": "Pick up the seal showing carved detailed textures and press onto Cyan",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200138,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Pink",
+        "{a}": "right"
+      },
+      "instruction": "Set the hand-sized red and black seal on Pink",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200140,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Gray",
+        "{a}": "right"
+      },
+      "instruction": "Grab the decorative brown stamping seal to press onto Gray",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200141,
+      "scene_info": {
+        "{A}": "100_seal/base6",
+        "{B}": "Red",
+        "{a}": "left"
+      },
+      "instruction": "Position the yellow seal with ridged grip on Red, apply pressure",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200146,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Orange",
+        "{a}": "right"
+      },
+      "instruction": "Stamp Orange after grabbing the brown seal for marking",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200149,
+      "scene_info": {
+        "{A}": "100_seal/base6",
+        "{B}": "Green",
+        "{a}": "left"
+      },
+      "instruction": "Position the handheld seal with yellow bottom on Green, apply pressure",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200151,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Orange",
+        "{a}": "left"
+      },
+      "instruction": "Place the stone seal with leaf designs onto Orange after grabbing.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200152,
+      "scene_info": {
+        "{A}": "100_seal/base2",
+        "{B}": "Indigo",
+        "{a}": "left"
+      },
+      "instruction": "Pick the seal with carved light letters and stamp it on Indigo",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200154,
+      "scene_info": {
+        "{A}": "100_seal/base3",
+        "{B}": "Cyan",
+        "{a}": "left"
+      },
+      "instruction": "Stamp the smooth rectangular seal on Cyan",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200155,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Purple",
+        "{a}": "left"
+      },
+      "instruction": "the left arm picks the brown seal for marking, stamps Purple",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200158,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Blue",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to grab the seal with rounded top, press Blue",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200159,
+      "scene_info": {
+        "{A}": "100_seal/base2",
+        "{B}": "Magenta",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm, take the small stone seal, and apply to Magenta.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200168,
+      "scene_info": {
+        "{A}": "100_seal/base6",
+        "{B}": "Brown",
+        "{a}": "left"
+      },
+      "instruction": "Pick up the seal for marking, stamp Brown",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200169,
+      "scene_info": {
+        "{A}": "100_seal/base2",
+        "{B}": "Blue",
+        "{a}": "left"
+      },
+      "instruction": "Use the palm-sized stamping seal to mark Blue",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200171,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Brown",
+        "{a}": "right"
+      },
+      "instruction": "Position the brown seal over Brown and stamp",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200172,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Green",
+        "{a}": "right"
+      },
+      "instruction": "Position the seal for imprinting on Green, apply pressure",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200173,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Tan",
+        "{a}": "left"
+      },
+      "instruction": "Set the compact seal with matte base on Tan",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200174,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Cyan",
+        "{a}": "left"
+      },
+      "instruction": "Pick the plastic seal with handle and press down on Cyan",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200175,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Navy",
+        "{a}": "right"
+      },
+      "instruction": "the right arm holds the hand-sized red and black seal, presses Navy",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200176,
+      "scene_info": {
+        "{A}": "100_seal/base4",
+        "{B}": "Purple",
+        "{a}": "left"
+      },
+      "instruction": "the left arm holds the seal showing carved detailed textures, presses Purple",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200180,
+      "scene_info": {
+        "{A}": "100_seal/base0",
+        "{B}": "Coral",
+        "{a}": "left"
+      },
+      "instruction": "Use the seal with smooth handle to mark Coral",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200181,
+      "scene_info": {
+        "{A}": "100_seal/base2",
+        "{B}": "Indigo",
+        "{a}": "left"
+      },
+      "instruction": "Grab the seal with rounded top and patterns and press onto Indigo",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200182,
+      "scene_info": {
+        "{A}": "100_seal/base2",
+        "{B}": "Black",
+        "{a}": "right"
+      },
+      "instruction": "Pick up the engraved reddish seal for marking and press onto Black",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200183,
+      "scene_info": {
+        "{A}": "100_seal/base6",
+        "{B}": "Coral",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to grab the seal for marking, press Coral",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    }
+  ]
+}

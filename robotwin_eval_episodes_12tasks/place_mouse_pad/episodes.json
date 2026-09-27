@@ -1,0 +1,1319 @@
+{
+  "schema": "sva.robotwin.eval_episodes.v1",
+  "task": "place_mouse_pad",
+  "task_config": "demo_clean",
+  "robotwin_root": "/newhome/xiexinyi/sva/RoboTwin",
+  "config_path": "/newhome/xiexinyi/sva/configs/robotwin_15tasks/sva_robotwin_place_mouse_pad.yaml",
+  "seed_start": 200000,
+  "target_count": 100,
+  "attempted_count": 124,
+  "failure_counts": {
+    "expert_check_failed": 1,
+    "planned_joints_illegal": 23
+  },
+  "instruction_split": "seen",
+  "language_num": 100,
+  "created_at": "2026-09-21T06:15:08.266384+00:00",
+  "episodes": [
+    {
+      "episode_id": 200000,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Yellow",
+        "{a}": "right"
+      },
+      "instruction": "Pick the ergonomic mouse and place it on the Yellow colored mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200001,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Cyan",
+        "{a}": "left"
+      },
+      "instruction": "With the left arm, grab the mouse with curved top and position it on Cyan mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200002,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Blue",
+        "{a}": "left"
+      },
+      "instruction": "Lift the mouse with scroll wheel with the left arm and place it on the Blue mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200003,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Yellow",
+        "{a}": "left"
+      },
+      "instruction": "Lift the mouse with two buttons and a scroll wheel with the left arm and place it on the Yellow mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200006,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Yellow",
+        "{a}": "right"
+      },
+      "instruction": "With the right arm, take the dark gray mouse and set it on Yellow mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200008,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Black",
+        "{a}": "left"
+      },
+      "instruction": "Lift the rounded top mouse with glossy logo and stick it on Black mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200009,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Magenta",
+        "{a}": "left"
+      },
+      "instruction": "Using the left arm, grab the dark gray mouse and place it on Magenta colored mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200010,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Red",
+        "{a}": "left"
+      },
+      "instruction": "Grab the mouse with scroll wheel using the left arm and place it on the Red mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200011,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Blue",
+        "{a}": "right"
+      },
+      "instruction": "Pick up the dark gray palm-sized mouse and move it to Blue mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200012,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Black",
+        "{a}": "right"
+      },
+      "instruction": "Grab the mouse with two buttons and a scroll wheel using the right arm and place it on the Black mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200013,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Black",
+        "{a}": "right"
+      },
+      "instruction": "Grab the compact matte gray computer mouse using the right arm and place it on the Black mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200014,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Gray",
+        "{a}": "right"
+      },
+      "instruction": "Lift the ergonomic mouse using the right arm and stick it on the Gray mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200015,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Cyan",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to lift the oval-shaped mouse for computer use and set it on the Cyan mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200016,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Magenta",
+        "{a}": "left"
+      },
+      "instruction": "Take the compact oval-shaped mouse and place it on the Magenta mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200017,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Gray",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to pick the plastic mouse up and set it on the Gray colored mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200018,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Black",
+        "{a}": "left"
+      },
+      "instruction": "Lift the small computer mouse and position it on the Black mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200019,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Magenta",
+        "{a}": "left"
+      },
+      "instruction": "Using the left arm, grab the mouse with sleek design and place it on Magenta colored mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200021,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Green",
+        "{a}": "right"
+      },
+      "instruction": "Grab the mouse with scroll wheel and position it onto the Green mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200023,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Cyan",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to grab the gray mouse with smooth surface and set it on the Cyan mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200024,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Yellow",
+        "{a}": "right"
+      },
+      "instruction": "Pick up the mouse with scroll wheel in center and move it to Yellow mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200026,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Black",
+        "{a}": "left"
+      },
+      "instruction": "Using the left arm, grab the small computer mouse and place it on Black colored mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200027,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Magenta",
+        "{a}": "left"
+      },
+      "instruction": "With the left arm, take the plastic mouse and set it on Magenta mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200030,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Yellow",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to pick the mouse with curved ergonomic shape up and set it on the Yellow colored mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200031,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Yellow",
+        "{a}": "right"
+      },
+      "instruction": "Lift the dark gray mouse and put it down onto the Yellow mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200032,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Cyan",
+        "{a}": "left"
+      },
+      "instruction": "Position the ergonomic mouse on the Cyan mat by picking it up.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200033,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Black",
+        "{a}": "right"
+      },
+      "instruction": "With the right arm, take the mouse with scroll wheel in center and set it on Black mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200034,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Black",
+        "{a}": "right"
+      },
+      "instruction": "Grip the gray mouse with smooth surface and move it onto the Black mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200035,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Red",
+        "{a}": "right"
+      },
+      "instruction": "Take the wireless dark gray computer mouse and adjust it to rest on the Red mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200036,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Gray",
+        "{a}": "right"
+      },
+      "instruction": "Lift the palm-fitting mouse using the right arm and drop it on the Gray colored mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200037,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Green",
+        "{a}": "left"
+      },
+      "instruction": "Hold the mouse with two buttons and a scroll wheel and transfer it to the Green mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200038,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Magenta",
+        "{a}": "left"
+      },
+      "instruction": "Lift the mouse with buttons and wheel up with the left arm and stick it onto the Magenta mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200039,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Blue",
+        "{a}": "right"
+      },
+      "instruction": "Using the right arm, pick the rounded computer mouse and position it on Blue colored mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200040,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Black",
+        "{a}": "left"
+      },
+      "instruction": "Grab the small computer mouse and place it firmly on the Black mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200041,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Cyan",
+        "{a}": "right"
+      },
+      "instruction": "Take the compact matte gray computer mouse and put it on the Cyan mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200042,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Gray",
+        "{a}": "left"
+      },
+      "instruction": "Lift the mouse with two buttons and a scroll wheel using the left arm and stick it on the Gray mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200043,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Green",
+        "{a}": "left"
+      },
+      "instruction": "Lift the mouse with buttons and wheel and place it onto Green mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200044,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Red",
+        "{a}": "left"
+      },
+      "instruction": "Lift the small computer mouse and position it on the Red mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200045,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Red",
+        "{a}": "right"
+      },
+      "instruction": "Hold the mouse with two buttons and wheel and transfer it to the Red mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200046,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Blue",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to pick the small computer mouse up and set it on the Blue colored mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200047,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Magenta",
+        "{a}": "left"
+      },
+      "instruction": "Pick the small mouse with smooth surface and place it on the Magenta colored mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200048,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Red",
+        "{a}": "right"
+      },
+      "instruction": "Lift the mouse for cursor control and stick it on Red mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200049,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Gray",
+        "{a}": "left"
+      },
+      "instruction": "Pick the plastic mouse with the left arm and move it to the Gray mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200050,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Gray",
+        "{a}": "left"
+      },
+      "instruction": "Take the compact oval-shaped mouse and place it on the Gray colored mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200051,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Cyan",
+        "{a}": "right"
+      },
+      "instruction": "Grab the small computer mouse using the right arm and place it on the Cyan mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200052,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Black",
+        "{a}": "right"
+      },
+      "instruction": "Take the mouse with curved ergonomic shape and put it on the Black mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200054,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Red",
+        "{a}": "left"
+      },
+      "instruction": "Grip the dark mouse with slight textured sides and move it onto the Red mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200056,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Yellow",
+        "{a}": "left"
+      },
+      "instruction": "Pick up the dark gray mouse with smooth texture with the left arm and move it to the Yellow mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200057,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Magenta",
+        "{a}": "right"
+      },
+      "instruction": "Take the gray mouse and place it on the Magenta colored mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200058,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Red",
+        "{a}": "left"
+      },
+      "instruction": "Take the gray mouse with smooth surface and put it onto Red mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200059,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Cyan",
+        "{a}": "right"
+      },
+      "instruction": "Grab the mouse for cursor control using the right arm and place it on the Cyan mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200061,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Yellow",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to lift the dark gray palm-sized mouse and set it on the Yellow mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200062,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Gray",
+        "{a}": "right"
+      },
+      "instruction": "Lift the dark gray mouse with the right arm and place it on the Gray mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200063,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Magenta",
+        "{a}": "left"
+      },
+      "instruction": "Take the dark ergonomic mouse for computer navigation and place it on the Magenta colored mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200065,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Blue",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to grab the mouse with ergonomic design and place it on the Blue colored mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200066,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Yellow",
+        "{a}": "right"
+      },
+      "instruction": "Slide the plastic mouse with smooth finish onto the Yellow mat gently.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200067,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Magenta",
+        "{a}": "right"
+      },
+      "instruction": "Take the rounded computer mouse and put it onto Magenta mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200068,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Yellow",
+        "{a}": "left"
+      },
+      "instruction": "Pick up the mouse with two buttons and wheel with the left arm and move it to the Yellow mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200069,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Yellow",
+        "{a}": "right"
+      },
+      "instruction": "Grab the small mouse with smooth surface and move it onto the Yellow mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200070,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Blue",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to grab the dark gray palm-sized mouse and set it on the Blue mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200071,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Gray",
+        "{a}": "right"
+      },
+      "instruction": "With the right arm, take the smooth plastic mouse and set it on Gray mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200072,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Magenta",
+        "{a}": "left"
+      },
+      "instruction": "Pick up the oval-shaped mouse and move it to Magenta mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200074,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Black",
+        "{a}": "left"
+      },
+      "instruction": "Lift the mouse for cursor control up with the left arm and stick it onto the Black mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200075,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Blue",
+        "{a}": "right"
+      },
+      "instruction": "Hold the dark mouse with logo on top and transfer it to the Blue mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200077,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Blue",
+        "{a}": "left"
+      },
+      "instruction": "Hold the small computer mouse and transfer it to the Blue mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200079,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Magenta",
+        "{a}": "right"
+      },
+      "instruction": "With the right arm, grab the mouse with two buttons and a scroll wheel and position it on Magenta mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200080,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Gray",
+        "{a}": "right"
+      },
+      "instruction": "Grip the compact oval-shaped mouse using the right arm and move it to the Gray mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200082,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Yellow",
+        "{a}": "left"
+      },
+      "instruction": "With the left arm, take the wireless dark gray computer mouse and set it on Yellow mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200085,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Magenta",
+        "{a}": "left"
+      },
+      "instruction": "Take the compact oval-shaped mouse and put it onto Magenta mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200086,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Magenta",
+        "{a}": "right"
+      },
+      "instruction": "Take the dark gray mouse and put it onto Magenta mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200087,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Gray",
+        "{a}": "left"
+      },
+      "instruction": "Slide the small mouse with smooth surface onto the Gray mat gently.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200089,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Blue",
+        "{a}": "left"
+      },
+      "instruction": "Lift the palm-fitting mouse and position it on the Blue mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200090,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Blue",
+        "{a}": "right"
+      },
+      "instruction": "Using the right arm, grab the mouse with scroll wheel in center and set it on the Blue mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200091,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Black",
+        "{a}": "right"
+      },
+      "instruction": "Lift the mouse for cursor control and set it down on the Black mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200092,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Gray",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to lift the mouse with curved ergonomic shape and set it on the Gray mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200093,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Black",
+        "{a}": "left"
+      },
+      "instruction": "Pick the mouse with buttons and wheel with the left arm and move it to the Black mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200095,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Magenta",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to lift the compact oval-shaped mouse and set it on the Magenta mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200097,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Yellow",
+        "{a}": "right"
+      },
+      "instruction": "Take hold of the mouse with scroll wheel in center with the right arm and drop it on the Yellow mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200098,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Red",
+        "{a}": "right"
+      },
+      "instruction": "Grab the gray mouse with smooth surface and drop it on Red mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200099,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Green",
+        "{a}": "left"
+      },
+      "instruction": "Lift the rounded computer mouse and put it down onto the Green mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200100,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Red",
+        "{a}": "right"
+      },
+      "instruction": "Grab the rounded top mouse with glossy logo using the right arm and place it on the Red mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200101,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Yellow",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to pick the mouse with curved ergonomic shape up and set it on the Yellow colored mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200102,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Gray",
+        "{a}": "left"
+      },
+      "instruction": "Lift the dark gray mouse with smooth texture and stick it on Gray mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200103,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Black",
+        "{a}": "left"
+      },
+      "instruction": "Pick up the mouse with buttons and wheel with the left arm and move it to the Black mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200105,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Magenta",
+        "{a}": "right"
+      },
+      "instruction": "Take hold of the compact matte gray computer mouse and place it on the Magenta mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200108,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Magenta",
+        "{a}": "left"
+      },
+      "instruction": "Lift the ergonomic mouse using the left arm and drop it on the Magenta colored mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200109,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Yellow",
+        "{a}": "left"
+      },
+      "instruction": "Grab the smooth plastic mouse with the left arm and lay it onto the Yellow colored mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200110,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Red",
+        "{a}": "right"
+      },
+      "instruction": "Take the smooth plastic mouse and place it on the Red mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200111,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Green",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to grab the oval-shaped mouse and set it on the Green mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200112,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Black",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to grab the mouse with curved ergonomic shape and set it on the Black mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200113,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Black",
+        "{a}": "left"
+      },
+      "instruction": "Grab the gray mouse with smooth surface with the left arm and lay it onto the Black colored mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200114,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Magenta",
+        "{a}": "right"
+      },
+      "instruction": "Using the right arm, grab the dark gray palm-sized mouse and place it on Magenta colored mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200115,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Blue",
+        "{a}": "left"
+      },
+      "instruction": "Lift the dark gray mouse and put it down onto the Blue mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200116,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Green",
+        "{a}": "left"
+      },
+      "instruction": "Hold the dark gray palm-sized mouse and transfer it to the Green mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200117,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Black",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to pick the rounded gray mouse and place it on the Black mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200118,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Red",
+        "{a}": "left"
+      },
+      "instruction": "Take the mouse with scroll wheel and adjust it to rest on the Red mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200119,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Gray",
+        "{a}": "right"
+      },
+      "instruction": "With the right arm, grab the plastic mouse with smooth finish and position it on the Gray mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200120,
+      "scene_info": {
+        "{A}": "047_mouse/base0",
+        "{B}": "Blue",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to pick the wireless dark gray computer mouse and place it on the Blue mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200121,
+      "scene_info": {
+        "{A}": "047_mouse/base1",
+        "{B}": "Cyan",
+        "{a}": "left"
+      },
+      "instruction": "Take hold of the ergonomic mouse with the left arm and drop it on the Cyan mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200122,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Cyan",
+        "{a}": "right"
+      },
+      "instruction": "Pick the mouse with scroll wheel in center and place it on the Cyan colored mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200123,
+      "scene_info": {
+        "{A}": "047_mouse/base2",
+        "{B}": "Black",
+        "{a}": "left"
+      },
+      "instruction": "Lift the oval-shaped mouse for computer use and set it down on the Black mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    }
+  ]
+}

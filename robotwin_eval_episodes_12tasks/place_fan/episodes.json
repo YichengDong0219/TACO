@@ -1,0 +1,1320 @@
+{
+  "schema": "sva.robotwin.eval_episodes.v1",
+  "task": "place_fan",
+  "task_config": "demo_clean",
+  "robotwin_root": "/newhome/xiexinyi/sva/RoboTwin",
+  "config_path": "/newhome/xiexinyi/sva/configs/robotwin_15tasks/sva_robotwin_place_fan.yaml",
+  "seed_start": 200000,
+  "target_count": 100,
+  "attempted_count": 112,
+  "failure_counts": {
+    "expert_check_failed": 3,
+    "expert_error": 2,
+    "planning_failed": 7
+  },
+  "instruction_split": "seen",
+  "language_num": 100,
+  "created_at": "2026-09-21T06:15:40.405406+00:00",
+  "episodes": [
+    {
+      "episode_id": 200000,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Pink",
+        "{a}": "right"
+      },
+      "instruction": "Using the right arm, grab the off-white fan, face it towards the robot, and set it on the Pink mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200002,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Blue",
+        "{a}": "left"
+      },
+      "instruction": "Set the portable white fan on the Blue colored mat ensuring it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200003,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Cyan",
+        "{a}": "left"
+      },
+      "instruction": "Place the fan with cylinder-shaped handle base on the Cyan mat after grabbing it with the left arm and align it toward the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200004,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Olive",
+        "{a}": "left"
+      },
+      "instruction": "Take the off-white fan with the left arm, put it on the Olive mat, and make it face the robot",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200005,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Orange",
+        "{a}": "right"
+      },
+      "instruction": "Take the compact fan with beige blades and place it on the Orange mat, making sure it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200006,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Purple",
+        "{a}": "right"
+      },
+      "instruction": "Lift the fan with rounded rectangular body, place it on the Purple mat, and ensure it's facing the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200007,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Indigo",
+        "{a}": "right"
+      },
+      "instruction": "With the right arm, grab the smooth compact fan, align it to face the robot, and put it on the Indigo mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200008,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Pink",
+        "{a}": "left"
+      },
+      "instruction": "Place the compact fan with beige blades on the Pink colored mat ensuring it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200010,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Olive",
+        "{a}": "left"
+      },
+      "instruction": "Lift the fan with rectangular base using the left arm and put it on the Olive mat facing the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200011,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Orange",
+        "{a}": "right"
+      },
+      "instruction": "Pick the fan with grid cover with the right arm and set it on the Orange mat facing the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200012,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Coral",
+        "{a}": "left"
+      },
+      "instruction": "Place the fan with beige grilles on the Coral mat and ensure it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200014,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Coral",
+        "{a}": "right"
+      },
+      "instruction": "Take the small handheld fan, place it on the Coral mat, ensure it points at the robot",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200015,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Olive",
+        "{a}": "left"
+      },
+      "instruction": "Set the round white fan on the Olive colored mat ensuring it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200016,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Olive",
+        "{a}": "left"
+      },
+      "instruction": "Lift the compact fan with beige blades and set it on the Olive mat, ensuring it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200017,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Olive",
+        "{a}": "right"
+      },
+      "instruction": "Position the white fan on the Olive mat so it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200018,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Teal",
+        "{a}": "left"
+      },
+      "instruction": "With the left arm, grab the handheld fan with circular blade housing and position it on the Teal mat facing the robot",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200019,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Gray",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to pick the fan with cylinder-shaped handle base, set it on the Gray mat, and face it toward the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200020,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Navy",
+        "{a}": "left"
+      },
+      "instruction": "Using the left arm, grab the fan with round blades and put it on the Navy mat facing the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200021,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Pink",
+        "{a}": "left"
+      },
+      "instruction": "Using the left arm, grab the off-white fan and set it on the Pink mat facing the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200022,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Coral",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to pick up the fan with rectangular base and place it on Coral mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200023,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Beige",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to grab the fan with rounded rectangular body, then align it on the Beige mat facing the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200024,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Coral",
+        "{a}": "right"
+      },
+      "instruction": "Lift the plastic fan with smooth finish and put it on the Coral mat so it faces the robot",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200025,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Gray",
+        "{a}": "right"
+      },
+      "instruction": "Pick the plastic fan with smooth finish with the right arm, ensure it faces the robot, and put it on the Gray mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200026,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Purple",
+        "{a}": "left"
+      },
+      "instruction": "Lift the curved plastic body small fan and set it on the Purple mat, ensuring it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200027,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Navy",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to grab the fan with round blades, then align it on the Navy mat facing the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200028,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Brown",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to pick the white fan, set it on the Brown mat, and direct it toward the robot",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200029,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Purple",
+        "{a}": "right"
+      },
+      "instruction": "Grab the white fan with adjustable arm, position it to face the robot, and place it on the Purple mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200030,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Purple",
+        "{a}": "left"
+      },
+      "instruction": "Place the curved plastic body small fan on the Purple mat and confirm it is pointing at the robot",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200031,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Yellow",
+        "{a}": "right"
+      },
+      "instruction": "Set the rounded fan with central handle on the Yellow mat and make sure it faces the robot",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200033,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Teal",
+        "{a}": "right"
+      },
+      "instruction": "Pick the lightweight plastic adjustable fan with the right arm and set it on the Teal mat facing the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200035,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Purple",
+        "{a}": "right"
+      },
+      "instruction": "Pick the table fan with white finish with the right arm, align it to face the robot, and set it on the Purple mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200036,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Orange",
+        "{a}": "right"
+      },
+      "instruction": "Place the fan with cylinder-shaped handle base on the Orange mat and position it to face the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200037,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Turquoise",
+        "{a}": "left"
+      },
+      "instruction": "Pick up the round white fan and place it on the Turquoise mat ensuring it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200038,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Maroon",
+        "{a}": "left"
+      },
+      "instruction": "Pick up the fan with beige grilles and place it on the Maroon mat ensuring it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200039,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Maroon",
+        "{a}": "right"
+      },
+      "instruction": "Using the right arm, grab the fan with grid cover, face it towards the robot, and set it on the Maroon mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200040,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Turquoise",
+        "{a}": "left"
+      },
+      "instruction": "Take the fan with cylinder-shaped handle base with the left arm, put it on the Turquoise mat, and make it face the robot",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200041,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Black",
+        "{a}": "right"
+      },
+      "instruction": "Set the rounded fan with central handle onto the Black colored mat, oriented towards the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200042,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Purple",
+        "{a}": "left"
+      },
+      "instruction": "Grab the table fan with white finish using the left arm and position it on the Purple mat facing the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200043,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Coral",
+        "{a}": "left"
+      },
+      "instruction": "Lift the compact plastic fan using the left arm and put it on the Coral mat facing the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200044,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Green",
+        "{a}": "left"
+      },
+      "instruction": "Grab the off-white fan with the left arm, set it on the Green mat, and align it to face the robot",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200045,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Navy",
+        "{a}": "right"
+      },
+      "instruction": "Place the handheld fan with circular blade housing on the Navy mat and ensure it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200047,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Beige",
+        "{a}": "left"
+      },
+      "instruction": "Grab the table fan with white finish using the left arm and position it on the Beige mat facing the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200048,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Yellow",
+        "{a}": "right"
+      },
+      "instruction": "Lift the smooth compact fan with the right arm, place it on the Yellow mat, and point it at the robot",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200049,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Maroon",
+        "{a}": "left"
+      },
+      "instruction": "Grab the fan with round blades with the left arm, making sure it faces the robot on the Maroon mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200051,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Cyan",
+        "{a}": "right"
+      },
+      "instruction": "Using the right arm, grab the fan with beige grilles, face it towards the robot, and set it on the Cyan mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200052,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Red",
+        "{a}": "right"
+      },
+      "instruction": "Grab the smooth compact fan and carefully place it on the Red mat facing toward the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200053,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Brown",
+        "{a}": "left"
+      },
+      "instruction": "Grab the lightweight plastic adjustable fan and carefully place it on the Brown mat facing toward the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200054,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Red",
+        "{a}": "left"
+      },
+      "instruction": "Grab the fan with grid cover with the left arm, making sure it faces the robot on the Red mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200055,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Yellow",
+        "{a}": "left"
+      },
+      "instruction": "Place the compact fan with beige blades on the Yellow colored mat ensuring it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200056,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Indigo",
+        "{a}": "left"
+      },
+      "instruction": "Pick up the fan with round blades and ensure it faces the robot on the Indigo mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200057,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Lime",
+        "{a}": "right"
+      },
+      "instruction": "Using the right arm, grab the fan with round blades and set it on the Lime mat facing the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200058,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Silver",
+        "{a}": "right"
+      },
+      "instruction": "Pick up the compact plastic fan and place it on the Silver mat ensuring it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200059,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Blue",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to pick the portable white fan, set it on the Blue mat, and direct it toward the robot",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200060,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Silver",
+        "{a}": "right"
+      },
+      "instruction": "Place the off-white fan on the Silver mat and position it to face the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200061,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Turquoise",
+        "{a}": "right"
+      },
+      "instruction": "Using the right arm, grab the plastic fan with smooth finish, face it towards the robot, and set it on the Turquoise mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200062,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Black",
+        "{a}": "right"
+      },
+      "instruction": "Using the right arm, grab the small handheld fan, face it towards the robot, and set it on the Black mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200065,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Beige",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to grab the plastic fan with smooth finish, put it on the Beige mat, and face it toward the robot",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200066,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Red",
+        "{a}": "right"
+      },
+      "instruction": "Place the off-white fan on the Red colored mat ensuring it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200067,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Tan",
+        "{a}": "right"
+      },
+      "instruction": "Pick the white fan, place it on the Tan mat, and ensure it points toward the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200068,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Indigo",
+        "{a}": "left"
+      },
+      "instruction": "Set the compact fan with beige blades onto the Indigo colored mat, oriented towards the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200069,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Indigo",
+        "{a}": "right"
+      },
+      "instruction": "Put the lightweight plastic adjustable fan on the Indigo mat and make sure it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200071,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Beige",
+        "{a}": "right"
+      },
+      "instruction": "Pick up the lightweight plastic adjustable fan with the right arm, place it on the Beige mat, and turn it toward the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200072,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Maroon",
+        "{a}": "left"
+      },
+      "instruction": "Using the left arm, grab the round white fan and set it on the Maroon mat facing the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200073,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Purple",
+        "{a}": "right"
+      },
+      "instruction": "Pick up the small cooling device fan with the right arm, place it on the Purple mat, and turn it toward the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200074,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Brown",
+        "{a}": "left"
+      },
+      "instruction": "Set the plastic fan with smooth finish onto the Brown colored mat, oriented towards the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200075,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Indigo",
+        "{a}": "right"
+      },
+      "instruction": "Grab the compact fan with beige blades and carefully place it on the Indigo mat facing toward the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200076,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Lime",
+        "{a}": "left"
+      },
+      "instruction": "Take the fan with cylinder-shaped handle base and place it on the Lime mat, making sure it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200077,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Magenta",
+        "{a}": "left"
+      },
+      "instruction": "Place the compact fan with beige blades on the Magenta mat and position it to face the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200078,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Turquoise",
+        "{a}": "right"
+      },
+      "instruction": "Grab the rounded fan with central handle using the right arm and set it on the Turquoise colored mat, facing the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200079,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Yellow",
+        "{a}": "right"
+      },
+      "instruction": "Grab the fan with rectangular base using the right arm and set it on the Yellow colored mat, facing the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200080,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Blue",
+        "{a}": "right"
+      },
+      "instruction": "Lift the off-white fan with the right arm, place it on the Blue mat, and point it at the robot",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200081,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Silver",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to grab the white fan with adjustable arm, set it on Silver mat, and make it face the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200082,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Magenta",
+        "{a}": "right"
+      },
+      "instruction": "Place the fan with beige grilles on the Magenta mat and ensure it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200083,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Purple",
+        "{a}": "left"
+      },
+      "instruction": "Position the lightweight plastic adjustable fan on the Purple mat so it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200084,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Purple",
+        "{a}": "right"
+      },
+      "instruction": "Pick the rounded fan with central handle, align it toward the robot, and drop it on the Purple mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200085,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Gray",
+        "{a}": "left"
+      },
+      "instruction": "Take the fan with beige grilles and place it on the Gray mat, making sure it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200086,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Yellow",
+        "{a}": "right"
+      },
+      "instruction": "With the right arm, grab the round white fan and position it on the Yellow mat facing the robot",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200088,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Pink",
+        "{a}": "left"
+      },
+      "instruction": "Grab the plastic fan with smooth finish and carefully place it on the Pink mat facing toward the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200089,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Blue",
+        "{a}": "left"
+      },
+      "instruction": "Position the small handheld fan on the Blue mat so it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200090,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Maroon",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to pick the fan with rectangular base, set it on the Maroon mat, and face it toward the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200091,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Cyan",
+        "{a}": "left"
+      },
+      "instruction": "Grab the fan with rectangular base, position it to face the robot, and place it on the Cyan mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200092,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Brown",
+        "{a}": "left"
+      },
+      "instruction": "Grab the white fan with adjustable arm, position it to face the robot, and place it on the Brown mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200093,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Maroon",
+        "{a}": "left"
+      },
+      "instruction": "Place the small fan on the Maroon colored mat ensuring it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200094,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Olive",
+        "{a}": "right"
+      },
+      "instruction": "Pick up the round white fan and ensure it faces the robot on the Olive mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200095,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Silver",
+        "{a}": "right"
+      },
+      "instruction": "Using the right arm, grab the fan with rounded rectangular body, face it towards the robot, and set it on the Silver mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200096,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Yellow",
+        "{a}": "right"
+      },
+      "instruction": "Pick up the portable white fan with the right arm, place it on the Yellow mat, and turn it toward the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200097,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Black",
+        "{a}": "left"
+      },
+      "instruction": "Lift the fan with beige grilles, align it toward the robot, and position it on the Black mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200098,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Silver",
+        "{a}": "right"
+      },
+      "instruction": "Grab the handheld fan with circular blade housing and carefully place it on the Silver mat facing toward the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200099,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Purple",
+        "{a}": "left"
+      },
+      "instruction": "Grab the small fan, position it to face the robot, and place it on the Purple mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200100,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Brown",
+        "{a}": "right"
+      },
+      "instruction": "Grab the small cooling device fan with the right arm, set it on the Brown mat, and align it to face the robot",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200101,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Yellow",
+        "{a}": "left"
+      },
+      "instruction": "Using the left arm, grab the table fan with white finish and put it on the Yellow mat facing the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200102,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Yellow",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to pick the compact plastic fan, set it on the Yellow mat, and face it toward the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200103,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Teal",
+        "{a}": "left"
+      },
+      "instruction": "Put the round white fan on the Teal mat and make sure it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200104,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Beige",
+        "{a}": "left"
+      },
+      "instruction": "Take the portable white fan with the left arm, put it on the Beige mat, and make it face the robot",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200105,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Coral",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to pick up the smooth off-white plastic fan and place it on Coral mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200106,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Brown",
+        "{a}": "left"
+      },
+      "instruction": "Set the lightweight plastic adjustable fan on the Brown mat and make sure it faces the robot",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200108,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Magenta",
+        "{a}": "left"
+      },
+      "instruction": "Pick the handheld fan with circular blade housing with the left arm, align it to face the robot, and set it on the Magenta mat.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200109,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Yellow",
+        "{a}": "left"
+      },
+      "instruction": "Place the fan with beige grilles on the Yellow mat and verify it is facing the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200110,
+      "scene_info": {
+        "{A}": "099_fan/base5",
+        "{B}": "Navy",
+        "{a}": "right"
+      },
+      "instruction": "Pick the plastic fan with smooth finish, place it on the Navy mat, and ensure it points toward the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200111,
+      "scene_info": {
+        "{A}": "099_fan/base4",
+        "{B}": "Olive",
+        "{a}": "left"
+      },
+      "instruction": "Grab the fan with grid cover and position it on the Olive mat, ensuring it faces the robot.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    }
+  ]
+}

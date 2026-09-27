@@ -1,0 +1,10 @@
+.DS_Store
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+artifacts/
+*.collect.lock
+episodes.progress.json
+third_party/Robotwin/assets/
+third_party/Robotwin/task_config/

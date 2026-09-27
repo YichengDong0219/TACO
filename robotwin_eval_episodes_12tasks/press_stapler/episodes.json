@@ -1,0 +1,1220 @@
+{
+  "schema": "sva.robotwin.eval_episodes.v1",
+  "task": "press_stapler",
+  "task_config": "demo_clean",
+  "robotwin_root": "/newhome/xiexinyi/sva/RoboTwin",
+  "config_path": "/newhome/xiexinyi/sva/configs/robotwin_15tasks/sva_robotwin_press_stapler.yaml",
+  "seed_start": 200000,
+  "target_count": 100,
+  "attempted_count": 112,
+  "failure_counts": {
+    "expert_error": 3,
+    "planned_joints_illegal": 8,
+    "planning_failed": 1
+  },
+  "instruction_split": "seen",
+  "language_num": 100,
+  "created_at": "2026-09-21T06:14:30.845998+00:00",
+  "episodes": [
+    {
+      "episode_id": 200000,
+      "scene_info": {
+        "{A}": "048_stapler/base3",
+        "{a}": "right"
+      },
+      "instruction": "Push the top of the paper stapler with silver tray down",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200001,
+      "scene_info": {
+        "{A}": "048_stapler/base0",
+        "{a}": "left"
+      },
+      "instruction": "Push the top of the blue stapler with shiny silver parts down",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200002,
+      "scene_info": {
+        "{A}": "048_stapler/base4",
+        "{a}": "left"
+      },
+      "instruction": "Push down on the stapler with red top firmly.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200003,
+      "scene_info": {
+        "{A}": "048_stapler/base5",
+        "{a}": "left"
+      },
+      "instruction": "Push down on the lightweight red stapler to staple",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200004,
+      "scene_info": {
+        "{A}": "048_stapler/base5",
+        "{a}": "left"
+      },
+      "instruction": "Lower the metallic stapler with red body using an arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200005,
+      "scene_info": {
+        "{A}": "048_stapler/base3",
+        "{a}": "right"
+      },
+      "instruction": "Firmly push the stapler with rounded edges using the right arm to operate it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200006,
+      "scene_info": {
+        "{A}": "048_stapler/base1",
+        "{a}": "right"
+      },
+      "instruction": "Apply pressure to the black stapler for joining pages firmly",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200007,
+      "scene_info": {
+        "{A}": "048_stapler/base6",
+        "{a}": "right"
+      },
+      "instruction": "Simply press the stapler the blue stapler downward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200008,
+      "scene_info": {
+        "{A}": "048_stapler/base3",
+        "{a}": "left"
+      },
+      "instruction": "Push down on the stapler the white body stapler with accents.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200010,
+      "scene_info": {
+        "{A}": "048_stapler/base4",
+        "{a}": "left"
+      },
+      "instruction": "Push the stapler the stapler for fastening papers to activate it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200011,
+      "scene_info": {
+        "{A}": "048_stapler/base0",
+        "{a}": "right"
+      },
+      "instruction": "Apply pressure to the metallic stapler with blue cover with the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200012,
+      "scene_info": {
+        "{A}": "048_stapler/base1",
+        "{a}": "left"
+      },
+      "instruction": "Push the handheld black stapler until it staples.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200014,
+      "scene_info": {
+        "{A}": "048_stapler/base5",
+        "{a}": "right"
+      },
+      "instruction": "Push down on the plastic stapler with metal top to staple",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200015,
+      "scene_info": {
+        "{A}": "048_stapler/base2",
+        "{a}": "left"
+      },
+      "instruction": "Firmly push down on the plastic blue stapler with metal parts.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200016,
+      "scene_info": {
+        "{A}": "048_stapler/base5",
+        "{a}": "left"
+      },
+      "instruction": "Apply one arm the left arm to press the red stapler firmly.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200017,
+      "scene_info": {
+        "{A}": "048_stapler/base0",
+        "{a}": "right"
+      },
+      "instruction": "Push the blue stapler with shiny silver parts until it staples.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200018,
+      "scene_info": {
+        "{A}": "048_stapler/base5",
+        "{a}": "left"
+      },
+      "instruction": "Use an arm to press the compact red stapler with silver accents",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200019,
+      "scene_info": {
+        "{A}": "048_stapler/base5",
+        "{a}": "left"
+      },
+      "instruction": "Press the red stapler for binding papers downward using your arm the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200020,
+      "scene_info": {
+        "{A}": "048_stapler/base4",
+        "{a}": "left"
+      },
+      "instruction": "Firmly push the compact office stapler using the left arm to operate it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200021,
+      "scene_info": {
+        "{A}": "048_stapler/base1",
+        "{a}": "left"
+      },
+      "instruction": "Push down on the stapler the compact black stapler.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200022,
+      "scene_info": {
+        "{A}": "048_stapler/base6",
+        "{a}": "right"
+      },
+      "instruction": "Use your arm the right arm to push the handy blue stapler with metal parts down.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200024,
+      "scene_info": {
+        "{A}": "048_stapler/base3",
+        "{a}": "right"
+      },
+      "instruction": "Push the stapler the handheld stapler to operate it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200025,
+      "scene_info": {
+        "{A}": "048_stapler/base1",
+        "{a}": "right"
+      },
+      "instruction": "Apply pressure to the small black stapler with metal core with the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200026,
+      "scene_info": {
+        "{A}": "048_stapler/base1",
+        "{a}": "left"
+      },
+      "instruction": "Use one arm to press the compact black stapler.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200027,
+      "scene_info": {
+        "{A}": "048_stapler/base4",
+        "{a}": "left"
+      },
+      "instruction": "Use your the left arm to press the stapler the small handheld stapler.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200030,
+      "scene_info": {
+        "{A}": "048_stapler/base3",
+        "{a}": "left"
+      },
+      "instruction": "Press down on the stapler the stapler with orange button firmly.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200031,
+      "scene_info": {
+        "{A}": "048_stapler/base5",
+        "{a}": "right"
+      },
+      "instruction": "Use one arm the right arm to press the lightweight red stapler.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200033,
+      "scene_info": {
+        "{A}": "048_stapler/base6",
+        "{a}": "right"
+      },
+      "instruction": "Use one arm to press the stapler with blue plastic handle.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200034,
+      "scene_info": {
+        "{A}": "048_stapler/base1",
+        "{a}": "left"
+      },
+      "instruction": "Apply one arm the left arm to press the black stapler with curved top firmly.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200035,
+      "scene_info": {
+        "{A}": "048_stapler/base0",
+        "{a}": "right"
+      },
+      "instruction": "Press the compact stapler with smooth surface to complete the task.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200036,
+      "scene_info": {
+        "{A}": "048_stapler/base1",
+        "{a}": "right"
+      },
+      "instruction": "Apply pressure to the curved black stapler with the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200037,
+      "scene_info": {
+        "{A}": "048_stapler/base2",
+        "{a}": "left"
+      },
+      "instruction": "Press the small lightweight blue stapler to staple the sheets together.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200038,
+      "scene_info": {
+        "{A}": "048_stapler/base3",
+        "{a}": "left"
+      },
+      "instruction": "Press the handheld stapler firmly to staple",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200039,
+      "scene_info": {
+        "{A}": "048_stapler/base4",
+        "{a}": "right"
+      },
+      "instruction": "Use one arm to press the stapler with red top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200040,
+      "scene_info": {
+        "{A}": "048_stapler/base1",
+        "{a}": "left"
+      },
+      "instruction": "Apply force to the black smooth-textured stapler to staple.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200041,
+      "scene_info": {
+        "{A}": "048_stapler/base3",
+        "{a}": "right"
+      },
+      "instruction": "Engage the stapler with rounded edges by using the right arm to press it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200042,
+      "scene_info": {
+        "{A}": "048_stapler/base2",
+        "{a}": "left"
+      },
+      "instruction": "Push the compact blue stapler down completely",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200043,
+      "scene_info": {
+        "{A}": "048_stapler/base0",
+        "{a}": "left"
+      },
+      "instruction": "Press the plastic stapler with metal on base downward using your arm the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200044,
+      "scene_info": {
+        "{A}": "048_stapler/base5",
+        "{a}": "left"
+      },
+      "instruction": "Press the metallic stapler with red body until it works",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200045,
+      "scene_info": {
+        "{A}": "048_stapler/base5",
+        "{a}": "right"
+      },
+      "instruction": "Apply pressure to the stapler in bright red color with the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200047,
+      "scene_info": {
+        "{A}": "048_stapler/base2",
+        "{a}": "left"
+      },
+      "instruction": "Press the stapler the handheld stapler using an arm the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200048,
+      "scene_info": {
+        "{A}": "048_stapler/base4",
+        "{a}": "right"
+      },
+      "instruction": "Push the stapler the desk stapler with red body with the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200049,
+      "scene_info": {
+        "{A}": "048_stapler/base4",
+        "{a}": "left"
+      },
+      "instruction": "Press on the stapler with red top using the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200050,
+      "scene_info": {
+        "{A}": "048_stapler/base5",
+        "{a}": "left"
+      },
+      "instruction": "Press on the stapler in bright red color using the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200051,
+      "scene_info": {
+        "{A}": "048_stapler/base1",
+        "{a}": "right"
+      },
+      "instruction": "Place pressure on the black stapler with smooth finish to staple.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200052,
+      "scene_info": {
+        "{A}": "048_stapler/base6",
+        "{a}": "right"
+      },
+      "instruction": "Press down on the stapler the blue stapler with silver staple tray firmly.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200053,
+      "scene_info": {
+        "{A}": "048_stapler/base4",
+        "{a}": "left"
+      },
+      "instruction": "Push the stapler the stapler with metallic staple slot with the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200054,
+      "scene_info": {
+        "{A}": "048_stapler/base2",
+        "{a}": "left"
+      },
+      "instruction": "Use one arm to press the blue stapler with black handle area.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200056,
+      "scene_info": {
+        "{A}": "048_stapler/base0",
+        "{a}": "left"
+      },
+      "instruction": "Press down on the stapler the blue plastic stapler with silver metal firmly.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200057,
+      "scene_info": {
+        "{A}": "048_stapler/base2",
+        "{a}": "right"
+      },
+      "instruction": "Firmly press down on the compact blue stapler to staple.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200058,
+      "scene_info": {
+        "{A}": "048_stapler/base6",
+        "{a}": "right"
+      },
+      "instruction": "Use your arm the right arm to push the compact bright blue stapler down.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200059,
+      "scene_info": {
+        "{A}": "048_stapler/base6",
+        "{a}": "left"
+      },
+      "instruction": "Push down firmly on the blue stapler to complete.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200060,
+      "scene_info": {
+        "{A}": "048_stapler/base3",
+        "{a}": "right"
+      },
+      "instruction": "Simply press the stapler the stapler for fastening papers downward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200061,
+      "scene_info": {
+        "{A}": "048_stapler/base4",
+        "{a}": "right"
+      },
+      "instruction": "Press the desk stapler with red body to complete the task.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200062,
+      "scene_info": {
+        "{A}": "048_stapler/base3",
+        "{a}": "right"
+      },
+      "instruction": "Push the stapler the handheld stapler with the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200063,
+      "scene_info": {
+        "{A}": "048_stapler/base6",
+        "{a}": "left"
+      },
+      "instruction": "Simply press the stapler the plastic stapler with silver mechanism downward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200064,
+      "scene_info": {
+        "{A}": "048_stapler/base5",
+        "{a}": "left"
+      },
+      "instruction": "Press down on the stapler the red stapler for binding papers firmly.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200065,
+      "scene_info": {
+        "{A}": "048_stapler/base5",
+        "{a}": "left"
+      },
+      "instruction": "Apply pressure on the stapler with rectangular silver mechanism until it works.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200066,
+      "scene_info": {
+        "{A}": "048_stapler/base6",
+        "{a}": "right"
+      },
+      "instruction": "Apply force to the blue stapler for paper fastening with the right arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200067,
+      "scene_info": {
+        "{A}": "048_stapler/base0",
+        "{a}": "right"
+      },
+      "instruction": "Apply one arm the right arm to press the handheld blue and silver stapler firmly.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200068,
+      "scene_info": {
+        "{A}": "048_stapler/base1",
+        "{a}": "left"
+      },
+      "instruction": "Simply press the stapler the black stapler with curved top downward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200069,
+      "scene_info": {
+        "{A}": "048_stapler/base2",
+        "{a}": "right"
+      },
+      "instruction": "Press the stapler the small stapler using an arm the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200070,
+      "scene_info": {
+        "{A}": "048_stapler/base4",
+        "{a}": "right"
+      },
+      "instruction": "Press the stapler the red plastic stapler with smooth top using an arm the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200071,
+      "scene_info": {
+        "{A}": "048_stapler/base2",
+        "{a}": "right"
+      },
+      "instruction": "Push down on the blue stapler to staple",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200072,
+      "scene_info": {
+        "{A}": "048_stapler/base4",
+        "{a}": "left"
+      },
+      "instruction": "Apply force to the stapler with red top to staple.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200073,
+      "scene_info": {
+        "{A}": "048_stapler/base0",
+        "{a}": "right"
+      },
+      "instruction": "Use your the right arm to press the stapler the manual blue stapler.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200074,
+      "scene_info": {
+        "{A}": "048_stapler/base1",
+        "{a}": "left"
+      },
+      "instruction": "Apply force to the stapler with silver staple tray with the left arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200075,
+      "scene_info": {
+        "{A}": "048_stapler/base5",
+        "{a}": "right"
+      },
+      "instruction": "Place pressure on the metallic stapler with red body to staple.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200076,
+      "scene_info": {
+        "{A}": "048_stapler/base3",
+        "{a}": "left"
+      },
+      "instruction": "Firmly press down on the white body stapler with accents to staple.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200077,
+      "scene_info": {
+        "{A}": "048_stapler/base5",
+        "{a}": "left"
+      },
+      "instruction": "Lower the left arm onto the stapler the metallic stapler with red body.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200078,
+      "scene_info": {
+        "{A}": "048_stapler/base3",
+        "{a}": "right"
+      },
+      "instruction": "Apply pressure on the white body stapler with accents until it works.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200079,
+      "scene_info": {
+        "{A}": "048_stapler/base6",
+        "{a}": "right"
+      },
+      "instruction": "Press on the stapler with blue plastic handle using the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200080,
+      "scene_info": {
+        "{A}": "048_stapler/base1",
+        "{a}": "right"
+      },
+      "instruction": "Use an arm to press the stapler with silver staple tray",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200082,
+      "scene_info": {
+        "{A}": "048_stapler/base3",
+        "{a}": "right"
+      },
+      "instruction": "Use your arm the right arm to push the stapler for fastening papers down.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200083,
+      "scene_info": {
+        "{A}": "048_stapler/base4",
+        "{a}": "left"
+      },
+      "instruction": "Push the top of the red plastic stapler with smooth top down",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200084,
+      "scene_info": {
+        "{A}": "048_stapler/base3",
+        "{a}": "right"
+      },
+      "instruction": "Place pressure on the white body stapler with accents to staple.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200086,
+      "scene_info": {
+        "{A}": "048_stapler/base4",
+        "{a}": "right"
+      },
+      "instruction": "Press the red stapler to complete the task.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200087,
+      "scene_info": {
+        "{A}": "048_stapler/base2",
+        "{a}": "left"
+      },
+      "instruction": "Place pressure on the plastic blue stapler with metal parts to staple.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200089,
+      "scene_info": {
+        "{A}": "048_stapler/base1",
+        "{a}": "left"
+      },
+      "instruction": "Firmly press down on the black smooth-textured stapler to staple.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200090,
+      "scene_info": {
+        "{A}": "048_stapler/base2",
+        "{a}": "right"
+      },
+      "instruction": "Push the stapler the plastic blue stapler with metal parts to activate it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200091,
+      "scene_info": {
+        "{A}": "048_stapler/base2",
+        "{a}": "left"
+      },
+      "instruction": "Push down firmly on the stapler with white metallic components to complete.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200092,
+      "scene_info": {
+        "{A}": "048_stapler/base0",
+        "{a}": "left"
+      },
+      "instruction": "Press down on the handheld blue and silver stapler until it functions.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200093,
+      "scene_info": {
+        "{A}": "048_stapler/base0",
+        "{a}": "left"
+      },
+      "instruction": "Engage the curved blue and silver stapler by using the left arm to press it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200094,
+      "scene_info": {
+        "{A}": "048_stapler/base2",
+        "{a}": "right"
+      },
+      "instruction": "Press the plastic blue stapler with metal parts until it works",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200095,
+      "scene_info": {
+        "{A}": "048_stapler/base5",
+        "{a}": "right"
+      },
+      "instruction": "Apply pressure on the metallic stapler with red body until it works.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200096,
+      "scene_info": {
+        "{A}": "048_stapler/base0",
+        "{a}": "right"
+      },
+      "instruction": "Use your the right arm to press the stapler the metallic stapler with blue cover.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200097,
+      "scene_info": {
+        "{A}": "048_stapler/base5",
+        "{a}": "left"
+      },
+      "instruction": "Push the stapler the red stapler for binding papers to operate it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200098,
+      "scene_info": {
+        "{A}": "048_stapler/base3",
+        "{a}": "right"
+      },
+      "instruction": "Push down hard on the white stapler with rounded design with the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200099,
+      "scene_info": {
+        "{A}": "048_stapler/base0",
+        "{a}": "left"
+      },
+      "instruction": "Press the curved blue and silver stapler to staple the sheets together.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200100,
+      "scene_info": {
+        "{A}": "048_stapler/base3",
+        "{a}": "right"
+      },
+      "instruction": "Simply press the stapler the plastic and metal stapler downward.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200101,
+      "scene_info": {
+        "{A}": "048_stapler/base6",
+        "{a}": "left"
+      },
+      "instruction": "Operate the simple stapler by pressing it with the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200102,
+      "scene_info": {
+        "{A}": "048_stapler/base4",
+        "{a}": "left"
+      },
+      "instruction": "Use your arm the left arm to push the office stapler with plastic and metal parts down.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200103,
+      "scene_info": {
+        "{A}": "048_stapler/base4",
+        "{a}": "left"
+      },
+      "instruction": "Lower the left arm onto the stapler the red stapler.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200104,
+      "scene_info": {
+        "{A}": "048_stapler/base6",
+        "{a}": "left"
+      },
+      "instruction": "Engage the blue stapler with white accents by using the left arm to press it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200105,
+      "scene_info": {
+        "{A}": "048_stapler/base3",
+        "{a}": "right"
+      },
+      "instruction": "Push down on the white stapler with rounded design to staple",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200107,
+      "scene_info": {
+        "{A}": "048_stapler/base1",
+        "{a}": "left"
+      },
+      "instruction": "Place pressure on the small black stapler with metal core to staple.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200108,
+      "scene_info": {
+        "{A}": "048_stapler/base3",
+        "{a}": "left"
+      },
+      "instruction": "Push down on the plastic and metal stapler to staple papers.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200109,
+      "scene_info": {
+        "{A}": "048_stapler/base1",
+        "{a}": "left"
+      },
+      "instruction": "Push down on the black stapler with curved top to staple",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200110,
+      "scene_info": {
+        "{A}": "048_stapler/base5",
+        "{a}": "right"
+      },
+      "instruction": "Apply pressure on the red stapler until it works.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200111,
+      "scene_info": {
+        "{A}": "048_stapler/base0",
+        "{a}": "left"
+      },
+      "instruction": "Push down on the stapler the handheld blue and silver stapler.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    }
+  ]
+}

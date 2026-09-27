@@ -1,0 +1,1416 @@
+{
+  "schema": "sva.robotwin.eval_episodes.v1",
+  "task": "stack_blocks_two",
+  "task_config": "demo_clean",
+  "robotwin_root": "/newhome/xiexinyi/sva/RoboTwin",
+  "config_path": "/newhome/xiexinyi/sva/configs/robotwin_15tasks/sva_robotwin_stack_blocks_two.yaml",
+  "seed_start": 200000,
+  "target_count": 100,
+  "attempted_count": 100,
+  "failure_counts": {},
+  "instruction_split": "seen",
+  "language_num": 100,
+  "created_at": "2026-09-21T06:19:13.087569+00:00",
+  "episodes": [
+    {
+      "episode_id": 200000,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Use the right arm to move red block and the left arm to position green block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200001,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Use the left arm to move red block and the right arm to move green block to the center, then place green block onto red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200002,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "left"
+      },
+      "instruction": "Pick up red block with the left arm and green block with the left arm, move both to the table's center and stack green block over red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200003,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Set red block at the center, then stack green block over red block after placing it alongside.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200004,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Use the left arm to move red block, then the right arm to stack green block on red block at the center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200005,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Set red block at the center, then stack green block over red block after placing it alongside.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200006,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Shift red block and green block to the center, then position green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200007,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "the right arm takes red block, sets it in the center, the left arm places green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200008,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "left"
+      },
+      "instruction": "Use the left arm to move red block, then the left arm to stack green block on red block at the center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200009,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Set red block at the center, then stack green block over red block after placing it alongside.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200010,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Use the left arm to move red block, then the right arm to stack green block on red block at the center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200011,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Shift red block and green block to the middle, then stack green block over red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200012,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "left"
+      },
+      "instruction": "Relocate red block and green block to the center, then layer green block over red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200013,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "the right arm takes red block, sets it in the center, the left arm places green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200014,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Center red block using the left arm, then stack green block with the right arm on top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200015,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Move red block and green block to the center, then stack green block above red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200016,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Set red block in the center, then position green block on top of it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200017,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Utilize the right arm to grab red block and the left arm to grab green block, move them to the middle, and stack green block above red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200018,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Use the left arm to move red block and the right arm to move green block to the center, then place green block onto red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200019,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Place red block and green block together at the center, then stack green block on top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200020,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Move red block and green block to the center, then stack green block above red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200021,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Use the right arm to move red block and the left arm to stack green block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200022,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Relocate red block and green block to the center, then layer green block over red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200023,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "left"
+      },
+      "instruction": "Pick up red block with the left arm and green block with the left arm, move both to the table's center and stack green block over red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200024,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "left"
+      },
+      "instruction": "Use the left arm for red block, place it in the center, then use the left arm to stack green block above red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200025,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Pick up red block and green block, set them at the center, then position green block above red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200026,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Grab red block, set it in the center, then stack green block over it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200027,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Center red block using the left arm, then stack green block with the right arm on top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200028,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Pick up red block with the left arm and green block with the right arm, move both to the table's center and stack green block over red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200029,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Position red block at the center and stack green block above it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200030,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Place red block and green block centrally, then stack green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200031,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Use the right arm to move red block, then the left arm to stack green block on red block at the center.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200032,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Use the left arm to place red block in the center; stack green block on it with the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200033,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Pick up red block with the right arm and green block with the left arm, move both to the table's center and stack green block over red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200034,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Grab red block using the left arm, position it at the center, and do the same for green block using the right arm, stacking green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200035,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Relocate red block and green block to the center, then layer green block over red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200036,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Grab red block using the left arm, position it at the center, and do the same for green block using the right arm, stacking green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200037,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Place red block and green block in the center, then stack green block above red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200038,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Place red block and green block at the center and then put green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200039,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Grab red block, set it in the center, then stack green block over it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200040,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Pick up red block and green block, set them at the center, then position green block above red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200041,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Place red block and green block in the center, then stack green block above red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200042,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Use the left arm for red block, place it in the center, then use the right arm to stack green block above red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200043,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Center red block and green block on the table and stack green block on top of red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200044,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "left"
+      },
+      "instruction": "Set red block in the center, then position green block on top of it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200045,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Pick up red block and green block, set them at the center, then position green block above red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200046,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Relocate red block and green block to the table's midpoint, and stack green block on top of red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200047,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Move red block to the middle and put green block on top of it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200048,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "left"
+      },
+      "instruction": "Use the left arm to move red block and the left arm to move green block to the center, then place green block onto red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200049,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Set red block at the center, then stack green block over red block after placing it alongside.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200050,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "left"
+      },
+      "instruction": "Shift red block and green block to the center, then position green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200051,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "right"
+      },
+      "instruction": "the right arm takes red block, sets it in the center, the right arm places green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200052,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Move red block and green block to the center, then stack green block above red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200053,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Shift red block to the center and place green block on top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200054,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Center red block using the left arm, then stack green block with the right arm on top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200055,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Move red block and green block to the center, then stack green block above red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200056,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Use the left arm to move red block and the right arm to move green block to the center, then place green block onto red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200057,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "right"
+      },
+      "instruction": "Utilize the right arm to grab red block and the right arm to grab green block, move them to the middle, and stack green block above red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200058,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "the left arm grabs red block, places it in the center, the right arm stacks green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200059,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "the right arm takes red block, sets it in the center, the left arm places green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200060,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Set red block and green block at the table's center, then stack green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200061,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Use the right arm to move red block and the left arm to stack green block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200062,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "right"
+      },
+      "instruction": "Move red block and green block to the center, using the right arm and the right arm, and stack green block on top of red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200063,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "the left arm grabs red block, places it in the center, the right arm stacks green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200064,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Grab red block, set it in the center, then stack green block over it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200065,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Use the right arm to center red block, then stack green block with the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200066,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "the right arm takes red block, sets it in the center, the left arm places green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200067,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Set red block in the center, then position green block on top of it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200068,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Place red block and green block at the center and then put green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200069,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Pick up red block with the right arm and green block with the left arm, move both to the table's center and stack green block over red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200070,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "right"
+      },
+      "instruction": "Use the right arm to move red block and the right arm to position green block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200071,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "right"
+      },
+      "instruction": "Move red block to the center using the right arm, then stack green block on red block using the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200072,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Bring red block to the center, then stack green block over it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200073,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "right"
+      },
+      "instruction": "the right arm relocates red block and the right arm moves green block, then stacks green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200074,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Move red block with the left arm, then stack green block on it using the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200075,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Utilize the right arm to grab red block and the left arm to grab green block, move them to the middle, and stack green block above red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200076,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Move red block to the center using the left arm, then stack green block on red block using the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200077,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Place red block and green block together at the center, then stack green block on top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200078,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Position red block and green block at the center, then stack green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200079,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Center red block using the right arm, then stack green block with the left arm on top.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200080,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "the right arm takes red block, sets it in the center, the left arm places green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200081,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Center red block and green block on the table and stack green block on top of red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200082,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Bring red block to the center, then stack green block over it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200083,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Set red block at the center, then stack green block over red block after placing it alongside.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200084,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "the right arm takes red block, sets it in the center, the left arm places green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200085,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Position red block at the center and stack green block above it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200086,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Move red block to the middle and put green block on top of it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200087,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Put red block in the center, then add green block above it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200088,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Move red block and green block to the center, then stack green block above red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200089,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "the left arm grabs red block, places it in the center, the right arm stacks green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200090,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Set red block and green block at the table's center, then stack green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200091,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "right"
+      },
+      "instruction": "Set red block and green block at the table's center, then stack green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200092,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "Use the left arm to move red block and the right arm to stack green block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200093,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "left"
+      },
+      "instruction": "Grab red block using the left arm, position it at the center, and do the same for green block using the left arm, stacking green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200094,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "the right arm grabs red block, places it in the center, the left arm stacks green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200095,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "the right arm relocates red block and the left arm moves green block, then stacks green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200096,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "left"
+      },
+      "instruction": "Use the left arm to move red block and the left arm to stack green block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200097,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Move red block to the middle and put green block on top of it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200098,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "right",
+        "{b}": "left"
+      },
+      "instruction": "Set red block at the center, then stack green block over red block after placing it alongside.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200099,
+      "scene_info": {
+        "{A}": "red block",
+        "{B}": "green block",
+        "{a}": "left",
+        "{b}": "right"
+      },
+      "instruction": "the left arm grabs red block, places it in the center, the right arm stacks green block on red block.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    }
+  ]
+}

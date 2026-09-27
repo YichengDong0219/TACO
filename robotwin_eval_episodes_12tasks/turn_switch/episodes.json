@@ -1,0 +1,1220 @@
+{
+  "schema": "sva.robotwin.eval_episodes.v1",
+  "task": "turn_switch",
+  "task_config": "demo_clean",
+  "robotwin_root": "/newhome/xiexinyi/sva/RoboTwin",
+  "config_path": "/newhome/xiexinyi/sva/configs/robotwin_15tasks/sva_robotwin_turn_switch.yaml",
+  "seed_start": 200000,
+  "target_count": 100,
+  "attempted_count": 119,
+  "failure_counts": {
+    "expert_check_failed": 3,
+    "planned_joints_illegal": 1,
+    "planning_failed": 15
+  },
+  "instruction_split": "seen",
+  "language_num": 100,
+  "created_at": "2026-09-21T06:21:39.295911+00:00",
+  "episodes": [
+    {
+      "episode_id": 200000,
+      "scene_info": {
+        "{A}": "056_switch/base4",
+        "{a}": "right"
+      },
+      "instruction": "Tap the switch for turning circuits on off to engage it",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200001,
+      "scene_info": {
+        "{A}": "056_switch/base1",
+        "{a}": "left"
+      },
+      "instruction": "Direct the left arm to operate the switch with rectangular dark button",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200002,
+      "scene_info": {
+        "{A}": "056_switch/base5",
+        "{a}": "right"
+      },
+      "instruction": "Activate the square gray switch panel with the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200004,
+      "scene_info": {
+        "{A}": "056_switch/base2",
+        "{a}": "left"
+      },
+      "instruction": "Trigger the rectangular switch with slanted sides without referencing the left arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200005,
+      "scene_info": {
+        "{A}": "056_switch/base5",
+        "{a}": "left"
+      },
+      "instruction": "Activate the switch for electrical control using the left arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200007,
+      "scene_info": {
+        "{A}": "056_switch/base4",
+        "{a}": "left"
+      },
+      "instruction": "Activate the red and black electrical switch with the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200008,
+      "scene_info": {
+        "{A}": "056_switch/base4",
+        "{a}": "left"
+      },
+      "instruction": "Tap the metal-pronged black switch to engage it",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200009,
+      "scene_info": {
+        "{A}": "056_switch/base4",
+        "{a}": "right"
+      },
+      "instruction": "Push the tiny rectangular switch via the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200010,
+      "scene_info": {
+        "{A}": "056_switch/base6",
+        "{a}": "left"
+      },
+      "instruction": "Deploy the left arm to operate the electrical switch with protruding toggle",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200011,
+      "scene_info": {
+        "{A}": "056_switch/base7",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to engage the electric toggle switch",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200012,
+      "scene_info": {
+        "{A}": "056_switch/base0",
+        "{a}": "right"
+      },
+      "instruction": "Press the red and black switch via automation",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200013,
+      "scene_info": {
+        "{A}": "056_switch/base1",
+        "{a}": "left"
+      },
+      "instruction": "Press the switch with rectangular dark button via automation",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200015,
+      "scene_info": {
+        "{A}": "056_switch/base0",
+        "{a}": "right"
+      },
+      "instruction": "Direct the right arm to operate the black switch",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200016,
+      "scene_info": {
+        "{A}": "056_switch/base6",
+        "{a}": "left"
+      },
+      "instruction": "Operate the square switch with red bar with the left arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200017,
+      "scene_info": {
+        "{A}": "056_switch/base4",
+        "{a}": "right"
+      },
+      "instruction": "Engage the black base switch using the right arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200018,
+      "scene_info": {
+        "{A}": "056_switch/base5",
+        "{a}": "left"
+      },
+      "instruction": "Engage the smooth gray switch using the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200019,
+      "scene_info": {
+        "{A}": "056_switch/base1",
+        "{a}": "right"
+      },
+      "instruction": "Direct the right arm to operate the toggle switch with brown rectangle button",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200021,
+      "scene_info": {
+        "{A}": "056_switch/base5",
+        "{a}": "left"
+      },
+      "instruction": "Deploy the left arm to press the square switch with smooth surface",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200022,
+      "scene_info": {
+        "{A}": "056_switch/base3",
+        "{a}": "right"
+      },
+      "instruction": "Approach and tap the control switch via the right arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200023,
+      "scene_info": {
+        "{A}": "056_switch/base7",
+        "{a}": "left"
+      },
+      "instruction": "Locate and press the gray base with black buttons",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200024,
+      "scene_info": {
+        "{A}": "056_switch/base2",
+        "{a}": "left"
+      },
+      "instruction": "Push the trapezoid-shaped switch smooth surface via the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200025,
+      "scene_info": {
+        "{A}": "056_switch/base0",
+        "{a}": "right"
+      },
+      "instruction": "Operate the rectangular switch with curved lever with the right arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200026,
+      "scene_info": {
+        "{A}": "056_switch/base7",
+        "{a}": "left"
+      },
+      "instruction": "Deploy the left arm to press the electric toggle switch",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200027,
+      "scene_info": {
+        "{A}": "056_switch/base1",
+        "{a}": "left"
+      },
+      "instruction": "Approach and tap the switch with a smooth top via the left arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200028,
+      "scene_info": {
+        "{A}": "056_switch/base7",
+        "{a}": "right"
+      },
+      "instruction": "Engage the handheld switch using the right arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200029,
+      "scene_info": {
+        "{A}": "056_switch/base1",
+        "{a}": "left"
+      },
+      "instruction": "Activate the toggle switch with brown rectangle button with robotic precision",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200030,
+      "scene_info": {
+        "{A}": "056_switch/base6",
+        "{a}": "left"
+      },
+      "instruction": "Deploy the left arm to operate the compact switch with flat base",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200031,
+      "scene_info": {
+        "{A}": "056_switch/base5",
+        "{a}": "right"
+      },
+      "instruction": "Operate the palm-sized light gray switch with the right arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200032,
+      "scene_info": {
+        "{A}": "056_switch/base7",
+        "{a}": "left"
+      },
+      "instruction": "Interact with the gray smooth surface switch.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200033,
+      "scene_info": {
+        "{A}": "056_switch/base7",
+        "{a}": "right"
+      },
+      "instruction": "Push the trapezoidal base switch via the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200034,
+      "scene_info": {
+        "{A}": "056_switch/base7",
+        "{a}": "right"
+      },
+      "instruction": "Switch the gray switch with black buttons to its active state",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200036,
+      "scene_info": {
+        "{A}": "056_switch/base2",
+        "{a}": "left"
+      },
+      "instruction": "Engage the rectangular switch with slanted sides using the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200037,
+      "scene_info": {
+        "{A}": "056_switch/base0",
+        "{a}": "left"
+      },
+      "instruction": "Command the left arm to engage the rectangular switch with curved lever",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200038,
+      "scene_info": {
+        "{A}": "056_switch/base0",
+        "{a}": "right"
+      },
+      "instruction": "Interact with the hand-sized switch with connector prongs directly",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200039,
+      "scene_info": {
+        "{A}": "056_switch/base0",
+        "{a}": "left"
+      },
+      "instruction": "Press the switch with curved red toggle carefully with the left arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200040,
+      "scene_info": {
+        "{A}": "056_switch/base1",
+        "{a}": "right"
+      },
+      "instruction": "Direct the right arm to operate the matte beige switch with flat top",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200041,
+      "scene_info": {
+        "{A}": "056_switch/base5",
+        "{a}": "left"
+      },
+      "instruction": "Initiate the small square switch made of plastic by clicking",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200043,
+      "scene_info": {
+        "{A}": "056_switch/base5",
+        "{a}": "left"
+      },
+      "instruction": "Activate the flat square with raised center directly",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200044,
+      "scene_info": {
+        "{A}": "056_switch/base0",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to interact with the red-top black switch",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200045,
+      "scene_info": {
+        "{A}": "056_switch/base0",
+        "{a}": "left"
+      },
+      "instruction": "Deploy the left arm to press the small switch",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200046,
+      "scene_info": {
+        "{A}": "056_switch/base5",
+        "{a}": "right"
+      },
+      "instruction": "Activate the small square switch made of plastic by pressing it",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200047,
+      "scene_info": {
+        "{A}": "056_switch/base6",
+        "{a}": "right"
+      },
+      "instruction": "Tap the switch with thin red toggle to engage it",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200048,
+      "scene_info": {
+        "{A}": "056_switch/base2",
+        "{a}": "left"
+      },
+      "instruction": "Engage with the trapezoid-shaped switch smooth surface manually",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200049,
+      "scene_info": {
+        "{A}": "056_switch/base2",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to interact with the tan switch",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200050,
+      "scene_info": {
+        "{A}": "056_switch/base0",
+        "{a}": "left"
+      },
+      "instruction": "Push the switch with curved red toggle via the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200051,
+      "scene_info": {
+        "{A}": "056_switch/base1",
+        "{a}": "left"
+      },
+      "instruction": "Activate the hand-sized light beige switch via the left arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200053,
+      "scene_info": {
+        "{A}": "056_switch/base3",
+        "{a}": "right"
+      },
+      "instruction": "Use the right arm to engage the compact rectangular black switch",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200055,
+      "scene_info": {
+        "{A}": "056_switch/base4",
+        "{a}": "right"
+      },
+      "instruction": "Operate the right arm to engage the switch with three metal pins",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200058,
+      "scene_info": {
+        "{A}": "056_switch/base7",
+        "{a}": "left"
+      },
+      "instruction": "Engage the left arm to press the two-button gray switch",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200061,
+      "scene_info": {
+        "{A}": "056_switch/base5",
+        "{a}": "left"
+      },
+      "instruction": "Click the light gray plastic switch directly.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200062,
+      "scene_info": {
+        "{A}": "056_switch/base4",
+        "{a}": "right"
+      },
+      "instruction": "Operate the black base switch with the right arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200063,
+      "scene_info": {
+        "{A}": "056_switch/base4",
+        "{a}": "right"
+      },
+      "instruction": "Activate the switch with three metal pins using the right arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200064,
+      "scene_info": {
+        "{A}": "056_switch/base4",
+        "{a}": "left"
+      },
+      "instruction": "Initiate the toggle switch with black housing by clicking",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200065,
+      "scene_info": {
+        "{A}": "056_switch/base0",
+        "{a}": "right"
+      },
+      "instruction": "Press the black base switch with red toggle with the right arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200066,
+      "scene_info": {
+        "{A}": "056_switch/base4",
+        "{a}": "right"
+      },
+      "instruction": "Engage the smooth red switch with labels using the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200067,
+      "scene_info": {
+        "{A}": "056_switch/base3",
+        "{a}": "left"
+      },
+      "instruction": "Click the control switch using automated tools",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200068,
+      "scene_info": {
+        "{A}": "056_switch/base0",
+        "{a}": "left"
+      },
+      "instruction": "Toggle the small switch with the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200069,
+      "scene_info": {
+        "{A}": "056_switch/base2",
+        "{a}": "left"
+      },
+      "instruction": "Trigger the angled switch light tan color with precision",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200071,
+      "scene_info": {
+        "{A}": "056_switch/base4",
+        "{a}": "left"
+      },
+      "instruction": "Use the left arm to engage the plastic switch with metal prongs",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200072,
+      "scene_info": {
+        "{A}": "056_switch/base0",
+        "{a}": "right"
+      },
+      "instruction": "Activate the small switch by pressing it",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200073,
+      "scene_info": {
+        "{A}": "056_switch/base0",
+        "{a}": "right"
+      },
+      "instruction": "Click the black base switch with red toggle directly.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200074,
+      "scene_info": {
+        "{A}": "056_switch/base4",
+        "{a}": "left"
+      },
+      "instruction": "Engage with the black base switch manually",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200076,
+      "scene_info": {
+        "{A}": "056_switch/base2",
+        "{a}": "left"
+      },
+      "instruction": "Push the switch trapezoid shape brown marking via the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200077,
+      "scene_info": {
+        "{A}": "056_switch/base5",
+        "{a}": "right"
+      },
+      "instruction": "Toggle the palm-sized light gray switch with the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200079,
+      "scene_info": {
+        "{A}": "056_switch/base7",
+        "{a}": "left"
+      },
+      "instruction": "Trigger the plastic switch with matte buttons with precision",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200080,
+      "scene_info": {
+        "{A}": "056_switch/base6",
+        "{a}": "left"
+      },
+      "instruction": "Command the left arm to engage the control switch with red lever",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200081,
+      "scene_info": {
+        "{A}": "056_switch/base4",
+        "{a}": "right"
+      },
+      "instruction": "Press the smooth red switch with labels via automation",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200082,
+      "scene_info": {
+        "{A}": "056_switch/base5",
+        "{a}": "left"
+      },
+      "instruction": "Trigger the angled-edge gray square switch without referencing the left arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200083,
+      "scene_info": {
+        "{A}": "056_switch/base3",
+        "{a}": "left"
+      },
+      "instruction": "Engage the black switch with matte coating with a press.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200084,
+      "scene_info": {
+        "{A}": "056_switch/base7",
+        "{a}": "left"
+      },
+      "instruction": "Activate the two-button gray switch via the left arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200085,
+      "scene_info": {
+        "{A}": "056_switch/base4",
+        "{a}": "right"
+      },
+      "instruction": "Deploy the right arm to operate the tiny rectangular switch",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200086,
+      "scene_info": {
+        "{A}": "056_switch/base7",
+        "{a}": "right"
+      },
+      "instruction": "Operate the right arm to engage the switch with trapezoidal base",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200087,
+      "scene_info": {
+        "{A}": "056_switch/base4",
+        "{a}": "left"
+      },
+      "instruction": "Engage the switch for turning circuits on off using the left arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200088,
+      "scene_info": {
+        "{A}": "056_switch/base0",
+        "{a}": "right"
+      },
+      "instruction": "Toggle the black switch with metallic connectors with the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200089,
+      "scene_info": {
+        "{A}": "056_switch/base6",
+        "{a}": "left"
+      },
+      "instruction": "Command the left arm to engage the control switch with red lever",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200090,
+      "scene_info": {
+        "{A}": "056_switch/base3",
+        "{a}": "right"
+      },
+      "instruction": "Set the switch at the black switch",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200091,
+      "scene_info": {
+        "{A}": "056_switch/base6",
+        "{a}": "right"
+      },
+      "instruction": "Press the gray switch with red toggle using the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200092,
+      "scene_info": {
+        "{A}": "056_switch/base1",
+        "{a}": "left"
+      },
+      "instruction": "Move to the switch with brown button and click it.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200093,
+      "scene_info": {
+        "{A}": "056_switch/base0",
+        "{a}": "right"
+      },
+      "instruction": "Engage the black switch using the right arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200094,
+      "scene_info": {
+        "{A}": "056_switch/base5",
+        "{a}": "left"
+      },
+      "instruction": "Engage the flat square with raised center using the left arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200095,
+      "scene_info": {
+        "{A}": "056_switch/base2",
+        "{a}": "right"
+      },
+      "instruction": "Interact with the switch trapezoid shape brown marking.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200096,
+      "scene_info": {
+        "{A}": "056_switch/base4",
+        "{a}": "left"
+      },
+      "instruction": "Trigger the metal-pronged black switch using the left arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200097,
+      "scene_info": {
+        "{A}": "056_switch/base7",
+        "{a}": "left"
+      },
+      "instruction": "Set the switch at the switch with trapezoidal base",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200099,
+      "scene_info": {
+        "{A}": "056_switch/base4",
+        "{a}": "right"
+      },
+      "instruction": "Click the rectangular switch with robotic precision",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200100,
+      "scene_info": {
+        "{A}": "056_switch/base4",
+        "{a}": "right"
+      },
+      "instruction": "Tap the toggle switch with black housing to engage it",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200101,
+      "scene_info": {
+        "{A}": "056_switch/base4",
+        "{a}": "left"
+      },
+      "instruction": "Set the left arm to press the plastic switch with metal prongs",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200102,
+      "scene_info": {
+        "{A}": "056_switch/base7",
+        "{a}": "left"
+      },
+      "instruction": "Toggle the gray base with black buttons with the left arm.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200104,
+      "scene_info": {
+        "{A}": "056_switch/base6",
+        "{a}": "right"
+      },
+      "instruction": "Tap the switch for electrical control to engage it",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200105,
+      "scene_info": {
+        "{A}": "056_switch/base5",
+        "{a}": "left"
+      },
+      "instruction": "Deploy the left arm to press the flat square with raised center",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200106,
+      "scene_info": {
+        "{A}": "056_switch/base0",
+        "{a}": "left"
+      },
+      "instruction": "Click the plastic switch with metal terminals directly.",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200107,
+      "scene_info": {
+        "{A}": "056_switch/base7",
+        "{a}": "right"
+      },
+      "instruction": "Engage the gray switch with black buttons using the right arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200108,
+      "scene_info": {
+        "{A}": "056_switch/base7",
+        "{a}": "right"
+      },
+      "instruction": "Click the plastic switch with matte buttons with robotic precision",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200110,
+      "scene_info": {
+        "{A}": "056_switch/base2",
+        "{a}": "right"
+      },
+      "instruction": "Activate the switch with darker rectangle by pressing it",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200111,
+      "scene_info": {
+        "{A}": "056_switch/base2",
+        "{a}": "left"
+      },
+      "instruction": "Set the switch at the trapezoid-shaped switch smooth surface",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200112,
+      "scene_info": {
+        "{A}": "056_switch/base2",
+        "{a}": "left"
+      },
+      "instruction": "Activate the switch trapezoid shape brown marking via the left arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200113,
+      "scene_info": {
+        "{A}": "056_switch/base1",
+        "{a}": "left"
+      },
+      "instruction": "Operate the left arm to engage the switch with a smooth top",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200114,
+      "scene_info": {
+        "{A}": "056_switch/base6",
+        "{a}": "left"
+      },
+      "instruction": "Initiate the light gray square switch by clicking",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200115,
+      "scene_info": {
+        "{A}": "056_switch/base6",
+        "{a}": "left"
+      },
+      "instruction": "Press the switch carefully with the left arm",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200116,
+      "scene_info": {
+        "{A}": "056_switch/base6",
+        "{a}": "right"
+      },
+      "instruction": "Deploy the right arm to press the light gray square switch",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    },
+    {
+      "episode_id": 200118,
+      "scene_info": {
+        "{A}": "056_switch/base6",
+        "{a}": "left"
+      },
+      "instruction": "Press the electrical switch with protruding toggle directly",
+      "instruction_split": "seen",
+      "plan_success": true,
+      "expert_success": true,
+      "planned_joints_legal": true
+    }
+  ]
+}

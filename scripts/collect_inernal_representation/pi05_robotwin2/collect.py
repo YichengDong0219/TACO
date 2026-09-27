@@ -20,6 +20,7 @@ from lerobot.policies.pi05 import PI05Policy
 from lerobot.policies.factory import make_pre_post_processors
 from lerobot.configs.policies import PreTrainedConfig
 from tqdm import tqdm
+from cfn.pi05_rpc import PI05RPCClient
 
 
 @parser.wrap()
@@ -32,30 +33,36 @@ def train(cfg: TrainPipelineConfig):
     if cfg.seed is not None:
         set_seed(cfg.seed)
 
-    # Check device is available
-    device = get_safe_torch_device(cfg.policy.device, log=True)
+    policy_server = os.getenv("TACO_POLICY_SERVER")
+    # A remote client keeps dataset decoding on CPU; the server owns the GPU.
+    device = torch.device("cpu") if policy_server else get_safe_torch_device(cfg.policy.device, log=True)
     torch.backends.cudnn.benchmark = True
     torch.backends.cuda.matmul.allow_tf32 = True
 
     logging.info("Creating dataset")
     dataset = make_dataset(cfg)
 
-    logging.info("Creating policy")
+    logging.info("Creating policy client" if policy_server else "Creating policy")
     pretrained_checkpoint_path = cfg.policy.pretrained_path
-    policy=PI05Policy.from_pretrained(
-        pretrained_name_or_path=pretrained_checkpoint_path, 
-        local_files_only=True
-    )
-    policy.eval()
-
-    policy_config = PreTrainedConfig.from_pretrained(
-        pretrained_name_or_path=pretrained_checkpoint_path, 
-        local_files_only=True
-    )
-    preprocessor, postprocessor = make_pre_post_processors(
-        policy_cfg=policy_config,
-        pretrained_path=pretrained_checkpoint_path,
-    )
+    if policy_server:
+        client = PI05RPCClient(policy_server)
+        client.health()
+        policy = None
+        preprocessor = None
+    else:
+        policy=PI05Policy.from_pretrained(
+            pretrained_name_or_path=pretrained_checkpoint_path,
+            local_files_only=True
+        )
+        policy.eval()
+        policy_config = PreTrainedConfig.from_pretrained(
+            pretrained_name_or_path=pretrained_checkpoint_path,
+            local_files_only=True
+        )
+        preprocessor, postprocessor = make_pre_post_processors(
+            policy_cfg=policy_config,
+            pretrained_path=pretrained_checkpoint_path,
+        )
 
     # create dataloader for offline training
     if hasattr(cfg.policy, "drop_n_last_frames"):
@@ -81,31 +88,33 @@ def train(cfg: TrainPipelineConfig):
         prefetch_factor=2,
     )
 
-    dtype = next(policy.parameters()).dtype
+    dtype = next(policy.parameters()).dtype if policy is not None else torch.float32
     seed = 42
     torch.manual_seed(seed)
     print(f"noise seed is {seed} !!!")
     noise_num = 50
-    actions_shape = (noise_num, policy.model.config.n_action_steps, policy.model.config.max_action_dim)
-    noise42 = torch.normal(
-        mean=0.0,
-        std=1.0,
-        size=actions_shape,
-        dtype=dtype,
-    ).to(device)
-    print(f"noise is\n{noise42}")
+    if policy is not None:
+        actions_shape = (noise_num, policy.model.config.n_action_steps, policy.model.config.max_action_dim)
+        noise42 = torch.normal(
+            mean=0.0,
+            std=1.0,
+            size=actions_shape,
+            dtype=dtype,
+        ).to(device)
+        print(f"noise is\n{noise42}")
 
-    policy.eval()
+    if policy is not None:
+        policy.eval()
     features_good = []
 
     logging.info("Start selecting noise")
     for batch in tqdm(dataloader):
-        # to cuda
-        batch['observation.state'] = batch['observation.state'].to(device)
-        batch['observation.images.cam_high'] = batch['observation.images.cam_high'].to(device)
-        batch['observation.images.cam_left_wrist'] = batch['observation.images.cam_left_wrist'].to(device)
-        batch['observation.images.cam_right_wrist'] = batch['observation.images.cam_right_wrist'].to(device)
-        batch['action'] = batch['action'].to(device)
+        if policy is not None:
+            batch['observation.state'] = batch['observation.state'].to(device)
+            batch['observation.images.cam_high'] = batch['observation.images.cam_high'].to(device)
+            batch['observation.images.cam_left_wrist'] = batch['observation.images.cam_left_wrist'].to(device)
+            batch['observation.images.cam_right_wrist'] = batch['observation.images.cam_right_wrist'].to(device)
+            batch['action'] = batch['action'].to(device)
         bs = batch['observation.state'].shape[0]
 
         for i in tqdm(range(bs)):
@@ -117,6 +126,21 @@ def train(cfg: TrainPipelineConfig):
                     noise_batch[key] = [value[i]]
                 else:
                     assert 0, "this batch is not right"
+
+            if policy_server:
+                feature = client.request(
+                    "feature",
+                    state=noise_batch['observation.state'][0].numpy(),
+                    images=[
+                        noise_batch['observation.images.cam_high'][0].numpy(),
+                        noise_batch['observation.images.cam_left_wrist'][0].numpy(),
+                        noise_batch['observation.images.cam_right_wrist'][0].numpy(),
+                    ],
+                    action=noise_batch['action'][0].numpy(),
+                    instruction=noise_batch['task'][0],
+                )
+                features_good.append(torch.from_numpy(feature))
+                continue
 
             noise_batch['observation.state'] = noise_batch['observation.state'].repeat(noise_num, 1)
             noise_batch['observation.images.cam_high'] = noise_batch['observation.images.cam_high'].repeat(noise_num, 1, 1, 1)
