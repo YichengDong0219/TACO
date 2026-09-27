@@ -50,10 +50,19 @@ The RoboTwin revision is pinned in `scripts/robotwin_multitask.py` as
 definitions all come from the checkout, so a different revision is a different
 benchmark: it is refused unless `--allow-revision-mismatch` is passed, and the
 revision each run actually saw is written to its `run_manifest.json` either
-way. `third_party/Robotwin`, vendored from the TACO release, is an older
-RoboTwin with the pre-2.0 `script/` layout — it cannot run `convert` or `eval`,
-which need `data/decode_image_bit.py` and `scripts/eval_policy_xpolicylab.py`
-from the official checkout.
+way. The upstream TACO release also vendors a `third_party/Robotwin`, but it is
+an older RoboTwin with the pre-2.0 `script/` layout and cannot run `convert` or
+`eval`, which need `data/decode_image_bit.py` and
+`scripts/eval_policy_xpolicylab.py` from the official checkout. It was removed
+along with the three single-task driver scripts that existed only to reach into
+it; they are superseded by `scripts/robotwin_data/`. Both are recoverable:
+
+```bash
+git checkout e3000ba -- third_party/Robotwin \
+    scripts/eval/eval_robotwin2_torch_pi05_taco.sh \
+    scripts/robotwin_data/task_dataset_collection.sh \
+    scripts/robotwin_data/data_trans/rt2-hdf5_2_hdf5_2_lerobot.sh
+```
 
 ## Official RoboTwin, no video
 

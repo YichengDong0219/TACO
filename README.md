@@ -77,10 +77,19 @@ cd ../../../..
 ```
 
 #### (Optional) Install Robotwin2.0
+
+This branch does not vendor RoboTwin. The multi-task RoboTwin pipeline clones
+the official checkout and fetches its assets itself:
+
 ```
-cd ./third_party/Robotwin
+vendor/bootstrap.sh robotwin
 ```
-Please follow [Robotwin doc](https://robotwin-platform.github.io/doc/usage/robotwin-install.html#4-download-assets-robotwin-od-texture-library-and-embodiments) to install this local Robotwin and its requirements.
+
+See [ROBOTWIN12.md](./ROBOTWIN12.md) for the pinned revision and what the
+pipeline expects of it. The upstream TACO release vendored an older RoboTwin
+under `third_party/Robotwin` for its single-task eval path; that path was
+removed here because it cannot run `convert` or `eval`. To get it back, see the
+recovery command in ROBOTWIN12.md.
 
 #### (Optional) Install Lerobot-Libero
 ```
@@ -107,16 +116,25 @@ hf download rhodes-team-teleai/pi05_TACO_libero_finetuned --local-dir /path/to/y
 
 ### Pi0.5
 #### Eval in Robotwin
-1. preparation
 
-Collect Robotwin task dataset, we provide a pipline as an example:
+This branch runs RoboTwin through a pinned official checkout and a
+manifest-driven pipeline rather than the upstream single-task example scripts,
+so the steps below differ from the rest of this README. Start with
+[ROBOTWIN12.md](./ROBOTWIN12.md).
+
+The upstream example flow (`task_dataset_collection.sh` and
+`rt2-hdf5_2_hdf5_2_lerobot.sh`) reached into a vendored RoboTwin under
+`third_party/Robotwin` and was removed with it: it drives one hardcoded task
+(`adjust_bottle`) and cannot run the multi-task pipeline, which needs the
+official checkout's `data/decode_image_bit.py` and
+`scripts/eval_policy_xpolicylab.py`. To collect and convert a task here:
+
 ```
-bash ./scripts/robotwin_data/task_dataset_collection.sh
-bash ./scripts/robotwin_data/data_trans/rt2-hdf5_2_hdf5_2_lerobot.sh
-bash ./scripts/robotwin_data/data_trans/v21_to_v30.sh
-bash ./scripts/robotwin_data/data_trans/make_sure_stats.sh
+python scripts/robotwin_multitask.py collect-convert --task click_bell
 ```
-You will get lerobot dataset v3.0 at `repo-id=RoboTwin2/demo_clean/${task}_v30`. Please refer to [Robotwin doc](https://robotwin-platform.github.io/doc/usage/Pi0.html) first if you have any questions.
+
+`data_trans/v21_to_v30.sh` and `data_trans/make_sure_stats.sh` remain, but the
+converter writes LeRobot v3 directly, so neither is part of this path.
 
 You can fine-tune your own pi0.5:
 ```
@@ -141,10 +159,13 @@ bash ./scripts/train_cfn/train_cfn_example.sh
 
 4. Eval TACO
 
-Modify and run:
 ```
-bash ./scripts/eval/eval_robotwin2_torch_pi05_taco.sh
+python scripts/robotwin_multitask.py --policy-server 127.0.0.1:18080 queue
+python scripts/robotwin_multitask.py summarize
 ```
+
+The upstream single-task entry point (`eval_robotwin2_torch_pi05_taco.sh`) was
+removed with the vendored RoboTwin; see [ROBOTWIN12.md](./ROBOTWIN12.md).
 
 #### Eval in Libero
 1. Collect internal representation

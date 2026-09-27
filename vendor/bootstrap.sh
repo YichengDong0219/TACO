@@ -23,8 +23,8 @@ PYTHON="${PYTHON:-python3}"
 CONDA="${CONDA:-conda}"
 
 ROBOTWIN_URL="https://github.com/robotwin-Platform/RoboTwin.git"
-# The asset bundle the official RoboTwin fetches; see
-# third_party/Robotwin/assets/_download.py upstream. ~30 GB extracted.
+# The asset bundle the official RoboTwin's own assets/_download.py fetches.
+# ~30 GB extracted.
 ASSET_REPO="TianxingChen/RoboTwin2.0"
 
 # The revision is pinned in the pipeline, not here, so that "which benchmark is
