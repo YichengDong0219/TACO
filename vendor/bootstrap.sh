@@ -6,7 +6,9 @@
 #                                  checkout (the default verb)
 #   vendor/bootstrap.sh env        create the conda environment and the three
 #                                  editable installs it depends on
-#   vendor/bootstrap.sh check      verify both, plus the load-bearing patches
+#   vendor/bootstrap.sh tokenizer  fetch the PaliGemma tokenizer the checkpoint
+#                                  was trained against (gated on Hugging Face)
+#   vendor/bootstrap.sh check      verify the layout and the load-bearing patches
 #
 # Nothing in the Python pipeline fetches any of this: `robotwin_multitask.py`
 # asserts that a checkout and an asset tree are already in place and stops with
@@ -26,6 +28,8 @@ ROBOTWIN_URL="https://github.com/robotwin-Platform/RoboTwin.git"
 # The asset bundle the official RoboTwin's own assets/_download.py fetches.
 # ~30 GB extracted.
 ASSET_REPO="TianxingChen/RoboTwin2.0"
+# LeRobot's default for pi05, which is what the checkpoint was trained against.
+TOKENIZER_REPO="google/paligemma-3b-pt-224"
 
 # The revision is pinned in the pipeline, not here, so that "which benchmark is
 # this" has exactly one answer and the shell cannot drift from the Python.
@@ -122,13 +126,39 @@ cmd_env() {
     log "environment ready; verify with: vendor/bootstrap.sh check"
 }
 
+cmd_tokenizer() {
+    # Read the destination from the settings rather than assuming one: fetching
+    # into one directory while the pipeline reads another looks like it worked.
+    local target
+    target="$("$PYTHON" -c \
+        "import sys; sys.path.insert(0, '$ROOT/scripts'); import robotwin_multitask as m; print(m.load_settings(m.ROOT).get('tokenizer', ''))" \
+        2>/dev/null)"
+    target="${target:-$ROOT/third_party/paligemma-3b-pt-224}"
+
+    if [ -f "$target/tokenizer.json" ]; then
+        log "tokenizer already present at $target"
+        return
+    fi
+    # Gated on Hugging Face: accept the PaliGemma licence and run
+    # `hf auth login` first, or this fails with a 401.
+    log "downloading $TOKENIZER_REPO -> $target"
+    mkdir -p "$target"
+    "$PYTHON" - "$target" "$TOKENIZER_REPO" <<'PY'
+import sys
+from huggingface_hub import snapshot_download
+
+snapshot_download(repo_id=sys.argv[2], local_dir=sys.argv[1])
+PY
+}
+
 cmd_check() {
     "$PYTHON" "$ROOT/handoff/check_env.py"
 }
 
 case "${1:-robotwin}" in
-    robotwin) cmd_robotwin ;;
-    env)      cmd_env ;;
-    check)    cmd_check ;;
-    *)        printf 'usage: %s [robotwin|env|check]\n' "$0" >&2; exit 2 ;;
+    robotwin)  cmd_robotwin ;;
+    env)       cmd_env ;;
+    tokenizer) cmd_tokenizer ;;
+    check)     cmd_check ;;
+    *)         printf 'usage: %s [robotwin|env|tokenizer|check]\n' "$0" >&2; exit 2 ;;
 esac

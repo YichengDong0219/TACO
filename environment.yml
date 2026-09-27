@@ -4,8 +4,8 @@
 #     conda env export -n taco --no-builds
 # The exporting machine's `prefix:` line is stripped.
 #
-# THREE PACKAGES ARE DELIBERATELY ABSENT from the pip list below, because they
-# are editable installs into this repository rather than releases:
+# FOUR PACKAGES ARE DELIBERATELY ABSENT from the pip list below. Three are
+# editable installs into this repository rather than releases:
 #
 #     lerobot       -> third_party/lerobot/src        (carries the PI0.5
 #                      preprocessing patch; the PyPI wheel does NOT, and an
@@ -13,12 +13,20 @@
 #     transformers  -> third_party/lerobot/src/transformers/src
 #     cfn           -> cfn/
 #
+# The fourth, nvidia-curobo, was an editable install into a RoboTwin checkout
+# outside this repository. It is also optional: RoboTwin imports it in a
+# try/except and plans with mplib by default, which is what this pipeline uses.
+# A `pip install nvidia-curobo` would pull an unrelated PyPI package of that
+# name, which is worse than not having it -- install it from
+# https://github.com/NVlabs/curobo if a task ever needs it.
+#
 # Recreating the environment therefore takes two steps:
 #     vendor/bootstrap.sh env        # conda env create + the editable installs
 #
 # and `vendor/bootstrap.sh check` verifies the patches actually landed.
 #
-# The removed entries were: - cfn==0.1.0, - lerobot==0.3.4, - transformers==4.53.2
+# The removed entries were: - cfn==0.1.0, - lerobot==0.3.4,
+#   - transformers==4.53.2, - nvidia-curobo==0.7.8
 name: taco
 channels:
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
@@ -163,7 +171,6 @@ dependencies:
       - nvidia-cufft-cu12==11.3.0.4
       - nvidia-cufile-cu12==1.11.1.6
       - nvidia-curand-cu12==10.3.7.77
-      - nvidia-curobo==0.7.8
       - nvidia-cusolver-cu12==11.7.1.2
       - nvidia-cusparse-cu12==12.5.4.2
       - nvidia-cusparselt-cu12==0.6.3

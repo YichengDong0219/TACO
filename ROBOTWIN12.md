@@ -34,6 +34,8 @@ vendor/bootstrap.sh env        # conda env from environment.yml + the three
                                # editable installs (lerobot, transformers, cfn)
 vendor/bootstrap.sh robotwin   # clone RoboTwin at the pinned revision, fetch
                                # ~30 GB of assets, symlink them into the checkout
+vendor/bootstrap.sh tokenizer  # PaliGemma tokenizer, which `serve` needs and
+                               # cannot fetch itself (HF_HUB_OFFLINE=1)
 vendor/bootstrap.sh check      # verify the layout and every load-bearing patch
 ```
 
@@ -41,9 +43,19 @@ vendor/bootstrap.sh check      # verify the layout and every load-bearing patch
 releases they would be an unpatched LeRobot, which degrades every result
 silently. They must come from this working tree, which is what `env` installs.
 
-The three are separate because they fail differently and are worth re-running
-separately: `env` needs conda, `robotwin` needs network and disk, and `check`
-needs neither and is safe to run at any time.
+The verbs are separate because they fail differently and are worth re-running
+separately: `env` needs conda, `robotwin` needs network and disk, `tokenizer`
+needs Hugging Face auth (the PaliGemma repo is gated), and `check` needs none of
+them and is safe to run at any time.
+
+**The CFN is buildable here; the policy is not.** `collect → convert → extract →
+train` produce a CFN from the manifests and the asset tree alone, but `extract`,
+`serve` and `eval` all need the fine-tuned PI0.5 at `paths.policy` (6.8 GB),
+which is a local conversion — `openpi_export.json` in it records its origin as
+`/newhome/xiexinyi/vla/openpi/checkpoints/RoboTwin-lerobot_v30-aloha_agilex-joint-0/29999`
+under the `rlinf_lerobot_pi05_v1` format. It is in no repository and on no hub,
+so a machine without that artifact can run the collection and conversion halves
+of the pipeline and nothing downstream of them.
 
 The RoboTwin revision is pinned in `scripts/robotwin_multitask.py` as
 `ROBOTWIN_REVISION` and asserted by `bootstrap`. Environments, experts and task
