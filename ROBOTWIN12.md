@@ -7,7 +7,8 @@ does not use a published TACO checkpoint or any DSRL artifact.
 
 - Policy: `/home/dongyicheng/dsrl/pi05_robotwin_lerobot`
 - Assets: `/home/dongyicheng/dsrl/RoboTwin-assets/assets`
-- RoboTwin: `third_party/RoboTwin-official` (`robotwin-Platform/RoboTwin`)
+- RoboTwin: `third_party/RoboTwin-official` at `6dde5715`, from
+  `robotwin-Platform/RoboTwin`
 - Train manifests: `robotwin_train_episodes_12tasks` (30 episodes per task)
 - Eval manifests: `robotwin_eval_episodes_12tasks` (100 episodes per task)
 - Artifacts: `artifacts/robotwin12_official_v1`
@@ -15,6 +16,40 @@ does not use a published TACO checkpoint or any DSRL artifact.
 Each manifest seed and instruction is used exactly as written. A failed expert
 episode or invalid scene aborts collection; it is never replaced by another
 seed.
+
+## Setting up a machine
+
+The repository carries the pipeline, the vendored LeRobot, the manifests and
+the CFN, but three of its inputs live outside it: the RoboTwin checkout, the
+asset tree, and the PI0.5 checkpoint. Nothing in the Python pipeline fetches
+them — `bootstrap` asserts they are already in place — so they are obtained
+here:
+
+```bash
+vendor/bootstrap.sh env        # conda env from environment.yml + the three
+                               # editable installs (lerobot, transformers, cfn)
+vendor/bootstrap.sh robotwin   # clone RoboTwin at the pinned revision, fetch
+                               # ~30 GB of assets, symlink them into the checkout
+vendor/bootstrap.sh check      # verify the layout and every load-bearing patch
+```
+
+`environment.yml` deliberately omits `lerobot`, `transformers` and `cfn`: as
+releases they would be an unpatched LeRobot, which degrades every result
+silently. They must come from this working tree, which is what `env` installs.
+
+The three are separate because they fail differently and are worth re-running
+separately: `env` needs conda, `robotwin` needs network and disk, and `check`
+needs neither and is safe to run at any time.
+
+The RoboTwin revision is pinned in `scripts/robotwin_multitask.py` as
+`ROBOTWIN_REVISION` and asserted by `bootstrap`. Environments, experts and task
+definitions all come from the checkout, so a different revision is a different
+benchmark: it is refused unless `--allow-revision-mismatch` is passed, and the
+revision each run actually saw is written to its `run_manifest.json` either
+way. `third_party/Robotwin`, vendored from the TACO release, is an older
+RoboTwin with the pre-2.0 `script/` layout — it cannot run `convert` or `eval`,
+which need `data/decode_image_bit.py` and `scripts/eval_policy_xpolicylab.py`
+from the official checkout.
 
 ## Official RoboTwin, no video
 

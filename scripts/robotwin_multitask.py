@@ -74,6 +74,13 @@ EXTRACT_SLOWEST_FIRST = (
 )
 PROTOCOL = "robotwin12_official_v1"
 RAW_TAG = "demo_clean_official_v1"
+# The RoboTwin revision every result in this campaign was produced against.
+# Environments, experts and the task definitions all come from the checkout, so
+# a different revision is a different benchmark rather than a different build of
+# the same one. Every run records the revision it saw in `run_manifest.json`,
+# but nothing in a manifest can carry it, so `bootstrap` is where a machine is
+# held to it before any work starts.
+ROBOTWIN_REVISION = "6dde57155eafa3e4ebf6ad1f93a7cf7d5d41a755"
 DEFAULT_ARTIFACTS = ROOT / "artifacts" / PROTOCOL
 DEFAULT_POLICY = Path("/home/dongyicheng/dsrl/pi05_robotwin_lerobot")
 DEFAULT_ASSETS = Path("/home/dongyicheng/dsrl/RoboTwin-assets/assets")
@@ -140,11 +147,71 @@ def validate(args) -> int:
     return 0
 
 
+def _git(robotwin: Path, *arguments: str) -> str:
+    return subprocess.run(
+        ["git", "-C", str(robotwin), *arguments],
+        check=True, capture_output=True, text=True,
+    ).stdout.strip()
+
+
+def _require_official_checkout(robotwin: Path) -> str:
+    """Return the checkout's origin, or stop with something actionable.
+
+    `bootstrap` is the first command on a fresh machine, so a missing or wrong
+    checkout has to name the fix instead of surfacing a git traceback.
+    """
+    if not (robotwin / ".git").exists():
+        raise SystemExit(
+            f"No RoboTwin checkout at {robotwin}.\n"
+            f"Create one with:  vendor/bootstrap.sh robotwin"
+        )
+    remote = _git(robotwin, "remote", "get-url", "origin")
+    if "robotwin-Platform/RoboTwin" not in remote:
+        raise SystemExit(
+            f"{robotwin} is not an official RoboTwin checkout.\n"
+            f"  origin: {remote}\n"
+            f"  expected a clone of robotwin-Platform/RoboTwin."
+        )
+    return remote
+
+
+def _require_pinned_revision(robotwin: Path, *, allow_mismatch: bool) -> str:
+    """Hold the checkout to the revision the campaign was built against.
+
+    Recording the revision per run is not enough: two machines at different
+    revisions produce byte-identical-looking artifact trees, and the difference
+    only shows up as numbers that disagree for no visible reason.
+    """
+    revision = _git(robotwin, "rev-parse", "HEAD")
+    if revision != ROBOTWIN_REVISION and not allow_mismatch:
+        raise SystemExit(
+            f"{robotwin} is at {revision[:12]}, but this campaign pins "
+            f"{ROBOTWIN_REVISION[:12]}.\n"
+            f"Environments, experts and task definitions all come from the "
+            f"checkout, so a different revision is a different benchmark.\n"
+            f"Check out the pinned revision, or pass --allow-revision-mismatch "
+            f"to proceed anyway; either way the revision each run saw is written "
+            f"to its run_manifest.json."
+        )
+    return revision
+
+
 def bootstrap(args) -> int:
     robotwin = args.robotwin.resolve()
+    assets = args.assets.resolve()
+    if not assets.is_dir():
+        raise SystemExit(
+            f"No asset tree at {assets}.\n"
+            f"Fetch it with:  vendor/bootstrap.sh robotwin"
+        )
+    remote = _require_official_checkout(robotwin)
+    revision = _require_pinned_revision(
+        robotwin, allow_mismatch=args.allow_revision_mismatch
+    )
+
     asset_dir = robotwin / "assets"
     asset_dir.mkdir(parents=True, exist_ok=True)
-    for source in sorted(args.assets.resolve().iterdir()):
+    for source in sorted(assets.iterdir()):
         if not source.is_dir() or source.name == "__MACOSX":
             continue
         target = asset_dir / source.name
@@ -158,22 +225,10 @@ def bootstrap(args) -> int:
     if missing:
         raise RuntimeError(f"Assets are not linked into {asset_dir}: {missing}")
 
-    revision = subprocess.run(
-        ["git", "-C", str(robotwin), "rev-parse", "HEAD"],
-        check=True, capture_output=True, text=True,
-    ).stdout.strip()
-    remote = subprocess.run(
-        ["git", "-C", str(robotwin), "remote", "get-url", "origin"],
-        check=True, capture_output=True, text=True,
-    ).stdout.strip()
-    if "robotwin-Platform/RoboTwin" not in remote:
-        raise RuntimeError(f"Not an official RoboTwin checkout: {remote}")
     print(json.dumps({
         "robotwin": str(robotwin), "repository": remote, "revision": revision,
-        "assets": str(args.assets), "checkout_dirty": bool(subprocess.run(
-            ["git", "-C", str(robotwin), "status", "--porcelain"],
-            check=True, capture_output=True, text=True,
-        ).stdout.strip()),
+        "revision_pinned": revision == ROBOTWIN_REVISION,
+        "assets": str(assets), "checkout_dirty": bool(_git(robotwin, "status", "--porcelain")),
     }))
     return 0
 
@@ -955,6 +1010,13 @@ def build_parser() -> argparse.ArgumentParser:
 
     command = subparsers.add_parser("bootstrap")
     command.add_argument("--assets", type=Path, default=DEFAULT_ASSETS)
+    command.add_argument(
+        "--allow-revision-mismatch",
+        action="store_true",
+        help="Set up a checkout whose revision differs from the pinned one. "
+             "Recorded in every run_manifest.json; the results stop being "
+             "comparable with the rest of the campaign.",
+    )
     command.set_defaults(func=bootstrap)
 
     for name, func in (

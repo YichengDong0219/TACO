@@ -3,9 +3,9 @@
 
 Checks, in order of how expensive they are to discover later:
   1. every required file is present, and the 12 datasets/manifests are complete;
-  2. the two LeRobot patches that align the input with the training
-     configuration are present (an unpatched copy silently degrades every
-     result, so this is a hard failure);
+  2. every LeRobot patch that aligns the input with the training configuration
+     is present (an unpatched copy silently degrades every result, so each is a
+     hard failure);
   3. the processor pipeline really builds a 14-number state prompt.
 
 Run from the package root:  python check_env.py
@@ -13,17 +13,42 @@ Run from the package root:  python check_env.py
 
 from __future__ import annotations
 
-import json
 import sys
 from pathlib import Path
 
-PKG = Path(__file__).resolve().parent
+
+def _package_root(start: Path) -> Path:
+    """The directory holding third_party/lerobot.
+
+    This file ships inside handoff/ in the repository and at the root of a
+    delivered bundle, so the root is located rather than assumed -- otherwise
+    running it in place silently checks the wrong paths.
+    """
+    for candidate in (start, *start.parents):
+        if (candidate / "third_party" / "lerobot" / "src" / "lerobot").is_dir():
+            return candidate
+    return start
+
+
+def _read(path: Path) -> str:
+    # A missing file is a failed check, not a crash: reporting what is wrong
+    # with a package is the entire job of this script.
+    try:
+        return path.read_text(encoding="utf-8")
+    except OSError:
+        return ""
+
+
+PKG = _package_root(Path(__file__).resolve().parent)
 TASKS = (
     "click_bell", "move_pillbottle_pad", "move_playingcard_away", "pick_dual_bottles",
     "place_bread_skillet", "place_fan", "place_mouse_pad", "press_stapler",
     "scan_object", "stack_blocks_two", "stamp_seal", "turn_switch",
 )
-LEROBOT = PKG / "third_party" / "lerobot" / "src" / "lerobot" / "policies" / "pi05"
+LEROBOT_SRC = PKG / "third_party" / "lerobot" / "src" / "lerobot"
+LEROBOT = LEROBOT_SRC / "policies" / "pi05"
+# `factory.py` sits one level above the policy packages, not beside them.
+LEROBOT_FACTORY = LEROBOT_SRC / "policies" / "factory.py"
 
 failures: list[str] = []
 
@@ -58,8 +83,11 @@ check("12 LeRobot datasets", not missing_ds, f"missing: {missing_ds}")
 check("12 train manifests", not missing_mf, f"missing: {missing_mf}")
 
 print("\n2. LeRobot patches (input must match the training configuration)")
-processor = (LEROBOT / "processor_pi05.py").read_text()
-modeling = (LEROBOT / "modeling_pi05.py").read_text()
+processor = _read(LEROBOT / "processor_pi05.py")
+modeling = _read(LEROBOT / "modeling_pi05.py")
+factory = _read(LEROBOT_FACTORY)
+config = _read(LEROBOT / "configuration_pi05.py")
+relative_actions = LEROBOT_SRC / "processor" / "relative_action_processor.py"
 
 # openpi tokenizes the state before padding it, so the prompt carries the real
 # dims only; padding to max_state_dim here would append 18 "128" bins.
@@ -71,6 +99,24 @@ check("state is NOT padded before digitizing", not pads_before_digitizing,
 # put the letterbox band at -3.0.
 check("image pad constant is 0.0", "else 0.0" in modeling and "else -1.0" not in modeling,
       "modeling_pi05.py still pads float images with -1.0")
+
+# The postprocessor's relative-to-absolute step reuses the observation state the
+# last preprocessor call cached, so it has to be handed the preprocessor's step
+# explicitly. Unwired, the step has nothing to undo.
+wired = "relative_step = next(" in factory and "step.relative_step = relative_step" in factory
+check("postprocessor is wired to the preprocessor's relative step", wired,
+      "factory.py does not hand AbsoluteActionsProcessorStep the "
+      "preprocessor's RelativeActionsProcessorStep")
+check("relative action processor exists", relative_actions.is_file(),
+      f"missing {relative_actions}")
+
+# Fields written into config.json by the LeRobot version that converted this
+# checkpoint. Absent them the checkpoint fails to load outright -- loud, but it
+# costs a policy-server start to discover.
+compat = "use_peft" in config and "pretrained_revision" in config
+check("checkpoint compatibility fields are declared", compat,
+      "configuration_pi05.py is missing use_peft / pretrained_revision, so the "
+      "converted checkpoint's config.json will not load")
 
 print("\n3. the pipeline actually builds a 14-number state prompt")
 try:

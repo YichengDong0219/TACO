@@ -8,3 +8,7 @@ artifacts/
 episodes.progress.json
 third_party/Robotwin/assets/
 third_party/Robotwin/task_config/
+# Fetched by vendor/bootstrap.sh -- the official checkout and ~30 GB of assets.
+# Both are machine-local; neither belongs in the repository.
+third_party/RoboTwin-official/
+third_party/RoboTwin-assets/
